@@ -1,0 +1,23 @@
+# Assignment Operator
+
+Assignment operators are used to assign values to variables.
+
+In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
+
+
+Operator|Example|Same As|
+=|x = 5|x = 5|
+
++=|x += 3|x = x + 3|
+-=|x -= 3|x = x - 3|
+*=|x *= 3|x = x * 3|
+/=|x /= 3|x = x / 3|
+
+%=|x %= 3|x = x % 3|
+
+&=|x &= 3|x = x & 3|
+|=|x |= 3|x = x | 3|
+^=|x ^= 3|x = x ^ 3|
+
+>>=|x >>= 3|x = x >> 3|
+<<=|x <<= 3|x = x << 3

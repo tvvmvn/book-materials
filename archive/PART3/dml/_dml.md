@@ -1,0 +1,9 @@
+# DML
+
+CRUD
+
+1. INSERT
+1. SELECT
+1. UPDATE
+1. DELETE
+

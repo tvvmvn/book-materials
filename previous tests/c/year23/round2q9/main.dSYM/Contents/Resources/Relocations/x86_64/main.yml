@@ -1,0 +1,13 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/mybook/codes/c/year23/round2/q9/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x0, symBinAddr: 0x100000D80, symSize: 0x30 }
+  - { offset: 0x3F, size: 0x8, addend: 0x0, symName: _point, symObjAddr: 0x214, symBinAddr: 0x100002000, symSize: 0x0 }
+  - { offset: 0x69, size: 0x8, addend: 0x0, symName: _isWhat, symBinAddr: 0x100002010, symSize: 0x0 }
+  - { offset: 0x7E, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x0, symBinAddr: 0x100000D80, symSize: 0x30 }
+  - { offset: 0x97, size: 0x8, addend: 0x0, symName: _isFull, symObjAddr: 0x30, symBinAddr: 0x100000DB0, symSize: 0x30 }
+  - { offset: 0xB0, size: 0x8, addend: 0x0, symName: _into, symObjAddr: 0x60, symBinAddr: 0x100000DE0, symSize: 0x60 }
+  - { offset: 0xD4, size: 0x8, addend: 0x0, symName: _take, symObjAddr: 0xC0, symBinAddr: 0x100000E40, symSize: 0x60 }
+  - { offset: 0xED, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x120, symBinAddr: 0x100000EA0, symSize: 0xF1 }
+...

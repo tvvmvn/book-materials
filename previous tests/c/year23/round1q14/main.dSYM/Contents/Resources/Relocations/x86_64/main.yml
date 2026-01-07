@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/mybook/codes/c/year23/round1/q14/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100000DD0, symSize: 0x50 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x0, symBinAddr: 0x100000DD0, symSize: 0x50 }
+  - { offset: 0x8F, size: 0x8, addend: 0x0, symName: _Usort, symObjAddr: 0x50, symBinAddr: 0x100000E20, symSize: 0xB0 }
+  - { offset: 0xF9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x100, symBinAddr: 0x100000ED0, symSize: 0xAF }
+...

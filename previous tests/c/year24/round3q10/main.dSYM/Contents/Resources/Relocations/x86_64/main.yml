@@ -1,0 +1,8 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/mybook/codes/c/year24/round3q10/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _func, symObjAddr: 0x0, symBinAddr: 0x100000E40, symSize: 0x80 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _func, symObjAddr: 0x0, symBinAddr: 0x100000E40, symSize: 0x80 }
+  - { offset: 0x81, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x80, symBinAddr: 0x100000EC0, symSize: 0xAA }
+...
