@@ -1,10 +1,13 @@
 # Basic
 
 1. Intro
+
 1. Data type
 1. Array
 1. String
+
 1. Methods
+
 1. User input
 
 

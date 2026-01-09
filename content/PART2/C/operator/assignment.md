@@ -1,23 +1,43 @@
-# Assignment Operator
+# 대입 연산자
 
-Assignment operators are used to assign values to variables.
-
-In the example below, we use the assignment operator (=) to assign the value 10 to a variable called x:
+변수에 값을 대입하는 연산을 수행합니다
 
 
-Operator|Example|Same As|
-=|x = 5|x = 5|
+# 기본 대입 연산자
 
-+=|x += 3|x = x + 3|
--=|x -= 3|x = x - 3|
-*=|x *= 3|x = x * 3|
-/=|x /= 3|x = x / 3|
+1. = (변수 대입 연산자)
+x = 1 처럼 변수에 값을 할당할 때 사용합니다
 
-%=|x %= 3|x = x % 3|
+2. += (더하기 대입 연산자)
+x += y는 x = x + y와 같습니다
 
-&=|x &= 3|x = x & 3|
-|=|x |= 3|x = x | 3|
-^=|x ^= 3|x = x ^ 3|
+3. -= (빼기 대입 연산자)
+x -= y는 x = x - y와 같습니다
 
->>=|x >>= 3|x = x >> 3|
-<<=|x <<= 3|x = x << 3
+4. *= (곱하기 대입 연산자)
+x *= y는 x = x * y와 같습니다
+
+5. /= (나누기 대입 연산자)
+x /= y는 x = x / y와 같습니다
+
+6. %= (나머지 대입 연산자)
+x %= y는 x = x % y와 같습니다
+
+
+# 비트 연산과 관련된 대입 연산자
+
+1. &= (비트and 대입 연산자)
+x &= y 는 x = x & y와 같습니다
+
+2. |= (비트or 대입 연산자)
+x |= y 는 x = x | y와 같습니다
+
+3. ^= (비트xor 대입 연산자)
+x ^= y 는 x = x ^ y와 같습니다
+
+5. <<= (비트 왼쪽 시프트 대입 연산자)
+x <<= y 는 x = x << y와 같습니다
+
+4. >>= (비트 오른쪽 시프트 대입 연산자)
+x >>= y 는 x = x >> y와 같습니다
+

@@ -1,16 +1,9 @@
-## Reference
+# 참조
 
-When a variable is created in C, a memory address is assigned to the variable.
-
-The memory address is the location of where the variable is stored on the computer.
-
-When we assign a value to the variable, it is stored in this memory address.
-
-To access it, use the `reference operator (&)`, and the result represents where the variable is stored:
-
+변수는 메모리 상에서 고유한 주소를 가지고 있습니다. 변수의 메모리 주소에 접근하는 것을 참조(reference)라고 합니다. &(참조 연산자)를 활용해 변수를 참조할 수 있습니다.
 
 ```c
-int myAge = 43;
+int myAge = 30;
 
-printf("%p", &myAge); // Outputs 0x7ffe5367e044
+printf("%p", &myAge); // 0x7ffe5367e044
 ```

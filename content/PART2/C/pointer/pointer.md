@@ -1,18 +1,12 @@
 # Pointer
 
-A pointer is a variable that stores the memory address of another variable as its value.
-
-A pointer variable points to a data type (like int) of the same type, and is created with the * operator.
-
-The address of the variable you are working with is assigned to the pointer:
+다른 변수의 주소를 값으로 가지는 변수를 포인터라고 부릅니다.
+포인터의 자료형은 주소를 저장한 변수의 자료형과 같으며 자료형 뒤에 *을 붙입니다.
 
 ```c
-int myAge = 43;     // An int variable
-int* ptr = &myAge;  // A pointer variable, with the name ptr, that stores the address of myAge
+int myAge = 30;     
+int* ptr = &myAge;  
 
-// Output the value of myAge (43)
-printf("%d\n", myAge);
-
-// Output the memory address of myAge with the pointer (0x7ffe5367e044)
-printf("%p\n", ptr);
+printf("%d\n", myAge); // 30
+printf("%p\n", ptr); // 0x7ffe5367e044
 ```

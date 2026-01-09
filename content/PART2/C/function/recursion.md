@@ -1,20 +1,11 @@
-# Recursion
-
-Recursion is the technique of making a function call itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+# 재귀 함수
 
 
-<!-- e.g) 5! = 5 * 4 * .. * 1 -->
+자신을 호출하는 함수를 재귀 함수라고 합니다. 재귀 함수는 반복적인 작업을 할 때 유용합니다.
 
-example. Factorial (계승)
+다음은 재귀함수를 활용해 5!(5의 계승)를 구하는 코드입니다
 
 ```c
-int factorial(int n);
-
-int main() {
-  printf("Factorial of 5 is %d", factorial(5));
-  return 0;
-}
-
 int factorial(int n) {
   if (n > 1) {
     return n * factorial(n - 1);
@@ -22,4 +13,11 @@ int factorial(int n) {
     return 1;
   }
 }
+
+int main() {
+  printf("5! : %d", factorial(5));
+  
+  return 0;
+}
+
 ```

@@ -1,15 +1,16 @@
-# Data type
+# 자료형
 
-The data type specifies the size and type of information the variable will store.
 
-## Primary type
+# Primary type
 
-1. number - int, float, double
-1. char
+- 정수형
+- 실수형
+- 문자형
 
-## Complex type
 
-1. string
-1. array
-1. struct
+# Complex type
+
+- 배열
+- 문자열
+- 구조체
 

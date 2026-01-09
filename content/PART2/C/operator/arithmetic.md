@@ -1,32 +1,38 @@
-# Arithmetic Operators
+# 산술 연산자
 
-Arithmetic operators are used to perform common mathematical operations.
+산술 연산자는 수학적인 연산을 수행합니다
 
+1. + (더하기 연산자)
+두 수를 더합니다
 
-1. + Addition 
-Adds together two values 
-e.g) x + y 
+예) x + y 
 
-2. - Subtraction 
-Subtracts one value from another 
-e.g) x - y 
+2. - (빼기 연산자)
+앞에 수에서 뒤의 수를 뺍니다
 
-3. * Multiplication 
-Multiplies two values 
-e.g) x * y 
+예) x - y 
 
-4. / Division 
-Divides one value by another 
-e.g) x / y 
+3. * (곱하기 연산자)
+두 수를 곱합니다
 
-5. % Modulus 
-Returns the division remainder 
-e.g) x % y 
+예) x * y 
 
-6. ++ Increment 
-Increases the value of a variable by 1 
-e.g)++x 
+4. / (나누기 연산자)
+앞의 수를 뒤의 수로 나눕니다
 
-7. -- Decrement 
-Decreases the value of a variable by 1 
-e.g) --x
+예) x / y 
+
+5. % (나머지 연산자)
+앞의 수를 뒤의 수로 나누고 나머지를 반환합니다
+
+예) x % y 
+
+6. ++ (증감 연산자)
+변수를 1 증가시킵니다. 증감 연산자가 앞에 붙는 경우와 뒤에 붙는 경우에는 미세한 차이가 있습니다.
+
+예)++x 또는 x++
+
+7. -- (감소 연산자)
+변수를 1 감소시킵니다. 감소 연산자가 앞에 붙는 경우와 뒤에 붙는 경우에는 미세한 차이가 있습니다.
+
+예) --x 또는 x--

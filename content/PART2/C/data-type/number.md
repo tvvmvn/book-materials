@@ -1,68 +1,57 @@
-# Number
+# 숫자형
 
-1. int
-2. float
-3. double
+- 정수형
+- 실수형
 
 
-## int
+# 정수형
 
-Stores whole numbers, without decimals
-size: 2 or 4 bytes
-
-e.g) 1
+정수형 값의 크기는 일반적으로 4바이트 입니다.
+변수 선언 예약어는 int 입니다
 
 ```c
-int myNum = 1000;
-printf("%d", myNum); // 1000
-```
+int a = 2;
+int b = 0;
+int c = -3;
 
-## float
-
-Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits
-size: 4 bytes
-
-e.g) 1.99
-
-```c
-float myNum = 5.75;
-printf("%f", myNum); // 5.750000
+printf("%d\n", a); // 2
+printf("%d\n", b); // 0
+printf("%d\n", c); // -3
 ```
 
 
-## double
+# 실수형
 
-Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
-size: 8 bytes
+아래처럼 두 개의 실수형 예약어가 있습니다.
 
-e.g) 1.99
+- float
+- double
+
+float은 6-7개의 소수점 이하 숫자를 저장할 수 있습니다. float 변수의 크기는 4바이트입니다
 
 ```c
-double myNum = 19.99;
-printf("%lf", myNum); // 19.990000
+float myNum = 1.5;
+
+printf("%f", myNum); // 1.500000
+```
+
+double은 float보다 더 많은 소수점 이하 숫자를 저장할 수 있습니다. 15개 정도까지 저장가능합니다. double 변수의 크기는 8바이트 입니다.
+
+```c
+double myNum = 1.5
+
+printf("%lf", myNum); // 1.500000
 ```
 
 
-## Set Decimal Precision
-
-You have probably already noticed that if you print a floating point number, the output will show many digits after the decimal point:
-
-```c
-float myFloatNum = 3.5;
-double myDoubleNum = 19.99;
-
-printf("%f\n", myFloatNum); // Outputs 3.500000
-printf("%lf", myDoubleNum); // Outputs 19.990000
-```
-
-
-If you want to remove the extra zeros (set decimal precision), you can use a dot (.) followed by a number that specifies how many digits that should be shown after the decimal point:
+실수형 변수를 출력하면 기본적으로 소수점 이하의 숫자가 6개 정도 출력이 됩니다.
+반면 출력할 때 소수점 이하 숫자의 개수를 원하는 만큼 설정할 수 있습니다. 
+설정 방법은 % 뒤에 점(.)을 찍고 출력을 원하는 개수를 적으면 됩니다.
 
 ```c
-float myFloatNum = 3.5;
+double d = 2.123456789123456789;
 
-printf("%f\n", myFloatNum);   // Default will show 6 digits after the decimal point
-printf("%.1f\n", myFloatNum); // Only show 1 digit
-printf("%.2f\n", myFloatNum); // Only show 2 digits
-printf("%.4f", myFloatNum);   // Only show 4 digits
+printf("%lf\n", d); // 2.123457
+printf("%.2lf\n", d); // 2.12
+printf("%.20lf", d); // 2.12345678912345681155
 ```

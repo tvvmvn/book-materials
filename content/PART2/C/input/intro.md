@@ -1,38 +1,28 @@
-# User input
+# 입력받기
 
-To get user input, you can use the scanf() function:
+scanf() 함수로 사용자로부터 입력을 받을 수 있습니다. scanf 함수의 첫번째 인자는 변수의 포맷 지정자이고 두번째 인자는 변수의 주소입니다.
 
 ```c
-// Create an integer variable that will store the number we get from the user
-int myNum;
+int age;
 
-// Ask the user to type a number
-printf("Type a number: \n");
+printf("나이를 입력하세요: ");
+scanf("%d", &age);
 
-// Get and save the number the user types
-scanf("%d", &myNum);
-
-// Output the number the user typed
-printf("Your number is: %d", myNum);
+printf("당신의 나이: %d", age);
 ```
 
 
-## String input
+문자열을 입력받을 때 문자열을 저장할 변수의 크기가 부족하지 않도록 사전에 잘 고려해야 합니다. 문자열을 입력받을 때는 변수 이름 앞에 &(참조 연산자)를 사용할 필요가 없습니다
 
-When working with strings in scanf(), 
-you must specify the size of the string/array 
-and you don't have to use the reference operator (&).
 
 ```c
-// Create a string
-char firstName[30];
+char name[10];
 
-// Ask the user to input some text
-printf("Enter your first name: \n");
+printf("이름을 입력하세요: ");
 
-// Get and save the text
-scanf("%s", firstName);
+scanf("%s", name);
 
-// Output the text
-printf("Hello %s", firstName);
+printf("안녕 %s", name);
+
+// 안녕 John
 ```

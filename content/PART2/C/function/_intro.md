@@ -1,46 +1,62 @@
-# Function
+# 함수
 
-A function is a block of code which only runs when it is called.
+함수는 입력을 받고 정해진 연산을 수행한 뒤 결과를 반환하는 작업 단위입니다.
+프로그래밍의 꽃이라고 할 수 있습니다.
 
-Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+다음은 함수를 정의하는 방법입니다.
+
+```
+반환-자료형 함수이름() {
+  작업..
+}
+```
+
+다음은 함수를 정의하고 호출하는 코드입니다. 함수는 한 번 정의하면 아무때나 몇번이고 호출할 수 있습니다.
 
 ```c
-// Create a function
+// 함수 정의
 void myFunction() {
-  printf("I just got executed!");
+  printf("호출됨");
 }
 
-myFunction(); // call the function
-
-// Outputs "I just got executed!"
+// 함수 호출
+myFunction(); 
+myFunction(); 
+myFunction(); 
 ```
 
 
-## Paramters and arguments
+# 매개 변수와 인자
 
-Information can be passed to functions as a parameter. Parameters act as variables inside the function.
+함수는 입력을 받을 수 있습니다. 함수에 입력되는 값을 인자(arguments)라고 부르고 함수를 정의할 때 인자를 치환한 변수를 매개변수(parameters)라고 부릅니다.
+
+다음은 두 수를 입력받아 합을 구하는 함수입니다.
 
 ```c
-void calculateSum(int x, int y) {
-  int sum = x + y;
-  printf("The sum of %d + %d is: %d\n", x, y, sum);
+// 매개변수 x, y
+void add(int x, int y) {
+  printf("sum: %d", x + y);
 }
 
-calculateSum(5, 3);
-calculateSum(8, 2);
-calculateSum(15, 15);
+// 인자는 매번 다를 수 있습니다.
+add(5, 3);
+add(8, 2);
+add(4, 5);
 ```
 
 
-## return
+# return
+
+함수는 연산의 결과를 반환할 수 있습니다. return으로 결과를 반환합니다.
+반환하고 나면 함수의 실행이 종료됩니다. 따라서 return 아래에 코드가 있다면 실행되지 않습니다.
+
 
 ```c
-int myFunction(int x, int y) {
+int add(int x, int y) {
   return x + y;
 }
 
-int result = myFunction(5, 3);
+int sum = add(5, 3);
 
-printf("Result is: %d", result);
-// Outputs 8 (5 + 3)
+printf("sum: %d", sum); // 8
 ```

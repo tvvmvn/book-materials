@@ -1,48 +1,20 @@
-# Operator
+# 연산자
 
-Operators are used to perform operations on variables and values.
-
-
-1. Arithmetic operators
-1. Assignment operators
-1. Comparison operators
-1. Logical operators
-1. Bitwise operators (advanced)
+- 산술 연산자
+- 대입 연산자
+- 비교 연산자
+- 논리 연산자
+- 비트 연산자
 
 
-## Operator Precedence
-
-Here are some common operators in C, from highest to lowest priority:
-
-1. () 
-Parentheses
-
-1. *, /, % 
-Multiplication, Division, Modulus
-
-1. +, - 
-Addition, Subtraction
-
-1. >, <, >=, <= 
-Comparison
-
-1. ==, != 
-Equality
-
-1. && 
-Logical AND
-
-1. || 
-Logical OR
-
-1. = 
-Assignment
+# 연산자 우선 순위
 
 
-```c
-int result1 = 2 + 3 * 4;     // 2 + 12 = 14
-int result2 = (2 + 3) * 4;   // 5 * 4 = 20
-
-printf("%d\n", result1);
-printf("%d\n", result2);
-```
+- () 
+- *, /, % 
+- +, - 
+- >, <, >=, <= 
+- ==, != 
+- && 
+- || 
+- = 

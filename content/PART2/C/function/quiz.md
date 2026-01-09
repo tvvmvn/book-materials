@@ -1,23 +1,16 @@
 # Real-Life Example
 
-Fareneheit to Celsius
+다음은 화씨를 섭씨로 바꾸는 연산을 수행하는 함수입니다
 
 ```c
-// Function to convert Fahrenheit to Celsius
 float toCelsius(float fahrenheit) {
   return (5.0 / 9.0) * (fahrenheit - 32.0);
 }
 
-// Set a fahrenheit value
-float f_value = 98.8;
+int main() {
+  float f_value = 98.8;
 
-// Print the fahrenheit value
-printf("Fahrenheit: %.2f\n", f_value);
-
-// Call the function with the fahrenheit value
-float result = toCelsius(f_value);
-
-// Print the result
-printf("Convert Fahrenheit to Celsius: %.2f\n", result);
+  printf("%.2f\n", toCelsius(f_value));
+}
 ```
 

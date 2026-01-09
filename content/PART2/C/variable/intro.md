@@ -1,39 +1,36 @@
-# Variables
+# 변수
 
-Variables are containers for storing data values, like numbers and characters.
+변수는 프로그래밍에서 값을 저장하는 역할을 합니다.
 
-Syntax
+다음은 변수를 선언하는 방법입니다
 ```
-type variableName = value;
+자료형 변수이름
 ```
+
+아래는 정수형 변수 myNum을 선언하고 값을 대입하는 과정입니다
 
 ```c
-int myNum = 15;
-
-printf("%d", myNum);  // Outputs 15
-```
-
-
-You can also declare a variable without assigning the value, and assign the value later:
-
-```c
-// Declare a variable
 int myNum;
 
-// Assign a value to the variable
 myNum = 15;
 ```
 
-If you assign a new value to an existing variable, it will overwrite the previous value:
+또는 변수 선언과 값 대입을 동시에 할 수도 있습니다.
 
 ```c
-int myNum = 15;  // myNum is 15
-
-myNum = 10;  // Now myNum is 10
+int myNum = 15;
 ```
 
 
-To declare more than one variable of the same type, use a comma-separated list:
+변수는 이름처럼 언제든지 값을 바꿀 수 있습니다. 
+
+```c
+int myNum = 15;  
+
+myNum = 10;  
+```
+
+만약 여러 개의 변수들이 같은 자료형이라면 콤마를 활용하여 코드를 줄일 수도 있습니다.
 
 ```c
 int x = 5, y = 6, z = 50;

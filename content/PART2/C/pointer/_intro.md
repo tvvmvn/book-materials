@@ -1,5 +1,5 @@
 # Pointer
 
-1. Memory Address
-1. Pointer variables
-1. Dereference
+- 메모리 주소
+- 포인터 변수
+- 역참조

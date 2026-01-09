@@ -1,5 +1,6 @@
 # if
 
+
 ```c
 int myAge = 25;
 int votingAge = 18;
@@ -11,8 +12,9 @@ if (myAge >= votingAge) {
 }
 ```
 
+
 ```c
-int myNum = 10; // Is this a positive or negative number?
+int myNum = 10; 
 
 if (myNum > 0) {
   printf("The value is a positive number.");

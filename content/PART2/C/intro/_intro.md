@@ -11,31 +11,40 @@
 UNIX
 
 
-# Output
+# 시작하기
 
-To output values or print text in C, you can use the printf() function:
+main 함수 안에 실행할 코드를 작성합니다
 
 ```c
 int main() {
-  printf("Hello World!");
+  //  여기에 코드 작성
+
   return 0;
 }
 ```
 
-to output values in number type
+
+# 출력
+
+printf 함수에 출력한 값을 전달합니다.
+
 
 ```c
-int myNum = 15;
+int main() {
+  printf("Hello World!");
 
-printf("%d", myNum);
+  return 0;
+}
 ```
 
 
-To combine both text and a variable, separate them with a comma inside the printf() function:
+# 주석
+
+코드를 작성할 때 메모가 필요한 경우 주석을 사용합니다. 주석은 프로그램에 포함되지 않습니다. 슬래시 두개(//)로 주석을 만들 수 있습니다.
 
 ```c
-int myNum = 15;
-
-printf("My favorite number is: %d", myNum);
+int main() {
+  // 메모..
+}
 ```
 

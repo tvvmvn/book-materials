@@ -1,14 +1,27 @@
-# Comparison Operators
+# 비교 연산자
 
-Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.
+두 값을 비교하는 연산을 수행합니다. 불리언 타입의 값을 반환합니다
 
-The return value of a comparison is either 1 or 0, which means true (1) or false (0). These values are known as Boolean values.
+1. == (동등 연산자)
+두 값이 같은지 비교합니다
+예) x == y
 
-Operator|Name|Example|Description|
+2. != (비동등 연산자)
+두 값이 다른지 비교합니다
+예) x != y
 
-==|Equal to|x == y|Returns 1 if the values are equal|
-!=|Not equal|x != y|Returns 1 if the values are not equal|
->|Greater than|x > y|Returns 1 if the first value is greater than the second value|
-<|Less than|x < y|Returns 1 if the first value is less than the second value|
->=|Greater than or equal to|x >= y|Returns 1 if the first value is greater than, or equal to, the second value|
-<=|Less than or equal to|x <= y|Returns 1 if the first value is less than, or equal to, the second value
+3. > (gt 연산자)
+숫자의 크기를 비교합니다. 
+예) x > y
+
+4. < (lt 연산자)
+숫자의 크기를 비교합니다.
+예) x < y
+
+5. >= (gte 연산자)
+크거나 작다. 
+예) x >= y
+
+6. <= (lte 연산자)
+작거나 같다. 
+예) x <= y

@@ -1,13 +1,18 @@
-# Logical Operators
+# 논리 연산자
 
-As with comparison operators, you can also test for true or false values with logical operators.
+논리 연산을 수행합니다. 불리언 타입의 값을 반환합니다
 
-Logical operators are used to determine the logic between variables or values, by combining multiple conditions:
+1. && (and)
+앞과 뒤가 모두 맞으면 참, 하나라도 다르면 거짓을 반환합니다.
 
+예) x < 5 && x < 10
 
-Operator|Name|Example|Description|
+2. || (or)
+앞과 뒤 중에서 하나라도 맞으면 참, 둘 다 틀리면 거짓을 반환합니다
 
-&& |AND|x < 5 &&  x < 10|Returns 1 if both statements are true|
-|| |OR|x < 5 || x < 4|Returns 1 if one of the statements is true|
-!|NOT|!(x < 5 && x < 10)|Reverse the result, returns 0 if the result is 1
+예) x < 5 || x < 4
 
+3. ! (not)
+참과 거짓을 뒤집습니다.
+
+예) !(1 > 0) 는 결과적으로 거짓을 반환합니다

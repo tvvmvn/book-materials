@@ -1,17 +1,21 @@
 # loop
 
-In this example, we create a program that only print even numbers between 0 and 10 (inclusive):
+
+다음은 1과 10사이의 수 중에서 짝수만 출력하는 코드입니다
 
 ```c
-int i = 0;
+int n = 1;
 
-while (i <= 10) {
-  printf("%d\n", i);
-  i += 2;
+while (n <= 10) {
+  if (n % 2 == 0) {
+    printf("%d ", n);
+  }
+  n++;
 }
 ```
 
-In this example we use a while loop to reverse some numbers:
+
+다음은 주어진 숫자를 거꾸로 뒤집는 코드입니다
 
 ```c
 // A variable with some specific numbers
@@ -30,9 +34,7 @@ while (numbers) {
 ```
 
 
-# Contional statements
-
-Find out if a number is even or odd:
+다음은 주어진 수가 짝수인지 홀수인지 판단하는 코드입니다.
 
 ```c
 int myNum = 5;

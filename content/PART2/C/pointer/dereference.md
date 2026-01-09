@@ -1,17 +1,12 @@
-# Dereference
+# 역참조
 
-In the example above, we used the pointer variable to get the memory address of a variable (used together with the & reference operator).
-
-You can also get the value of the variable the pointer points to, by using the `* (the dereference operator):`
-
+메모리 주소로 변수의 값에 접근하는 것을 역참조(dereference)라고 표현합니다. 
+메모리 주소 앞에 *(역참조 연산자)를 붙여 역참조 할 수 있습니다.
 
 ```c
-int myAge = 43;     // Variable declaration
-int* ptr = &myAge;  // Pointer declaration
+int myAge = 30;     
+int* ptr = &myAge;  
 
-// Reference: Output the memory address of myAge with the pointer (0x7ffe5367e044)
-printf("%p\n", ptr);
-
-// Dereference: Output the value of myAge with the pointer (43)
-printf("%d\n", *ptr);
+printf("%p\n", ptr); //0x7ffe5367e044
+printf("%d\n", *ptr); //30
 ```
