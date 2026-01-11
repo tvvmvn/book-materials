@@ -1,26 +1,31 @@
-# User Input
+# 입력 받기
 
-The Scanner class is used to get user input, and it is found in the codejava.util package.
-
-To use the Scanner class, create an object of the class and use any of the available methods found in the Scanner class documentation. In our example, we will use the nextLine() method, which is used to read Strings:
+Scanner 객체를 활용해 사용자로부터 입력을 받을 수 있습니다.
 
 ```java
-// Import the Scanner class
 import codejava.util.Scanner;  
 
 class Main {
   public static void main(String[] args) {
-    // Create a Scanner object
     Scanner myObj = new Scanner(System.in);  
     
-    // Output
-    System.out.println("Enter username");
+    System.out.println("Enter username.");
 
-    // Read user input
+    // 입력 받기
     String userName = myObj.nextLine();  
 
-    // Output user input
-    System.out.println("Username is: " + userName);  
+    System.out.println("Hello " + userName);  
   }
 }
 ```
+
+다음은 자료형 별로 입력을 받는 메서드입니다
+
+- nextByte(): byte
+- nextShort(): short
+- nextInt(): int
+- nextLong(): long
+- nextDouble(): double
+- nextFloat(): float
+- nextBoolean(): boolean
+- nextLine(): String

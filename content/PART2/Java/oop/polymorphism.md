@@ -1,53 +1,41 @@
-# Polymorphism
+# 다형성
 
-Achieved by overloading or override.
+다형성의 사전적 의미는 하나의 개체가 다양한 형태로 분기되는 특성입니다.
+프로그래밍에서 다형성은 같은 이름의 메서드가 다른 연산을 수행하는 능력을 뜻합니다.
+프로그래밍에서 다형성을 통해 동종의 작업들을 쉽게 구분할 수 있도록 돕습니다.
+
+자바에서 다형성은 다음의 두가지 방법으로 구현될 수 있습니다.
 
 1. overloading
 1. override
 
 
-## Overloading
+# Overloading
 
-Consider the following example, which has two methods that add numbers of different type:
+자바에서는 매개변수와 반환값의 타입을 다르게 하면 같은 이름의 함수를 여러번 정의하는 것이 가능합니다. 이 특성이 오버로딩이며 오버로딩을 사용하면 다형성을 구현할 수 있습니다.
 
 ```java
-static int plusMethodInt(int x, int y) {
-  return x + y;
+class Cal {
+  int plusMethod(int x, int y) {
+    return x + y;
+  }
+
+  double plusMethod(double x, double y) {
+    return x + y;
+  }
 }
 
-static double plusMethodDouble(double x, double y) {
-  return x + y;
-}
+Cal cal = new Cal();
 
-int myNum1 = plusMethodInt(8, 5);
-double myNum2 = plusMethodDouble(4.3, 6.26);
-
-System.out.println("int: " + myNum1);
-System.out.println("double: " + myNum2);
+int myNum1 = cal.plusMethod(8, 5);
+double myNum2 = cal.plusMethod(4.3, 6.26);
 ```
 
 
-Instead of defining two methods that should do the same thing, it is better to overload one.
+# Override
 
-```java
-static int plusMethod(int x, int y) {
-  return x + y;
-}
+상속은 여러 클래스들이 다형성을 구현하도록 강제하는 역할을 합니다.
 
-static double plusMethod(double x, double y) {
-  return x + y;
-}
-
-int myNum1 = plusMethod(8, 5);
-double myNum2 = plusMethod(4.3, 6.26);
-
-System.out.println("int: " + myNum1);
-System.out.println("double: " + myNum2);
-```
-
-## Override
-
-Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
 
 ```java
 class Animal {
@@ -68,13 +56,9 @@ class Dog extends Animal {
   }
 }
 
-// this is core: all of instances are typed in Animal
-Animal myAnimal = new Animal();
 Animal myPig = new Pig();
 Animal myDog = new Dog();
 
-// Polymorphism 
-myAnimal.animalSound();
 myPig.animalSound();
 myDog.animalSound();
 ```

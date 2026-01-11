@@ -1,38 +1,26 @@
-# Abstract class
+# 추상 클래스
 
-Data abstraction is the process of hiding certain details and showing only essential information to the user.
-Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+추상화는 실제 세계를 컴퓨터에 옮기는 과정에서 큰 도움이 됩니다. 추상 개념을 우선 빠르게 만들고 이 개념을 기반으로 구체적인 설계를 할 수 있습니다.
 
+자바에서 추상화를 할 수 있는 2가지 방법이 있습니다
 
-## No instance
+- 추상 클래스
+- 인터페이스
 
-Abstract class is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+추상적인 개념은 보편적인 개념을 제공할 뿐 구체적으로는 사용되지 않는 것이 좋습니다. 이것이 바로 추상 클래스가 인스턴스를 생성할 수 없는 이유입니다.
 
-```java
-abstract class Animal {
-  public void sleep() {
-    System.out.println("Zzz");
-  }
-}
-
-Animal myObj = new Animal(); // will generate an error
-```
-
-
-## Abstract methods
-
-An abstract class can have both abstract and regular methods
-
-Abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+추상 클래스는 추상 메서드와 일반 메서드 둘 다 가질 수 있습니다. 추상 메서드는 추상 클래스에서만 사용될 수 메서드로서 몸체가 없는 함수입니다. 추상 클래스를 상속받은 클래스는 아래와 같이 추상 메서드를 구현해야 합니다.
 
 
 ```java
 abstract class Animal {
   // abstract method
   public abstract void animalSound();
+}
 
-  public void sleep() {
-    System.out.println("Zzz");
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.print("Bow wow");
   }
 }
 ```

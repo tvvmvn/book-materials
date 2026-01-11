@@ -25,3 +25,4 @@
 ## Advanced
 
 1. Thread
+1. Generics

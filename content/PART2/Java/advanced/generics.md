@@ -1,46 +1,45 @@
 # Generics
 
-Generics allow you to write classes, interfaces, and methods that work with `different data types`, without having to specify the exact type in advance.
+지네릭은 한마디로 타입 매개변수 입니다. 지네릭을 통해 유연하게 클래스나 메서드를 사용할 수 있습니다.
 
-This makes your code more flexible, reusable, and type-safe.
+- 지네릭 클래스
+- 지네릭 메서드
 
 
-## Generic Class Example
+# Generic Class 
 
-You can create a class that works with different data types using generics:
 
 ```java
 class Box<T> {
-  T value; // T is a placeholder for any data type
+  // T is a placeholder for any data type
+  T value;
 
-  void set(T value) {
+  Box(T value) {
     this.value = value;
-  }
+  } 
 
-  T get() {
-    return value;
+  void show() {
+    System.out.println(this.value);
   }
 }
 
-// Create a Box to hold a String
-Box<String> stringBox = new Box<>();
-stringBox.set("Hello");
-System.out.println("Value: " + stringBox.get());
+class Main {
+  public static void main(String[] args) {
+    Box<String> stringBox = new Box<>("foo");
+    stringBox.show();
 
-// Create a Box to hold an Integer
-Box<Integer> intBox = new Box<>();
-intBox.set(50);
-System.out.println("Value: " + intBox.get());
+    Box<Integer> intBox = new Box<>(20);
+    intBox.show();
+  }
+}
 ```
 
 
-## Generic Method Example
+# Generic Method 
 
-You can also create methods that work with any data type using generics:
 
 ```java
 public class Main {
-  // Generic method: works with any type T
   public static <T> void printArray(T[] array) {
     for (T item : array) {
       System.out.println(item);
@@ -48,13 +47,9 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    // Array of Strings
     String[] names = {"Jenny", "Liam"};
-
-    // Array of Integers
     Integer[] numbers = {1, 2, 3};
 
-    // Call the generic method with both arrays
     printArray(names);
     printArray(numbers);
   }

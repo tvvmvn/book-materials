@@ -1,47 +1,31 @@
-# Inheritance
+# 상속
 
-1. What is it
-1. override
-1. super keyword
+상속은 코드를 재사용하여 프로그래밍의 효율성을 높이는 특성입니다. 하위 클래스가 필요한 멤버들을 부모로부터 상속받음으로써 개발자가 같은 코드를 또 작성할 필요가 없게 만듭니다.
 
-In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
-
-**subclass (child)** the class that inherits from another class
-
-**superclass (parent)** the class being inherited from
-To inherit from a class, use the extends keyword.
+- 기본 사용법
+- 덮어쓰기
+- super
 
 
-In the example below, the Car class (subclass) inherits the attributes and methods from the Vehicle class (superclass)
+다음은 상속의 가장 기본적인 사용 사례입니다. Car클래스가 Vehicle의 honk 메서드를 상속받았습니다.
 
 ```java
 class Vehicle {
-  // Vehicle attribute
-  protected String brand = "Ford";
-  
-  // Vehicle method
   public void honk() {
     System.out.println("Tuut, tuut!");
   }
 }
 
 class Car extends Vehicle {
-  // Car attribute
   private String modelName = "Mustang";   
 }
 
-// Create a myCar object
 Car myCar = new Car();
 
-// Call the honk() method (from the Vehicle class) on the myCar object
 myCar.honk();
-
-// Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
-System.out.println(myCar.brand + " " + myCar.modelName);
 ```
 
-
-## Override
+멤버를 상속받았다고 해서 그대로 사용하는 것을 강제하지는 않습니다. 얼마든지 자식이 원하는 대로 바꿀 수 있습니다. 
 
 ```java
 class Person {
@@ -50,7 +34,7 @@ class Person {
   }
 }
 
-class Student {
+class Student extends Person {
   void greeting() {
     System.out.println("hello I'm student");
   }
@@ -58,19 +42,8 @@ class Student {
 ```
 
 
-## super
+만약 하위 클래스 내에서 부모 클래스의 멤버를 활용하고 싶다면 예약어 super가 있습니다. super는 부모 클래스를 의미합니다.
 
-the super keyword is used to refer to the `parent class of a subclass`.
-
-The most common use of the super keyword is to eliminate the confusion between superclasses and subclasses that have methods with the same name.
-
-It can be used in two main ways:
-
-1. To access attributes and methods from the parent class
-2. To call the parent class constructor
-
-
-If a subclass has a method with the same name as one in its parent class, you can use super to call the parent version:
 
 ```java
 class Animal {
@@ -81,13 +54,14 @@ class Animal {
 
 class Dog extends Animal {
   public void animalSound() {
-    super.animalSound(); // Call the parent method
-    // ..
+    // 부모의 메서드 호출
+    super.animalSound(); 
   }
 }
 ```
 
-Use super() to call the constructor of the parent class. This is especially useful for reusing initialization code.
+
+다음과 같이 부모의 생성자를 호출할 수도 있습니다.
 
 ```java
 class Animal {
@@ -98,10 +72,9 @@ class Animal {
 
 class Dog extends Animal {
   Dog() {
-    super(); // Call parent constructor
+    // Call parent constructor
+    super(); 
     System.out.println("Dog is created");
   }
 }
-
-// ..
 ```

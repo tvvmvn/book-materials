@@ -1,53 +1,56 @@
-# Access Modifiers
+#  제어자
 
 
-*for class*
-
-1. default
-The class is only accessible by classes in the `same package`. This is used when you don't specify a modifier.
-
-2. public
-The class is accessible by any other class
+- 접근 제어자(Access Modifiers)
+- 비접근 제어자(Non-Access Modifiers)
 
 
-*for class member*
+# 접근 제어자
 
-1. default
-The code is only accessible in the `same package`. This is used when you don't specify a modifier. 
+1. 클래스
 
-2. public
-The code is accessible for all classes
+- default (기본값)
+- public
 
-3. private
-The code is only accessible within the declared class
-
-4. protected
-The code is accessible in the same package and subclasses.
+default 클래스는 같은 패키지 내의 클래스들만 접근할 수 있습니다. 기본값 접근 제어자입니다. public 클래스는 프로그램 내의 모든 클래스에서 접근할 수 있습니다.
 
 
-# Non-Access Modifiers
+2. 클래스 멤버
+
+- default (기본값)
+- public
+- private
+- protected
+
+default 멤버는 같은 패키지 내의 클래스에서 접근할 수 있습니다. 
+public 멤버는 모든 클래스에서 접근할 수 있습니다.
+private은 해당 private 변수가 선언된 클래스에서만 접근할 수 있습니다.
+protected는 같은 패키지 내의 클래스 또는 하위 클래스에서 접근할 수 있습니다.
 
 
-*for class*
 
-1. final
-The class cannot be inherited by other classes 
+# 비접근 제어자
 
-2. abstract
-The class cannot be used to create objects (To access an abstract class, it must be inherited from another class)
+1. 클래스
+
+- final
+- abstract
+
+final 클래스는 상속할 수 없는 클래스입니다.
+abstract 클래스는 객체 생성이 불가능한 클래스입니다.
 
 
-*for class member*
+2. 클래스 멤버
 
-1. final
-Attributes and methods cannot be overridden/modified
+- final
+- static
+- abstract
+- transient
+- synchronized
+- volatile
 
-2. static
-Attributes and methods belong to the class, not to objects. This means all objects share the same static attribute, and static methods can be called without creating objects.
+final 멤버는 수정/Override할 수 없습니다.
 
-3. abstract
-Can only be used in an abstract class, and can only be used on methods. The method does not have a body. The body is provided by the subclass (inherited from)
+static 멤버는 인스턴스가 아닌 클래스의 속성입니다. 따라서 인스턴스를 생성할 필요없이 클래스를 이용해 접근 가능합니다.
 
-4. transient
-5. synchronized
-6. volatile
+abstract 멤버는 abstract 클래스의 메서드에만 사용할 수 있는 비접근 제어자입니다. abstract 메서드는 몸체가 없으며 상속받은 클래스가 이를 구현해야 합니다.
