@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/previous tests/c/year25/round2q12/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _enq, symObjAddr: 0x0, symBinAddr: 0x100000E80, symSize: 0x40 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _enq, symObjAddr: 0x0, symBinAddr: 0x100000E80, symSize: 0x40 }
+  - { offset: 0x73, size: 0x8, addend: 0x0, symName: _deq, symObjAddr: 0x40, symBinAddr: 0x100000EC0, symSize: 0x40 }
+  - { offset: 0xA9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x80, symBinAddr: 0x100000F00, symSize: 0x86 }
+...

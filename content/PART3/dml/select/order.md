@@ -1,50 +1,33 @@
 # ORDER BY
 
-The ORDER BY keyword is used to sort the result-set in ascending or descending order.
+추출할 레코드의 순서를 정렬하는 명령어입니다.
+정렬 명령을 따로 명시하지 않으면 문자는 알파벳순, 숫자는 오름차순으로 정렬됩니다.
 
-Syntax
+사용 방법
 ```sql
-SELECT column1, column2, ...
-FROM table_name
-ORDER BY column1, column2, ... ASC|DESC;
+FROM 테이블 ORDER BY 컬럼1, 컬럼2, ... ASC|DESC;
 ```
 
-if you don't specify order, It will ordered by ascending order. 
-
-
-Sort the products alphabetically by ProductName:
+다음은 ProductName을 기준으로 레코드를 알파벳순으로 정렬하고 추출하는 명령문입니다
 
 ```sql
-SELECT * FROM Products
-ORDER BY ProductName;
+SELECT * FROM Products ORDER BY ProductName;
 ```
 
-Sort the products by ProductName in reverse order:
+다음은 Price를 기준으로 내림차순으로 정렬하고 추출하는 명령문입니다
 
 ```sql
-SELECT * FROM Products
-ORDER BY ProductName DESC;
+SELECT * FROM Products ORDER BY Price DESC;
 ```
 
 
-Sort the products from highest to lowest price:
+여러 개의 컬럼을 기준으로 정렬하는 경우를 생각해봅시다. 우선 Country를 기준으로 오름차순 정렬합니다. 그리고 Country값이 같은 레코드들을 CustomerName 기준으로 오름차순 정렬합니다. 
 
 ```sql
-SELECT * FROM Products
-ORDER BY Price DESC;
+SELECT * FROM Customers ORDER BY Country, CustomerName;
 ```
 
-
-## Several Columns and ORDER BY 
-
-The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:
-
-```sql
-SELECT * FROM Customers
-ORDER BY Country, CustomerName;
-```
-
-The following SQL statement selects all customers from the "Customers" table, sorted ascending by the "Country" and descending by the "CustomerName" column:
+다음은 우선 Country를 기준으로 오름차순 정렬합니다. 그리고 Country값이 같은 레코드들을 CustromerName 기준으로 내림차순 정렬합니다.
 
 ```sql
 SELECT * FROM Customers

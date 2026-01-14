@@ -1,48 +1,23 @@
-# Update Statement
+# UPDATE 문
 
-The UPDATE statement is used to modify the existing records in a table.
+UPDATE문은 레코드를 수정할 때 사용되는 명령어입니다
 
-UPDATE Syntax
+사용 방법
 ```sql
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
+UPDATE 테이블명 SET 컬럼1 = 값1, 컬럼2 = 값2, ...
+WHERE 조건;
 ```
 
-Note: Be careful when updating records in a table! Notice the WHERE clause in the UPDATE statement. The WHERE clause specifies which record(s) that should be updated. If you omit the WHERE clause, all records in the table will be updated!
 
-
-## Update Example
-
-The selection from the "Customers" table will now look like this:
-
-- CustomerID
-- CustomerName
-- ContactName
-- Address
-- City
-- PostalCode
-- Country
-
-1. UPDATE a specific record
-
-The following SQL statement updates the first customer (CustomerID = 1) with a new contact person and a new city.
+다음은 CustomerID가 1인 레코드의 ContactName을 Alfred로 수정하는 명령문입니다.
 
 ```sql
-UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+UPDATE Customers SET ContactName = 'Alfred Schmidt'
 WHERE CustomerID = 1;
 ```
 
-
-2. UPDATE Multiple Records
-
-It is the WHERE clause that determines how many records will be updated.
-
-The following SQL statement will update the ContactName to "Juan" for all records where country is "Mexico":
+조건을 제시하지 않으면 테이블의 모든 컬럼이 수정되니 주의하세요.
 
 ```sql
-UPDATE Customers
-SET ContactName='Juan'
-WHERE Country='Mexico';
+UPDATE Customers SET ContactName='Juan'
 ```

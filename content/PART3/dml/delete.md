@@ -1,37 +1,21 @@
-# DELETE Statement
+# DELETE 문
 
-The DELETE statement is used to delete existing records in a table.
+DELETE 문은 레코드를 삭제할 때 사용되는 명령문입니다
 
-DELETE Syntax
+사용 방법
 ```sql
-DELETE FROM table_name WHERE condition;
+DELETE FROM 테이블명 WHERE 조건;
 ```
 
-Note: Be careful when deleting records in a table! Notice the WHERE clause in the DELETE statement. The WHERE clause specifies which record(s) should be deleted. If you omit the WHERE clause, all records in the table will be deleted!
 
-
-## Delete Example
-
-The selection from the "Customers" table will now look like this:
-
-- CustomerID
-- CustomerName
-- ContactName
-- Address
-- City
-- PostalCode
-- Country
-
-1. Delete one row
-
-The following SQL statement deletes the customer "Alfreds Futterkiste" from the "Customers" table:
+아래는 테이블 Customers에서 CustomerName이 Alfreds인 고객을 삭제하는 명령문입니다
 
 ```sql
 DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 ```
 
 
-2. Delete all records
+조건을 제시하지 않으면 테이블의 모든 레코드가 삭제되니 주의하세요.
 
 ```sql
 DELETE FROM Customers;

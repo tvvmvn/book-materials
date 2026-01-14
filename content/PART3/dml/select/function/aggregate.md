@@ -1,10 +1,10 @@
-# SQL Aggregate Functions
+# 집합 함수
 
-An aggregate function is a function that performs a calculation on a set of values, and returns a single value.
+주로 GROUP BY (HAVING) 명령어와 함께 쓰이며 그룹을 대상으로 여러 연산을 수행할 수 있습니다. 집합 함수는 NULL값을 무시합니다(COUNT(*) 제외)
 
-Aggregate functions are often used with the `GROUP BY` clause of the SELECT statement. The GROUP BY clause splits the result-set into groups of values and the aggregate function can be used to return a single value for each group.
-
-The most commonly used SQL aggregate functions are:
+```sql
+SELECT 그룹함수 GROUP BY 컬럼 HAVING 그룹 필터링 조건
+```
 
 - MIN() 
 - MAX() 
@@ -12,70 +12,58 @@ The most commonly used SQL aggregate functions are:
 - SUM()
 - AVG()
 
-Aggregate functions ignore null values (except for COUNT(*)).
 
+# MIN(), MAX()
 
-## MIN() and MAX()
+레코드들로부터 제시한 컬럼의 최소값과 최대값을 구하는 함수입니다.
 
-The MIN() function returns the smallest value of the selected column.
-
-The MAX() function returns the largest value of the selected column.
-
-```sql
-SELECT MIN(column_name) FROM table_name ...
-SELECT MAX(column_name) FROM table_name ...
-```
-
-Find the lowest price in the Price column:
-
-```sql
-SELECT MIN(Price) FROM Products;
-```
-
-Find the highest price in the Price column:
+다음은 테이블 Products를 대상으로 상품의 최저가를 구하는 명령문입니다
 
 ```sql
 SELECT MAX(Price) FROM Products;
 ```
 
 
-## COUNT()
+# COUNT()
 
-The COUNT() function returns the number of rows that matches a specified criterion.
+주어진 컬럼을 포함한 레코드의 개수를 세는 함수입니다.
+
+다음은 테이블 Products의 총 레코드의 개수를 구하는 명령문입니다
 
 ```sql
-SELECT COUNT(column_name)
-FROM table_name
-WHERE condition;
+SELECT COUNT(*) FROM Products;
 ```
 
-Find the total number of rows in the Products table:
+COUNT 에서 *(와일드카드) 대신 컬럼을 지정하면 지정된 컬럼이 NULL값이 레코드는 제외합니다.
+
+ProductName이 NULL값인 레코드들을 제외한 레코드들을 추출합니다
 
 ```sql
-SELECT COUNT(*)
-FROM Products;
-```
-
-You can specify a column name instead of the asterix symbol (*).
-If you specify a column name instead of (*), NULL values will not be counted.
-
-
-Find the number of products where the ProductName is not null:
-```sql
-SELECT COUNT(ProductName)
-FROM Products;
+SELECT COUNT(ProductName) FROM Products;
 ```
 
 
-## SUM()
-
-The SUM() function returns the total sum of a numeric column.
+다음은 국가별 고객의 수를 알고싶을 때 적절한 명령문입니다.
 
 ```sql
-SELECT SUM(column_name) FROM table_name ...
+SELECT Country, COUNT(CustomerID) FROM Customers
+GROUP BY Country;
 ```
 
-Return the sum of all Quantity fields in the OrderDetails table:
+
+다음은 국가별 고객의 수를 알고싶을 때 적절한 명령문입니다. 단 고객의 수가 10명 이상인 정보만 조회합니다
+
+```sql
+SELECT Country, COUNT(Country) FROM Customers
+GROUP BY Country HAVING COUNT(Country) > 10;
+```
+
+
+# SUM()
+
+레코드들로부터 주어진 컬럼의 합을 구하는 함수입니다.
+
+다음은 OrderDetails에서 총 주문수량을 구하는 명령문입니다
 
 ```sql
 SELECT SUM(Quantity)
@@ -83,17 +71,14 @@ FROM OrderDetails;
 ```
 
 
-## AVG()
+# AVG()
 
-The AVG() function returns the average value of a numeric column.
+레코드들로부터 주어진 컬럼의 평균을 구하는 함수입니다.
 
-```sql
-SELECT AVG(column_name) FROM table_name ...
-```
-
-Find the average price of all products:
+다음은 테이블 Products로부터 제품의 평균 가격을 구하는 명령문입니다
 
 ```sql
 SELECT AVG(Price)
 FROM Products;
 ```
+

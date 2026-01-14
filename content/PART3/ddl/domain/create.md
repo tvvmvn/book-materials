@@ -1,4 +1,5 @@
-# Create domain
+# CREATE DOMAIN
+
 
 ```sql
 CREATE DOMAIN 직위 VARCHAR2(10) 

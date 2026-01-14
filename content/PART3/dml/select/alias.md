@@ -1,24 +1,20 @@
-# Alias
+# 별칭
 
-SQL aliases are used to give a table, or a column in a table, a temporary name.
-
-Aliases are often used to make column names more readable.
-
-An alias only exists for the duration of that query.
-
-An alias is created with the AS keyword.
+명령문을 작성할 때 컬럼과 테이블을 조작자가 원하는 대로 이름(별칭)을 지을 수 있습니다. 기존의 컬럼/테이블의 이름이 길거나 읽기 어려운 경우 별칭을 사용하면 효과적입니다. 
 
 
-## Alias with column
+- 컬럼 별칭
+- 테이블 별칭
 
-Syntax
+
+# 컬럼 별칭
+
 ```sql
-SELECT column_name AS alias_name
-FROM table_name;
+컬럼이름 AS 별칭
 ```
 
-e.g)
-The following SQL statement creates two aliases, one for the CustomerID column and one for the CustomerName column:
+
+다음은 CustomerID를 ID, CustomerName를 Customer로 단순화하여 추출하는 명령문입니다
 
 ```sql
 SELECT CustomerID AS ID, CustomerName AS Customer
@@ -26,35 +22,25 @@ FROM Customers;
 ```
 
 
-## Alias with table
+# 테이블 별칭
 
-Syntax
+테이블 별칭은 명령문에서 테이블 이름을 여러번 언급해야 할때 효과적입니다.
+
+사용 방법
 ```sql
-SELECT column_name(s)
-FROM table_name AS alias_name;
+테이블 AS 별칭;
 ```
 
-Refer to the Customers table as Persons instead:
+테이블 별칭이 없는 경우와 있는 경우 두가지를 비교해봅시다. 별칭이 있는 경우가 더 짧은 문장이라는 것을 알 수 있습니다
 
 ```sql
-SELECT * FROM Customers AS Persons;
+SELECT * FROM customers JOIN orders
+ON customers.CustomerID = orders.CustomerID
+WHERE customers.City = 'London';
 ```
 
-
-It might seem useless to use aliases on tables, but when you are using more than one table in your queries, it can make the SQL statements shorter.
-
-The following SQL statement is without aliases:
-
 ```sql
-SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName
-FROM Customers, Orders
-WHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;
-```
-
-The following SQL statement selects all the orders from the customer with CustomerID=4 (Around the Horn). We use the "Customers" and "Orders" tables, and give them the table aliases of "c" and "o" respectively (Here we use aliases to make the SQL shorter):
-
-```sql
-SELECT o.OrderID, o.OrderDate, c.CustomerName
-FROM Customers AS c, Orders AS o
-WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
+SELECT * FROM customers AS c JOIN orders AS o
+ON c.CustomerID = o.CustomerID;
+WHERE c.City = 'London';
 ```
