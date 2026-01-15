@@ -8,17 +8,20 @@ struct node {
 
 struct node* func(char* s) {
   struct node* h = NULL, *n;
+
   while (*s) {
     n = (struct node*)malloc(sizeof(struct node));
     n->c = *s++;
     n->p = h;
     h = n;
   }
+  
   return h;
 }
 
 int main() {
   struct node* n = func("BEST");
+
   while (n) {
     struct node* t = n;
     putchar(n->c);

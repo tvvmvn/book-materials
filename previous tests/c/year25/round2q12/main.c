@@ -15,18 +15,22 @@ void enq(Queue* q, int val) {
 int deq(Queue* q) {
   int val = q->data[q->front];
   q->front = (q->front + 1) % SIZE;
+  
   return val;
 }
 
 int main() {
   Queue q = {{0}, 0, 0};
   int a, b;
+
   enq(&q, 1);
   enq(&q, 2);
   deq(&q);
   enq(&q, 3);
+
   a = deq(&q);
   b = deq(&q);
+
   printf("%d and %d", b, a);
   
   return 0;

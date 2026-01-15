@@ -3,6 +3,7 @@ package codejava.year25.round2q15;
 public class Main {
   public static class BO {
     public int v;
+    
     public BO(int v) {
       this.v = v;
     }

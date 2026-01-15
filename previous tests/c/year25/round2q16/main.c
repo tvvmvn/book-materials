@@ -18,6 +18,7 @@ int main() {
   c.n = &a;
   a.n = &b;
   b.n = NULL;
+
   printf("%d %d %d", head->p, head->n->p, head->n->n->p);
 
   return 0;
