@@ -32,3 +32,11 @@ Controller: 사용자의 요청에 적합한 서비스를 호출하고 결과를
 - Django
 - Codeigniter
 - Ruby on Rails
+
+
+# 프레임워크의 특징
+
+- 모듈화
+- 재사용성
+- 확장성
+- 제어의 역흐름
