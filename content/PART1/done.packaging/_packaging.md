@@ -72,8 +72,7 @@ Maven은 아파치 소프트웨어 재단에서 개발한 빌드 도구입니다
 
 # CI/CD
 
-CI/CD는 지속적 통합(Continuous Integration) 및 지속적 배포(Continuous Deployment)를 의미합니다. 빌드부터 최종 배포까지 아우르는 큰 개념입니다. 지속성을 강조하는 애자일 개발 환경의 구현이라고볼 수 있습니다.
-다음은 주요 CI/CD 도구입니다.
+CI/CD는 지속적 통합(Continuous Integration) 및 지속적 배포(Continuous Deployment)를 의미합니다. 빌드부터 패키징, 배포까지 모두 자동화된 프로세스를 의미합니다. 지속성을 강조하는 애자일 개발 환경의 구현이라고볼 수 있습니다. 다음은 주요 CI/CD 도구입니다.
 
 - Jenkins
 - Github Actions
