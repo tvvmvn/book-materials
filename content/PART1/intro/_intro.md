@@ -6,6 +6,11 @@
 - 재사용
 
 
+# 소프트웨어란
+
+소프트웨어와 S/W 엔지니어
+
+
 # 소프트웨어 공학 (S/W Engineering)
 
 소프트웨어 공학은 소프트웨어의 위기(Software Crisis)를 극복하기 위한 방안으로 연구된 학문입니다. 
@@ -49,9 +54,18 @@ IPO는 HIPO의 핵심으로 모듈이 데이터를 입력(Input)받아 처리(Pr
 상세 도표는 총체적 도표를 프로그래머가 실제 코딩을 할 수 있을 정도로 아주 상세하게 쪼깬 도표입니다.
 
 
-# CASE
+# CASE 도구
 
-CASE(Computer Aided S/W Engineering) 컴퓨터가 보조하는 S/W 공학.
+CASE(Computer Aided S/W Engineering) 도구는 소프트웨어 개발에 사용되는 소프트웨어들을 의미합니다.
 
-예를 들어 손으로 설계도를 그리는 것보다 CASE 도구를 활용하는 경우가 있습니다.
+요구사항, 설계 등 개발 전반부에서 사용되는 도구를 UpperCASE 도구라고 부르고 구현, 테스트, 유지보수 등 개발 후반부에서 사용되는 도구를 LowerCASE 도구라고 부릅니다.
 
+다음은 몇가지 고전적인 CASE 도구들입니다.
+
+- SADT (Structured Analysis & Design Technique)
+- SREM (S/W Requirements Engineering Methodology)
+- PSL/PSA
+
+SADT는 SoftTEch에서 1970년대에 개발한 요구사항 분석 및 S/W 설계용 UpperCASE 도구입니다. 시각적인 요소(블록 다이어그램)을 활용합니다. 현대적인 UML 등장하기 전에 많이 사용되었던 도구입니다.
+
+SREM은 TRW 사에서 1970년대 후반 미 육군의 BMDS(탄도 미사일 방어 시스템)을 위해 개발한 실시간 시스템용 요구사항 분석 도구입니다. 미사일과 항공기처럼 복잡한 계산과 빠른 속도가 생명인 시스템을 위해 만들어졌기 때문에, 일반적인 분석 도구보다 엄격한 구조를 갖고 있습니다.
