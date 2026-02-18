@@ -26,7 +26,7 @@ int main() {
 
 # 출력
 
-printf 함수에 출력한 값을 전달합니다.
+printf 함수에 출력할 값을 전달합니다.
 
 
 ```c
@@ -35,6 +35,7 @@ int main() {
 
   return 0;
 }
+// Hello World!
 ```
 
 

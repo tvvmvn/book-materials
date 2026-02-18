@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/C/variable/scope/global/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _f, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x20 }
+  - { offset: 0x3F, size: 0x8, addend: 0x0, symName: _x, symObjAddr: 0x50, symBinAddr: 0x100002000, symSize: 0x0 }
+  - { offset: 0x5D, size: 0x8, addend: 0x0, symName: _f, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x20 }
+  - { offset: 0x72, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x20, symBinAddr: 0x100000F60, symSize: 0x30 }
+...
