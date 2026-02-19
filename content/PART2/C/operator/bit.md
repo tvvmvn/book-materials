@@ -1,12 +1,10 @@
 # 비트 연산자
 
+비트 연산자 내에서 우선 순위입니다.
 
-& (and) 
-| (or)
-^ (xor)
-~ (not)
->> (left shift)
-<<  (right shift)
+1. ~ (not)
+2. <<, >>
+3. & (and), ^ (xor), | (or)
 
 
 # basic

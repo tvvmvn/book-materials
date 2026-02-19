@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void f() {
-  const int x = 1;
-}
-
 int main() {
-  printf("%d", x);
+  int* ptr = NULL;
+
+  printf("%p\n", ptr); // 0x0
+
+  return 0;
 }
