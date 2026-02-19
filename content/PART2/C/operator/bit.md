@@ -1,13 +1,21 @@
 # 비트 연산자
 
-비트 연산자 내에서 우선 순위입니다.
+비트 연산자는 비트 단위의 연산을 수행합니다. 매우 빠른 속도
 
-1. ~ (not)
-2. <<, >>
-3. & (and), ^ (xor), | (or)
+- 기본 비트 연산자 (Basic bit operator)
+- 비트 이동 연산자 (Shift operator)
 
 
-# basic
+# 기본 비트 연산자
+
+- & (and)
+- | (or)
+- ^ (xor)
+- ~ (not)
+
+&는 둘다 1이면 1을 반환합니다.
+|는 둘중에 하나가 1이면 1을 반환합니다
+^은 둘이 다르면 1을 반환합니다.
 
 ```c
 #include <stdio.h>
@@ -24,7 +32,7 @@ int main() {
 }
 ```
 
-# not
+~(not)은 비트를 뒤집습니다.
 
 ```c
 #include <stdio.h>
@@ -37,7 +45,13 @@ int main() {
 ```
 
 
-# shift
+# 비트 이동 연산자
+
+- left shift
+- right shift
+
+왼쪽 시프트 연산자는 변수값..
+오른쪽 시프트 연산자는..
 
 ```c
 #include <stdio.h>
