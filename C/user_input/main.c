@@ -1,11 +1,14 @@
 #include <stdio.h>
 
 int main() {
-  int num;
+  char name[10];
+  int age;
 
-  printf("Type a number\n");
+  printf("your name\n");
+  scanf("%s", name);
+  
+  printf("your age\n");
+  scanf("%d", &age);
 
-  scanf("%d", &num);
-
-  printf("The number: ", num);
+  printf("your name: %s\n your age: %d", name, age);
 }

@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 
-int main(int argc, char const *argv[]) {
-
+int main() {
   int n = 2;
   char c = 'A';
 

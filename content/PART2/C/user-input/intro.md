@@ -1,28 +1,47 @@
-# 입력 받기
+# 사용자 입력받기
 
-scanf() 함수로 사용자로부터 입력을 받을 수 있습니다. scanf 함수의 첫번째 인자는 변수의 포맷 지정자이고 두번째 인자는 변수의 주소입니다.
+- scanf
+- putc
+- 
+
+
+scanf() 함수를 주로 사용합니다. 
+```
+scanf(서식 지정자, 변수 주소)
+```
+
+문자열을 입력받을 때는 변수 이름 앞에 &(참조 연산자)를 사용할 필요가 없다는 점 참고하세요.
 
 ```c
-int age;
+#include <stdio.h>
 
-printf("나이를 입력하세요: ");
-scanf("%d", &age);
+int main() {
+  char name[10];
+  int age;
 
-printf("당신의 나이: %d", age);
+  printf("your name\n");
+  scanf("%s", name);
+  
+  printf("your age\n");
+  scanf("%d", &age);
+
+  printf("your name: %s\n your age: %d", name, age);
+}
 ```
 
 
-문자열을 입력받을 때 문자열을 저장할 변수의 크기가 부족하지 않도록 사전에 잘 고려해야 합니다. 문자열을 입력받을 때는 변수 이름 앞에 &(참조 연산자)를 사용할 필요가 없습니다
-
+여러 개 입력 받기도 가능합니다. 이 경우 space 또는 return키를 누르면 다음 입력으로 넘어갑니다.
 
 ```c
-char name[10];
+#include <stdio.h>
 
-printf("이름을 입력하세요: ");
+int main() {
+  char name[10];
+  int age;
 
-scanf("%s", name);
-
-printf("안녕 %s", name);
-
-// 안녕 John
+  printf("your name and age\n");
+  scanf("%s %d", name, &age);
+  
+  printf("your name: %s\n your age: %d", name, age);
+}
 ```

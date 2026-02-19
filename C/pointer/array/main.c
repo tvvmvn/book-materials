@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
-  
-  int arr[] = {10, 20, 30};
+int main() {
+  int myNumbers[4] = {25, 50, 75, 100};
 
-  printf("%p\n", arr); // arr is pointer
+  printf("%p\n", myNumbers);
+  printf("%p\n", myNumbers + 1);
+  printf("%p\n", myNumbers + 2);
+  printf("%p", myNumbers + 3);
 
-  printf("%d\n", *arr); // same as arr[0]
-
+  // 0x7ff7bfeff220
+  // 0x7ff7bfeff224
+  // 0x7ff7bfeff228
+  // 0x7ff7bfeff22c
   return 0;
 }

@@ -2,6 +2,76 @@
 
 C 언어에서 "안녕하세요" 등의 연속된 문자(문자열)를 표현하고 싶을 때 문자형 배열을 활용합니다. 
 
+
+# 문자열 생성하기
+
+
+```c
+char greetings[] = "hello";
+
+printf("%s", greetings); // hello
+```
+
+
+# 각 문자에 접근하기 
+
+
+```c
+#include <stdio.h>
+
+int main() {
+  char greeting[] = "hello";
+
+  printf("%c\n", greeting[0]);
+  printf("%c\n", greeting[1]);
+  printf("%c\n", greeting[2]);
+  printf("%c\n", greeting[3]);
+  printf("%c\n", greeting[4]);
+  
+  return 0;
+}
+```
+
+
+# 바꾸기
+
+
+```c
+#include <stdio.h>
+
+int main() {
+  char greeting[] = "hello";
+
+  greeting[0] = 'H';
+
+  printf("%s\n", greeting);
+  
+  return 0;
+}
+```
+
+
+# 나중에 값 할당
+
+사용자 입력으로 값을 정하고 싶은 경우에 유용합니다.
+이 경우 최대 입력 길이를 지정해야 합니다.
+
+
+```c
+#include <stdio.h>
+
+int main() {
+  char greeting[10];
+
+  scanf("%s", greeting);
+}
+```
+
+
+# 배열처럼
+
+문자열은 일종의 배열입니다. 따라서 배열처럼 작성할 수 있습니다.
+
 여기서 중요한 점은 배열의 마지막에 \0(널 종료문자)를 반드시 추가해야합니다. \0는 문자열이 끝난다는 것을 프로그램에게 알립니다. 구조적으로 필요할 뿐 실제 사용되거나 출력되진 않습니다
 
 
@@ -12,15 +82,3 @@ char greetings[] = {'h', 'e', 'l', 'l', 'o', '\0'};
 
 printf("%s", greetings); // hello
 ```
-
-위의 경우를 보면 문자열을 표현하는게 불편해보입니다. 더 긴 문장의 경우 특히 그러할 것입니다. 
-
-그래서 C 에서는 다음과 같이 좀 더 편리한 방법도 사용할 수 있습니다. 중괄호와 콤마 대신 큰 따옴표로 문자들을 묶어주면 됩니다. 이 경우 \0 문자는 자동으로 적용되므로 따로 작성할 필요가 없습니다. 이 방법을 특별히 literal 표기법이라고 부릅니다.
-
-```c
-char greetings[] = "hello";
-
-printf("%s", greetings); // hello
-```
-
-리터럴 표기법에서도 인덱스를 통해 문자에 접근하거나 수정하는 등 모든 기능을 똑같이 사용할 수 있습니다.
