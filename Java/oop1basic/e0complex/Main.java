@@ -1,28 +1,23 @@
 package oop1basic.e0complex;
 
-class Printer {}
-
-class Keyboard {}
-
-class Phone {
-  Printer printer;
+class Address {
+  int zipCode;
 }
 
-class PC {
-  Printer printer;
-  Keyboard keyboard;
+class Person {
+  String name;
+  Address address;
 }
 
 public class Main {
   public static void main(String[] args) {
-    Printer printer = new Printer();
-    Keyboard keyboard = new Keyboard();
-    
-    Phone phone = new Phone();
-    phone.printer = printer;
-    
-    PC pc = new PC();
-    pc.printer = printer;
-    pc.keyboard = keyboard;
+    Address address = new Address();
+    address.zipCode = 100;
+
+    Person person = new Person();
+    person.name = "John Doe";
+    person.address = address;
+
+    System.out.println(person.address.zipCode);
   }
 }

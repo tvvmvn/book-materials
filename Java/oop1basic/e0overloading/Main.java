@@ -1,20 +1,20 @@
 package oop1basic.e0overloading;
 
+class Calc {
+  void add(int a, int b) {
+    System.out.println(a + b);
+  }
+
+  void add(double a, double b) {
+    System.out.println(a + b);
+  }
+}
+
 public class Main {
-  static void println(int n) {
-    System.out.print(n);
-    System.out.println();
-  }
-  
-  static void println(String s) {
-    System.out.print(s);
-    System.out.println();
-  }
-  
   public static void main(String[] args) {
-    
-    // println has many forms
-    println("hello");
-    println(2025);
+    Calc calc = new Calc();
+
+    calc.add(1, 2);
+    calc.add(1.2, 2.5);
   }
 }

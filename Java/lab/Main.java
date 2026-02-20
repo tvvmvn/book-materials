@@ -1,17 +1,27 @@
 package lab;
 
-class Person {
-  String name;
-  int age;
+interface Payment {
+  void pay();
+}
+
+class KakaoPay implements Payment {
+  public void pay() {
+    System.out.println("kakao pay");
+  }
+}
+
+class NaverPay implements Payment {
+  public void pay() {
+    System.out.println("never pay");
+  }
 }
 
 public class Main {
   public static void main(String[] args) {
-    Person p = new Person();
-    p.name = "John";
-    p.age = 30;
+    Payment payment = new KakaoPay();
+    // Payment payment = new NaverPay();
 
-    System.out.println(p.toString());
+    payment.pay(); // kakao or naver
   }
 }
 
