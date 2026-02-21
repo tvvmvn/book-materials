@@ -59,8 +59,7 @@ LOC = (2,000 + (4 * 3,000) + 7,000)/6 = 3,500줄
 
 # COCOMO 모형
 
-COCOMO(COnstructive COst MOdel)는 LOC를 활용한 비용 산정 기법입니다. 
-보헴(Bohem)이 제안했습니다.
+COCOMO(COnstructive COst MOdel)는 LOC를 활용한 비용 산정 기법입니다. 보헴(Bohem)이 제안했습니다.
 
 LOC를 소프트웨어 유형에 따라 다른 방정식에 대입하여 비용을 산정합니다. 산정 결과는 프로젝트를 완성하는데 필요한 노력(인월)으로 나타납니다.
 

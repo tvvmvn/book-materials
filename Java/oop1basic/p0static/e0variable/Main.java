@@ -1,19 +1,11 @@
 package oop1basic.p0static.e0variable;
 
-class Counter {
-  static int count = 0;
-
-  Counter() {
-    count++;
-  }
+class MyMath {
+  static final double PI = 3.14;
 }
 
 public class Main {
   public static void main(String[] args) {
-    Counter c1 = new Counter();
-    Counter c2 = new Counter();
-    Counter c3 = new Counter();
-
-    System.out.println(Counter.count);
+    System.out.println(MyMath.PI);
   }
 }

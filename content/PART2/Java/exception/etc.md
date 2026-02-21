@@ -1,20 +1,21 @@
-아래는 자바의 주요한 예외의 종류입니다
+# 예외 종류
 
+다음은 자바의 주요 예외 타입입니다.
 
 - ArithmeticError: Occurs when a numeric calculation goes wrong
 
-- ArrayIndexOutOfBoundsException: Occurs when trying to access an index number that does not exist in an array
+- ArrayIndexOutOfBoundsException: 배열에서 범위를 벗어난 인덱스로 요소에 접근을 시도했을 때 발생합니다.
 
-- ClassNotFoundException: Occurs when trying to access a class that does not exist
+- ClassNotFoundException: 존재하지 않는 클래스에 접근을 시도했을 때 발생합니다.
 
-- FileNotFoundException: Occurs when a file cannot be accessed
+- FileNotFoundException: 존재하지 않는 파일에 접근을 시도할 때 발생합니다.
 
-- InputMismatchException: Occurs when entering wrong input (e.g. text in a numerical input)
+- InputMismatchException: 잘못된 값을 입력했을 때 발생합니다. (숫자 입력 요구에 문자열을 입력하는 경우 등)
 
-- IOException: Occurs when an input or output operation fails
+- IOException: IO(입/출력) 작업이 실패했을 때 발생합니다.
 
-- NullPointerException: Occurs when trying to access an object referece that is null
+- NumberFormatException:  특정 문자열을 숫자로 변환하는 과정에 실패했을 때 발생합니다.
 
-- NumberFormatException: Occurs when it is not possible to convert a specified string to a numeric type
+- StringIndexOutOfBoundsException: 문자열에서 범위를 벗어난 인덱스로 특정 문자에 접근을 시도했을 때 발생합니다.
 
-- StringIndexOutOfBoundsException: Occurs when trying to access a character in a String that does not exist
+- NullPointerException: null 객체를 사용하려고 했을 때 발생합니다. 

@@ -3,10 +3,6 @@ package oop1basic.e0instance;
 class Person {
   String name;
   int age;
-
-  void greeting() {
-    System.out.println("hello");
-  }
 }
 
 public class Main {

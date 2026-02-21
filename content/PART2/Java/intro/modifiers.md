@@ -1,13 +1,14 @@
-#  제어자
+#  제어자 (Modifier)
 
+자바 프로그래밍에서 다양한 기능과 제약 조건을 부여하는 예약어를 의미합니다.
 
-- 접근 제어자(Access Modifiers)
-- 비접근 제어자(Non-Access Modifiers)
+- 접근 제어자 (Access Modifiers)
+- 비접근 제어자 (Non-Access Modifiers)
 
 
 # 접근 제어자
 
-1. 클래스
+1. 클래스 접근 제어자
 
 - default (기본값)
 - public
@@ -15,7 +16,7 @@
 default 클래스는 같은 패키지 내의 클래스들만 접근할 수 있습니다. 기본값 접근 제어자입니다. public 클래스는 프로그램 내의 모든 클래스에서 접근할 수 있습니다.
 
 
-2. 클래스 멤버
+2. 멤버 접근 제어자
 
 - default (기본값)
 - public
@@ -28,10 +29,9 @@ private은 해당 private 변수가 선언된 클래스에서만 접근할 수 �
 protected는 같은 패키지 내의 클래스 또는 하위 클래스에서 접근할 수 있습니다.
 
 
-
 # 비접근 제어자
 
-1. 클래스
+1. 클래스 비접근 제어자
 
 - final
 - abstract
@@ -40,7 +40,7 @@ final 클래스는 상속할 수 없는 클래스입니다.
 abstract 클래스는 객체 생성이 불가능한 클래스입니다.
 
 
-2. 클래스 멤버
+2. 멤버 비접근 제어자
 
 - final
 - static

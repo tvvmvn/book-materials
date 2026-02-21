@@ -1,36 +1,16 @@
 # 설계 도구
 
-- HIPO
-- UML
+다음은 주요 요구사항 분석 및 S/W 설계 도구입니다.
 
-# 요구사항 개발 도구
-
-- SRS (S/W Requirements Specification)
-- CASE
 - DFD
-
-
-# CASE 도구
-
-CASE(Computer Aided S/W Engineering) 도구는 소프트웨어 개발에 사용되는 소프트웨어들을 의미합니다.
-
-요구사항, 설계 등 개발 전반부에서 사용되는 도구를 UpperCASE 도구라고 부르고 구현, 테스트, 유지보수 등 개발 후반부에서 사용되는 도구를 LowerCASE 도구라고 부릅니다.
-
-다음은 몇가지 고전적인 CASE 도구들입니다.
-
-- SADT (Structured Analysis & Design Technique)
-- SREM (S/W Requirements Engineering Methodology)
-- PSL/PSA
-
-SADT는 SoftTEch에서 1970년대에 개발한 요구사항 분석 및 S/W 설계용 UpperCASE 도구입니다. 시각적인 요소(블록 다이어그램)을 활용합니다. 현대적인 UML 등장하기 전에 많이 사용되었던 도구입니다.
-
-SREM은 TRW 사에서 1970년대 후반 미 육군의 BMDS(탄도 미사일 방어 시스템)을 위해 개발한 실시간 시스템용 요구사항 분석 도구입니다. 미사일과 항공기처럼 복잡한 계산과 빠른 속도가 생명인 시스템을 위해 만들어졌기 때문에, 일반적인 분석 도구보다 엄격한 구조를 갖고 있습니다.
+- UML
+- HIPO
+- 기타 도구
 
 
 # 자료흐름도 (DFD)
 
-자료흐름도는 데이터의 흐름(Flow)과 데이터를 처리하는 프로세스(Process)를 표현한 그림으로 요구사항 개발 단계나 객체지향 분석 과정 등에서 활용됩니다.
-자료 흐름 그래프, 버블 차트라고도 합니다.
+데이터의 흐름(Flow)과 데이터를 처리하는 프로세스(Process)를 표현한 그림으로 대표적인 구조적 방법론의 설계 도구입니다. 자료 흐름 그래프, 버블 차트라고도 합니다.
 
 - 자료 사전(DD)
 - 소단위 명세서(Mini-Spec)
@@ -46,6 +26,11 @@ SREM은 TRW 사에서 1970년대 후반 미 육군의 BMDS(탄도 미사일 방�
 <그림 - DFD, DD, Mini-Spec를 모두 나타낸 예제>
 
 
+# UML
+
+UML(Unified Modeling Language)은 대표적인 객체 지향 설계 도구입니다. 구조적 다이어그램으로 시스템의 정적인 구조를 나타내고 행위 다이어그램으로 시스템의 행위를 나타냅니다. 
+
+
 # HIPO (Hierarchy Input Process Output)
 
 HIPO은 1970년대 IBM에서 개발한 고전적 소프트웨어 설계 도구입니다. 하향식(Top-Down) 설계 도구이며 다이어그램을 활용하여 시스템을 시각적으로 표현하는 것이 특징입니다.
@@ -58,12 +43,18 @@ HIPO은 1970년대 IBM에서 개발한 고전적 소프트웨어 설계 도구�
 
 가시적 도표는 시스템의 전체 구조를 계층 구조(Tree)로 보여주는 도표입니다. 일종의 목차(Table of Contents)역할입니다.
 
-총체적 도표는 가시적 도표의 각 모듈을 IPO 관점에서 대략적으로 기술한 도표입니다.
-IPO는 HIPO의 핵심으로 모듈이 데이터를 입력(Input)받아 처리(Process)하고 결과를 출력(Output)하는 과정을 의미합니다.
+총체적 도표는 가시적 도표의 각 모듈을 IPO 관점에서 대략적으로 기술한 도표입니다. IPO는 HIPO의 핵심으로 모듈이 데이터를 입력(Input)받아 처리(Process)하고 결과를 출력(Output)하는 과정을 의미합니다.
 
 상세 도표는 총체적 도표를 프로그래머가 실제 코딩을 할 수 있을 정도로 아주 상세하게 쪼깬 도표입니다.
 
 
-# UML (통합 모델링 언어)
+# 기타 도구
 
-UML(Unified Modeling Language)은 시스템 개발 과정에서 개발자와 고객 간에 또는 개발자 상호 간의 원활한 의사소통을 위해 고안된 표준 모델링 언어입니다. 
+- SADT (Structured Analysis & Design Technique)
+- SREM (S/W Requirements Engineering Methodology)
+- PSL/PSA
+
+SADT는 SoftTEch에서 1970년대에 개발한 요구사항 분석 및 S/W 설계용 UpperCASE 도구입니다. 시각적인 요소(블록 다이어그램)을 활용합니다. 현대적인 UML 등장하기 전에 많이 사용되었던 도구입니다.
+
+SREM은 TRW 사에서 1970년대 후반 미 육군의 BMDS(탄도 미사일 방어 시스템)을 위해 개발한 실시간 시스템용 요구사항 분석 도구입니다. 미사일과 항공기처럼 복잡한 계산과 빠른 속도가 생명인 시스템을 위해 만들어졌기 때문에, 일반적인 분석 도구보다 엄격한 구조를 갖고 있습니다.
+

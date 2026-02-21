@@ -1,28 +1,34 @@
-# Basic
+# Beginner
 
-1. Intro
+- Intro
+- Data type
+- Array
+- String
+- Methods
+- User input
 
-1. Data type
-1. Array
-1. String
+# OOP1 basic
 
-1. Methods
+- Class & Instance
+- Constructor
+- overloading
+- static
 
-1. User input
+# OOP2 extends
 
+- basic
+- constructor
+- Inheritance
+- override
+- casting
 
-## OOP
+# OOP3 interface
 
-1. Class
-1. Instance
-1. Constructor
-1. Static keyword
-1. Abstraction
-1. Inheritance
-1. Polymorphism
+- usage
+- abstraction
+- inherit
 
+# Advanced
 
-## Advanced
-
-1. Thread
-1. Generics
+- Thread
+- Generics
