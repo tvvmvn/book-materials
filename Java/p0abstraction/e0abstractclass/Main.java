@@ -1,4 +1,4 @@
-package oop2extends.e0abstractclass;
+package p0abstraction.e0abstractclass;
 
 abstract class Shape {
   abstract void draw();

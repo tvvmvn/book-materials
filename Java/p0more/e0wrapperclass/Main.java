@@ -2,12 +2,11 @@ package p0more.e0wrapperclass;
 
 public class Main {
   public static void main(String[] args) {
-    // Wrapper instance
-    Integer isbn = 1234567890;
+    // Wrapper instance. random number
+    Integer randomNum = 1234567890;
 
-    // call methods
-    String isbnStr = isbn.toString();
+    String numString = randomNum.toString();
 
-    System.out.println(isbnStr.length());
+    System.out.println("how many digits: " + numString.length());
   }
 }

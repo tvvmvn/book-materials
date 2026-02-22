@@ -1,4 +1,4 @@
-package oop3interface.p0inherit.e0multiple;
+package p0abstraction.p0inherit.e0multiple;
 
 interface Camera {
   void takePhoto();

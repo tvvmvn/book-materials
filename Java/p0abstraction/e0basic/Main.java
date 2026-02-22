@@ -1,4 +1,4 @@
-package oop3interface.e0basic;
+package p0abstraction.e0basic;
 
 // interface
 interface Shape {

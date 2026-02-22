@@ -1,5 +1,10 @@
-package oop2extends.e0casting;
+# 객체 캐스팅
 
+- 다운캐스팅 (Down-Casting)
+- 업캐스팅 (Up-Casting)
+
+
+```java
 class Person {
   void greeting() {
     System.out.println("Hi");
@@ -16,7 +21,7 @@ public class Main {
   public static void main(String[] args) {
     // Upcasting
     Person person = new Student();
-
+    
     // Downcasting (put it back)
     Student student = (Student) person;
 
@@ -27,3 +32,4 @@ public class Main {
     student.study(); 
   }
 }
+```

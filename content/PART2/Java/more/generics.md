@@ -1,4 +1,4 @@
-# Generics
+# Generics (지네릭)
 
 지네릭은 한마디로 타입 매개변수 입니다. 지네릭을 통해 유연하게 클래스나 메서드를 사용할 수 있습니다.
 
@@ -6,7 +6,7 @@
 - 지네릭 메서드
 
 
-# Generic Class 
+# Generic 클래스
 
 
 ```java
@@ -35,7 +35,7 @@ class Main {
 ```
 
 
-# Generic Method 
+# Generic 메서드
 
 
 ```java

@@ -1,4 +1,4 @@
-package oop3interface.p0inherit.e0multilevel;
+package p0abstraction.p0inherit.e0multilevel;
 
 interface Vehicle {
   void takePerson();

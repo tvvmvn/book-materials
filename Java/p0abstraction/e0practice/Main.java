@@ -1,4 +1,4 @@
-package oop3interface.e0abstraction;
+package p0abstraction.e0practice;
 
 interface Payment {
   void pay();
