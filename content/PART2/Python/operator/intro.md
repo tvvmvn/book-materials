@@ -2,13 +2,13 @@
 
 Python divides the operators in the following groups:
 
-1. 산술 연산자
-2. 대입 연산자
-3. 비교 연산자
-4. 논리 연산자
-5. 식별 연산자
-6. 멤버 연산자
-7. 비트 연산자
+1. 산술 연산자 (Arithmetic Operator)
+2. 대입 연산자 (Assignment Operator)
+3. 비교 연산자 (Comparison Operator)
+4. 논리 연산자 (Logical Operator)
+5. 식별 연산자 (Identity Operator)
+6. 멤버 연산자 (Member Operator)
+7. 비트 연산자 (Bit operator)
 
 
 # 연산자 우선순위
