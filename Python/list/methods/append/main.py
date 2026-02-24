@@ -1,7 +1,6 @@
-# To add an item to the end of the list, use the append() method:
+mylist = [10, 20, 30]
 
-# Using the append() method to append an item:
-thislist = ["apple", "banana", "cherry"]
-thislist.append("orange")
+mylist.append(40)
 
-print(thislist)
+print(mylist)
+# [10, 20, 30, 40]

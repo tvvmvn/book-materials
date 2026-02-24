@@ -1,11 +1,6 @@
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",  
+  "age": 2,
 }
 
-# Get the value of the "model" key:
-x = thisdict.get("model")
-
-print(x)
-# Mustang
+print(cat.get("name")) # Kitty

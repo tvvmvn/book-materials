@@ -1,7 +1,6 @@
-# The clear() method empties the set:
+a = {10, 20, 30}
 
-thisset = {"apple", "banana", "cherry"}
+a.clear()
 
-thisset.clear()
-
-print(thisset)
+print(a)
+# set()

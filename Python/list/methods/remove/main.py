@@ -1,10 +1,6 @@
-# The remove() method removes the specified item.
+mylist = [10, 20, 30, 40]
 
-# If there are more than one item with the specified value, 
-# the remove() method removes the first occurrence:
+mylist.remove(30)
 
-# Remove "banana":
-thislist = ["apple", "banana", "cherry"]
-thislist.remove("banana")
-
-print(thislist)
+print(mylist)
+# [10, 20, 40]

@@ -1,14 +1,10 @@
-# There are several methods to remove items from a dictionary:
-
-
-# The pop() method removes the item with the specified key name:
-
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
 }
 
-thisdict.pop("model")
+cat.pop("home")
 
-print(thisdict)
+print(cat)
+# {'name': 'Kitty', 'age': 2}

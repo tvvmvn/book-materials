@@ -1,10 +1,6 @@
-# To insert a new list item, without replacing any of the existing values, 
-# we can use the insert() method.
+mylist = [10, 20, 30]
 
-# Insert "watermelon" as the third item:
+mylist.insert(3, 40)
 
-thislist = ["apple", "banana", "cherry"]
-
-thislist.insert(2, "watermelon")
-
-print(thislist)
+print(mylist)
+# [10, 20, 30, 40]

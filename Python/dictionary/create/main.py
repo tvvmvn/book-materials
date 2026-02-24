@@ -1,8 +1,8 @@
-
-thisdict =	{
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None  
 }
 
-print(thisdict)
+print(cat)
+# {'name': 'Kitty', 'age': 2, 'home': None}

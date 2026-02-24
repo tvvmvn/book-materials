@@ -1,9 +1,6 @@
-# Remove "banana" by using the discard() method:
+a = {10, 20, 30}
 
-thisset = {"apple", "banana", "cherry"}
+a.discard(20)
 
-thisset.discard("banana")
-
-print(thisset)
-
-# Note: If the item to remove does not exist, discard() will NOT raise an error.
+print(a)
+# {10, 30}

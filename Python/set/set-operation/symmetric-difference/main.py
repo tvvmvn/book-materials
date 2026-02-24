@@ -1,5 +1,5 @@
-set1 = {"apple", "banana", "cherry"}
-set2 = {"google", "microsoft", "apple"}
+a = {1, 2, 3}
+b = {3, 4, 5}
 
-print(set1.symmetric_difference(set2))
-print(set1 ^ set2)
+print(a.symmetric_difference(b))# {1, 2, 4, 5}
+print(a ^ b)# {1, 2, 4, 5}

@@ -1,15 +1,6 @@
-# You can also use the pop() method to remove an item, 
-# but this method will remove a random item, 
-# so you cannot be sure what item that gets removed.
+a = {10, 20, 30}
 
-# The return value of the pop() method is the removed item.
+a.pop()
 
-
-# Remove a random item by using the pop() method:
-thisset = {"apple", "banana", "cherry"}
-
-x = thisset.pop()
-
-print(x)
-
-print(thisset)
+print(a)
+# {20, 30}

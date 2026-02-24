@@ -1,9 +1,6 @@
-# Once a set is created, you cannot change its items, but you can add new items.
+a = {10, 20, 30}
 
-# To add one item to a set use the add() method.
+a.add(40)
 
-thisset = {"apple", "banana", "cherry"}
-
-thisset.add("orange")
-
-print(thisset)
+print(a)
+# {40, 10, 20, 30}

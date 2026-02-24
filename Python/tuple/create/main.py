@@ -1,8 +1,7 @@
-# Tuple items can be of any data type:
+t1 = (100, 200)
+t2 = 100, 200
+t3 = (300,)
 
-# String, int and boolean data types:
-tuple1 = ("apple", "banana", "cherry")
-tuple2 = (1, 5, 7, 9, 3)
-
-# A tuple with strings, integers and boolean values:
-tuple1 = ("abc", 34, True, 40, "male")
+print(t1)# (100, 200)
+print(t2)# (100, 200)
+print(t3)# (300,)

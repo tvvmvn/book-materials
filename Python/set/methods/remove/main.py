@@ -1,10 +1,6 @@
-# To remove an item in a set, use the remove(), or the discard() method.
+a = {10, 20, 30}
 
-# Remove "banana" by using the remove() method:
-thisset = {"apple", "banana", "cherry"}
+a.remove(20)
 
-thisset.remove("banana")
-
-print(thisset)
-
-# Note: If the item to remove does not exist, remove() will raise an error.
+print(a)
+# {10, 30}

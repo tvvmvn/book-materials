@@ -1,10 +1,8 @@
-# The finally block, if specified, will be executed 
-# regardless if the try block raises an error or not.
-
-
 try:
   print(x)
 except:
-  print("Something went wrong")
+  print("Error!")
 finally:
-  print("The 'try except' is finished")
+  print("finished")
+# Error!
+# finished

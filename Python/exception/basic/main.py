@@ -1,5 +1,2 @@
-try:
-  print(x)
-
-except:
-  print("An exception occurred")
+print(x)
+# NameError: name 'x' is not defined

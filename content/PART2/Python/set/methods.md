@@ -1,12 +1,11 @@
 # Methods
 
 - add
--
--
-- remove()
-- discard()
-- pop()
-- clear()
+- update
+- remove
+- discard
+- pop
+- clear
 
 
 # add
@@ -14,54 +13,57 @@
 add 메서드로 집합에 원소를 추가할 수 있습니다.
 
 ```python
-fruits = {"apple", "banana", "cherry"}
+a = {10, 20, 30}
 
-fruits.add("orange") 
+a.add(40)
 
-print(fruits)
-# {'banana', 'orange', 'cherry', 'apple'}
+print(a)
+# {40, 10, 20, 30}
 ```
+
 
 # update
 
-update 메서드로 현재 집합에 다른 집합의 원소들을 합칠 수 있습니다. 
+현재 집합을 다른 집합과 합칩니다.
 
 ```python
-fruits = {"apple", "banana", "cherry"}
-more = {"pineapple", "mango"}
+a = {10, 20, 30}
+b = {40, 50}
 
-fruits.update(more)
+a.update(b)
 
-print(fruits)
-# {apple, mango, pineapple, cherry, banana}
+print(a)
+# {50, 20, 40, 10, 30}
 ```
 
 
 # remove()
 
-remove 메서드에 전달된 원소를 제거합니다. 전달된 원소가 집합에 없는 경우 에러를 일으킵니다
+remove 메서드에 전달된 원소를 제거합니다. 
+전달된 원소가 집합에 없는 경우 에러를 일으킵니다
 
 ```python
-fruits = {"apple", "banana", "cherry"}
+a = {10, 20, 30}
 
-fruits.remove("banana")
+a.remove(20)
 
-print(fruits)
-# {apple, cherry}
+print(a)
+# {10, 30}
 ```
 
 
 # discard()
 
-discard 메서드에 전달된 원소를 제거합니다. 전달된 원소가 집합에 없어도 오류를 발생시키지 않습니다.
+discard 메서드에 전달된 원소를 제거합니다. 
+전달된 원소가 집합에 없으면 무시합니다.(에러 없음)
 
 ```python
-fruits = {"apple", "banana", "cherry"}
+a = {10, 20, 30}
 
-fruits.discard("banana")
+a.discard(20)
 
-print(fruits)
-# {apple, cherry}
+print(a)
+# {10, 30}
 ```
 
 
@@ -70,24 +72,24 @@ print(fruits)
 랜덤으로 한가지 원소를 제거합니다
 
 ```python
-fruits = {"apple", "banana", "cherry"}
+a = {10, 20, 30}
 
-fruits.pop()
+a.pop()
 
-print(len(fruits))
-# 2
+print(a)
+# {20, 30}
 ```
 
 
 # clear()
 
-집합의 모든 원소를 제거합니다
+집합의 모든 원소를 제거합니다.
 
 ```python
-fruits = {"apple", "banana", "cherry"}
+a = {10, 20, 30}
 
-fruits.clear()
+a.clear()
 
-print(fruits)
-# {}
+print(a)
+# set()
 ```

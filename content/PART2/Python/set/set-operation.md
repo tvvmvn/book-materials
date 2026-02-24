@@ -1,107 +1,58 @@
-# 집합 연산
+# 집합 연산 (Set Operation)
 
-1. 합집합
-2. 교집합
-3. 차집합
-4. 대칭 차집합
+- 합집합 (Union)
+- 교집합 (Intersection)
+- 차집합 (Difference)
+- 대칭 차집합 (Symmetric Difference)
 
 
 # 합집합
 
-다음은 union() 메서드를 활용한 합집합 연산입니다.
+union 메서드 또는 | 연산자를 사용합니다.
+
 ```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
+a = {1, 2, 3}
+b = {3, 4, 5}
 
-set3 = set1.union(set2)
-
-print(set3)
-# {1, 2, 3, 4, 5}
-```
-
-다음은 | 연산자를 활용한 합집합 연산입니다. 결과는 union 메서드를 사용한 것과 같습니다
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-set3 = set1 | set2
-
-print(set3)
-# {1, 2, 3, 4, 5}
+print(a.union(b))# {1, 2, 3, 4, 5}
+print(a | b)# {1, 2, 3, 4, 5}
 ```
 
 
 # 교집합
 
-다음은 intersection() 메서드를 활용한 교집합 연산입니다
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
+intersection메서드 또는 & 연산자를 사용합니다
 
-set3 = set1.intersection(set2)
-print(set3)
-# {3}
+```python
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+print(a.intersection(b))# {3}
+print(a & b)# {3}
 ```
 
-다음은 & 연산자를 활용한 교집합 연산입니다
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-set3 = set1 & set2
-print(set3)
-# {3}
-```
 
 # 차집합
 
-두 집합 A와 B가 있을 때 A - B를 수행하는 경우, 집합 A에는 있고 집합 B에는 없는 원소들만 추출합니다
+difference 메서드 또는 - 연산자를 사용합니다.
 
-
-다음은 difference()를 활용한 차집합 연산입니다
 ```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
+a = {1, 2, 3}
+b = {3, 4, 5}
 
-set3 = set1.difference(set2)
-
-print(set3)
-# 1, 2
-```
-
-다음은 - 연산자를 활용한 차집합 연산입니다
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-set3 = set1 - set2
-print(set3)
-# {1, 2}
+print(a.difference(b))# {1, 2}
+print(a - b)# {1, 2}
 ```
 
 
 # 대칭 차집합
 
-두 집합에서 중복된 원소만 제거합니다
+symmetric_difference 메서드 또는 ^ 연산자를 사용합니다.
 
-다음은 symmetric_difference() 메서드를 활용한 대칭 차집합 연산입니다
 ```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
+a = {1, 2, 3}
+b = {3, 4, 5}
 
-set3 = set1.symmetric_difference(set2)
-
-print(set3)
-# {1, 2, 4, 5}
-```
-
-다음은 ^ 연산자를 활용한 대칭 차집합 연산입니다
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-
-set3 = set1.symmetric_difference(set2)
-
-print(set3)
-# {1, 2, 4, 5}
+print(a.symmetric_difference(b))# {1, 2, 4, 5}
+print(a ^ b)# {1, 2, 4, 5}
 ```

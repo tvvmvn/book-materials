@@ -1,11 +1,11 @@
-# The update() method will update the dictionary with the items from the given argument.
-# if items do not exists, added
-
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
 }
 
-# The argument must be a dictionary, or an iterable object with key:value pairs.
-thisdict.update({"year": 2020})
+cat.update({
+  "age": 2,
+  "home": None
+})
+
+print(cat)
+# {'name': 'Kitty', 'age': 2, 'home': None}

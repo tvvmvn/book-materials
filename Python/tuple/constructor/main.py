@@ -1,6 +1,4 @@
-# It is also possible to use the tuple() constructor to make a tuple.
+t = tuple((100, 200)) 
 
-# note the double round-brackets
-thistuple = tuple(("apple", "banana", "cherry")) 
-
-print(thistuple)
+print(t)
+# (100, 200)

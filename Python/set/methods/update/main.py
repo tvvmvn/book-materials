@@ -1,11 +1,7 @@
-# To add items from another set into the current set, use the update() method.
+a = {10, 20, 30}
+b = {40, 50}
 
+a.update(b)
 
-# Add elements from tropical into thisset:
-
-thisset = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
-
-thisset.update(tropical)
-
-print(thisset)
+print(a)
+# {50, 20, 40, 10, 30}

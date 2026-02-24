@@ -1,29 +1,34 @@
-# 튜플
+# Tuple
 
-1. 튜플 개념
-1. 요소에 접근하기
-1. 튜플 연결하기
-1. 튜플 자르기
-
-
-# What is tuple
-
-튜플은 여러 개의 값을 저장할 수 있는 자료형입니다.
-과일 바구니에 여러 과일을 담는 것처럼 하나의 변수에 여러 개의 값을 저장할 수 있습니다.
+튜플은 읽기전용(read-only) 시퀀스입니다. 
+즉 한번 생성하고 난 뒤에 요소의 추가/삭제/수정이 불가능합니다.
 
 
 # 튜플 생성하기
 
-소괄호안에 값들을 나열하고 콤마로 구분합니다.
+소괄호 안에 값들을 나열하고 콤마로 구분합니다. 소괄호는 생략 가능합니다.
+만약 튜플을 이루는 요소가 하나라면 값 뒤에 콤마(,)를 찍어야 합니다. 그렇지 않으면 파이썬이 튜플이 아니라 하나의 값으로 인식합니다.
 
 ```python
-fruits = ("apple", "banana", "cherry")
+t1 = (100, 200)
+t2 = 100, 200
+t3 = (300,)
+
+print(t1)# (100, 200)
+print(t2)# (100, 200)
+print(t3)# (300,)
 ```
+
+
+# 튜플 생성자
 
 튜플 생성자로도 튜플을 생성할 수 있습니다. 소괄호로 묶은 값들을 튜플 생성자에 전달하면 됩니다
 
 ```python
-fruits = tuple(("apple", "banana", "cherry")) 
+t = tuple((100, 200)) 
+
+print(t)
+# (100, 200)
 ```
 
 
@@ -32,20 +37,35 @@ fruits = tuple(("apple", "banana", "cherry"))
 튜플을 구성하는 원소의 개수를 길이라고 합니다. len() 메서드로 튜플의 길이를 구할 수 있습니다
 
 ```python
-fruits = ("apple", "banana", "cherry")
+t = (100, 200)
 
-print(len(fruits))
-# 3
+print(len(t))
+# 2
 ```
 
 
-# Concat
+# 튜플 합치기
 
-리스트와 마찬가지로 + 연산자로 여러 개의 튜플을 합칠 수 있습니다
+리스트와 마찬가지로 + 연산자로 여러 개의 튜플을 합쳐 새로운 튜플을 만들 수 있습니다.
 
 ```python
-fruits = ("apple", "banana", "cherry")
-more = ("mango", "kiwi")
+t1 = (100, 200)
+t2 = (300,)
 
-print(fruits + more) # (apple, banana, cherry, mango, kiwi)
+print(t1 + t2)
+# (100, 200, 300)
+```
+
+
+# Unpacking
+
+```py
+# packing
+t = (100, 200)
+
+# unpacking
+x, y = t
+
+print(x) # 100
+print(y) # 200
 ```

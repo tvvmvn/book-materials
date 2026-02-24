@@ -1,10 +1,8 @@
-# You can also use the values() method to return values of a dictionary:
-
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
 }
 
-print(thisdict.values())
-# dict_values(['Ford', 'Mustang', 1964])
+print(cat.values())
+# dict_values(['Kitty', 2, None])

@@ -1,10 +1,6 @@
-# The clear() method empties the list.
+mylist = [10, 20, 30]
 
-# The list still remains, but it has no content.
+mylist.clear()
 
-
-# Clear the list content:
-thislist = ["apple", "banana", "cherry"]
-thislist.clear()
-
-print(thislist)
+print(mylist)
+# []

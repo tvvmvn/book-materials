@@ -1,12 +1,8 @@
-# The keys() method will return a list of all the keys in the dictionary.
-
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
 }
 
-x = thisdict.keys()
-
-print(x)
-# dict_keys(['brand', 'model', 'year'])
+print(cat.keys())
+# dict_keys(['name', 'age', 'home'])

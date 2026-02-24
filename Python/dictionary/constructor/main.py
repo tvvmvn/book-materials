@@ -1,6 +1,4 @@
-# It is also possible to use the dict() constructor to make a dictionary.
+cat = dict(name = "Kitty", age = 2, home = None)
 
-
-thisdict = dict(name = "John", age = 36, country = "Norway")
-
-print(thisdict)
+print(cat)
+# {'name': 'Kitty', 'age': 2, 'home': None}

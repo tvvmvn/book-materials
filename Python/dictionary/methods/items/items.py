@@ -1,10 +1,8 @@
-# Loop through both keys and values, by using the items() method:
-
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
 }
 
-print(thisdict.items())
-# dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+print(cat.items())
+# dict_items([('name', 'Kitty'), ('age', 2), ('home', None)])

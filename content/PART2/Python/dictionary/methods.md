@@ -1,50 +1,45 @@
+# 딕셔너리 메서드
+
+- get
+- update
+- pop
+- clear
+- keys
+- values
+- items
+
+
 # get
 
 또는 get() 메서드로도 데이터에 접근할 수 있습니다.
 키 값을 메서드에 전달합니다
 
 ```python
-# Get the value of the "model" key:
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",  
+  "age": 2,
 }
 
-x = thisdict.get("model")
-# Mustang
+print(cat.get("name")) # Kitty
 ```
 
 # update()
 
-한번에 여러개의 데이터를 바꾸고 싶을 때는 update() 메서드가 유용합니다
+한번에 여러 개의 데이터를 추가하고 싶을 때는 update() 메서드가 유용합니다.
+만약 기존에 있던 키를 입력하면 덮어씁니다.
 
 ```python
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
 }
 
-# model, year를 새 값으로 바꿉니다
-thisdict.update({
-  "model": "Aspire",
-  "year": 2020
+cat.update({
+  "age": 2,
+  "home": None
 })
-```
 
-update() 메서드는 요소를 수정하는 것 뿐만 아니라 추가도 가능합니다.
-기존에 없던 키라면 데이터가 추가됩니다.
-
-```python
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-
-# color 추가
-thisdict.update({"color": "red"})
+print(cat)
+# {'name': 'Kitty', 'age': 2, 'home': None}
 ```
 
 
@@ -53,30 +48,74 @@ thisdict.update({"color": "red"})
 pop메서드에 삭제하고 싶은 데이터의 키를 입력하세요
 
 ```python
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
 }
 
-# model 삭제
-thisdict.pop("model")
+cat.pop("home")
 
-print(thisdict)
+print(cat)
+# {'name': 'Kitty', 'age': 2}
 ```
 
 # clear()
 
-clear() 메서드는 딕셔너리의 모든 데이터를 삭제합니다. 필요한 경우에만 사용하세요
+딕셔너리의 완전히 비웁니다. 필요한 경우에만 사용하세요
 
 ```python
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
+cat = {
+  "name": "kitty",
+  "age": 2,
 }
 
-thisdict.clear()
+cat.clear()
 
-print(thisdict)
+print(cat)
+# {}
+```
+
+
+# keys
+
+```py
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
+}
+
+print(cat.keys())
+# dict_keys(['name', 'age', 'home'])
+```
+
+
+# values
+
+```py
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
+}
+
+print(cat.values())
+# dict_values(['Kitty', 2, None])
+```
+
+
+# items
+
+딕셔너리의 각 키-값 쌍을 (키, 값)의 튜플로 저장합니다.
+
+```py
+cat = {
+  "name": "Kitty",
+  "age": 2,
+  "home": None
+}
+
+print(cat.items())
+# dict_items([('name', 'Kitty'), ('age', 2), ('home', None)])
 ```

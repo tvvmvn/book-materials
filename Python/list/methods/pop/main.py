@@ -1,8 +1,6 @@
-# The pop() method removes the specified index.
-# If you do not specify the index, the pop() method removes the last item.
+mylist = [10, 20, 30]
 
-# Remove the second item:
-thislist = ["apple", "banana", "cherry"]
-thislist.pop(1)
+mylist.pop()
 
-print(thislist)
+print(mylist)
+# [10, 20]

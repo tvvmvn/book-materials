@@ -1,12 +1,11 @@
-# Raise an exception
+input = 123
+password = 1234
 
-
-# As a Python developer you can choose to throw an exception if a condition occurs.
-# To throw (or raise) an exception, use the raise keyword.
-
-
-# Raise an error and stop the program if x is lower than 0:
-x = -1
-
-if x < 0:
-  raise Exception("Sorry, no numbers below zero")
+try:
+  if input != password:
+    raise Exception(1)
+  
+  print("login success")
+except:
+  print("비밀번호 오류")
+# 비밀번호 오류
