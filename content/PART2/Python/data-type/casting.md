@@ -1,6 +1,6 @@
-# 형 변환
+# 형 변환 (Type Casting)
 
-다음의 생성자들은 해당 타입으로 형 변환을 수행합니다
+다음의 생성자들은 자신의 타입으로 입력값을 변환합니다.
 
 - int()
 - float()
@@ -10,25 +10,20 @@ int()는 Int의 생성자입니다. 입력값을 정수형으로 변환합니다
 float()은 Float의 생성자입니다. 입력값을 실수형으로 변환합니다
 str()은 String의 생성자입니다. 입력값을 문자형으로 변환합니다
 
-
-다음은 문자열 값을 정수형 값으로 변환하는 코드입니다.
-
 ```py
-s = '2'
-print(type(s))
-# <class 'str'>
-
-n = int(s)
-print(type(n))
-# <class 'int'>
+print(int(1.5)) # 1
+print(float(2)) # 2.0
+print(int("3")) # 3
 ```
 
+
+# 활용 사례
 
 다음의 예제처럼 사용자 입력값을 숫자로 바꾸어야 하는 경우가 좋은 예시입니다. 사용자 입력값은 기본적으로 문자열로 저장됩니다. 
 
 ```py
-a = input('첫번째 수')
-b = input('두번째 수')
+x = input("first: ")
+y = input("second: ")
 
-print('두 수의 합:', int(a) + int(b))
+print(int(x) + int(y))
 ```
