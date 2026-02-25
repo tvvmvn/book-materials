@@ -1,0 +1,14 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/DSA/queue/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _enq, symObjAddr: 0x0, symBinAddr: 0x100000E40, symSize: 0x50 }
+  - { offset: 0x3F, size: 0x8, addend: 0x0, symName: _front, symObjAddr: 0x8AC, symBinAddr: 0x100002004, symSize: 0x0 }
+  - { offset: 0x5B, size: 0x8, addend: 0x0, symName: _rear, symObjAddr: 0x154, symBinAddr: 0x100002000, symSize: 0x0 }
+  - { offset: 0x70, size: 0x8, addend: 0x0, symName: _size, symObjAddr: 0x8B0, symBinAddr: 0x100002008, symSize: 0x0 }
+  - { offset: 0x93, size: 0x8, addend: 0x0, symName: _queue, symBinAddr: 0x10000200C, symSize: 0x0 }
+  - { offset: 0xA8, size: 0x8, addend: 0x0, symName: _enq, symObjAddr: 0x0, symBinAddr: 0x100000E40, symSize: 0x50 }
+  - { offset: 0xCC, size: 0x8, addend: 0x0, symName: _deq, symObjAddr: 0x50, symBinAddr: 0x100000E90, symSize: 0x30 }
+  - { offset: 0xE1, size: 0x8, addend: 0x0, symName: _printQueue, symObjAddr: 0x80, symBinAddr: 0x100000EC0, symSize: 0x80 }
+  - { offset: 0x113, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x100, symBinAddr: 0x100000F40, symSize: 0x53 }
+...

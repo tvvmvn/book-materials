@@ -1,7 +1,6 @@
-# 집합 연산자
+# 집합 연산자 (Set Operator)
 
 집합 연산에 참여하는 두 테이블로부터 컬럼을 명시할 때 기본적으로 컬럼들은 같은 자료형이어야 합니다. 또한 명시된 컬럼들의 순서와 개수를 일치시켜야 합니다. 
-
 
 - UNION (합집합)
 - UNION ALL (합집합)
@@ -19,14 +18,13 @@ UNION
 SELECT 컬럼1, 컬럼2, ... FROM 테이블2;
 ```
 
+예제)
+다음은 <고객>, <판매자>의 '도시'들을 합치는 명령문입니다.
 
-다음은 Customers, Suppliers 테이블에 나타난 모든 도시 값을 알고싶을 때 적절한 명령문입니다.
-
-<!-- 집합 연산도 조인처럼 테이블이 있으면 좋을 듯 -->
 ```sql
-SELECT City FROM Customers
+SELECT 도시 FROM 고객
 UNION
-SELECT City FROM Suppliers
+SELECT 도시 FROM 판매자
 ```
 
 
@@ -34,7 +32,8 @@ SELECT City FROM Suppliers
 
 UNION와 기본적으로 같은 연산이지만 중복된 행도 포함시킵니다.
 
-다음은 Customers, Suppliers 테이블에 나타난 모든 도시 값 뿐만 아니라 각 도시의 개수를 알고 싶을 때 적절한 명령문입니다.
+예제)
+다음은 Customers, Suppliers 테이블에 나타난 모든 도시들 뿐만 아니라 각 도시의 개수를 알고 싶을 때 적절한 명령문입니다.
 
 ```sql
 SELECT City FROM Customers
@@ -53,7 +52,7 @@ INTERSECT
 SELECT column_name(s) FROM table2;
 ```
 
-
+예제)
 다음은 Customers, Suppliers에 공통적으로 있는 City를 알고싶을 때 적절한 명령문입니다
 
 ```sql

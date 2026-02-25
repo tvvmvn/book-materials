@@ -1,0 +1,13 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/DSA/_stack/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x0, symBinAddr: 0x100000C70, symSize: 0x60 }
+  - { offset: 0x86, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x0, symBinAddr: 0x100000C70, symSize: 0x60 }
+  - { offset: 0xB8, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0x60, symBinAddr: 0x100000CD0, symSize: 0x60 }
+  - { offset: 0xE0, size: 0x8, addend: 0x0, symName: _peek, symObjAddr: 0xC0, symBinAddr: 0x100000D30, symSize: 0x60 }
+  - { offset: 0x108, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x120, symBinAddr: 0x100000D90, symSize: 0x20 }
+  - { offset: 0x130, size: 0x8, addend: 0x0, symName: _size, symObjAddr: 0x140, symBinAddr: 0x100000DB0, symSize: 0x20 }
+  - { offset: 0x158, size: 0x8, addend: 0x0, symName: _printStack, symObjAddr: 0x160, symBinAddr: 0x100000DD0, symSize: 0x70 }
+  - { offset: 0x198, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1D0, symBinAddr: 0x100000E40, symSize: 0xFB }
+...

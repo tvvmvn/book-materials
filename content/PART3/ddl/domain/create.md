@@ -1,6 +1,5 @@
 # CREATE DOMAIN
 
-
 ```sql
 CREATE DOMAIN 직위 VARCHAR2(10) 
   DEFAULT '팀원'
