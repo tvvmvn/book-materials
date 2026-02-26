@@ -1,4 +1,6 @@
-# 연산자
+# 연산자 (Operator)
+
+주로 조건을 지정할 때 사용됩니다.
 
 - 산술 연산자 (Arithmetic Operator)
 - 비트 연산자 (Bit Operator)
@@ -17,15 +19,15 @@
 - <= (작거나 같다 연산자)
 
 예제)
-테이블 <Customers>에서 국가가 멕시코인 고객들만 추출합니다.
+테이블 <학생>에서 1학년 학생들만 추출합니다.
 ```sql
-SELECT * FROM Customers WHERE Country = 'Mexico';
+SELECT * FROM 학생 WHERE 학년 = 1;
 ```
 
 예제)
-테이블 <Student>에서 2학년 이상인 학생들만 추출합니다.
+테이블 <학생>에서 3학년 이상인 학생들만 추출합니다.
 ```sql
-SELECT * FROM Student WHERE grade >= 2
+SELECT * FROM 학생 WHERE 학년 >= 2
 ```
 
 
@@ -45,38 +47,33 @@ SELECT * FROM Student WHERE grade >= 2
 
 # AND
 
-AND는 검색 조건을 좁히는 연산자입니다
+AND는 검색 조건을 추가하는 연산자입니다.
 
 ```sql
--- 모든 조건을 만족시켜야 함
-WHERE 조건1 AND 조건2 AND 조건3 ...;
+.. WHERE 조건1 AND 조건2 AND 조건3 ...;
 ```
 
 예제)
-다음은 City가 Rio de Janeiro이고 CustomerID가 50보다 큰 레코드를 추출하는 명령문입니다
+다음 명령문은 1학년 학생이면서 취미가 축구인 학생들을 추출합니다.
 ```sql
-SELECT * FROM Customers
-WHERE Country = 'Brazil'
-AND City = 'Rio de Janeiro' 
-AND CustomerID > 50;
+SELECT * FROM 학생
+WHERE 학년 = 1 AND 취미 = '축구' 
 ```
 
 
 # OR 
 
-검색 조건을 넓히는 연산자입니다.
+OR은 검색 조건을 넓히는 연산자입니다. 명시된 조건들 중 하나만 만족시키면 됩니다.
 
 ```sql
--- 조건들 중 하나만 만족시키면 됨
 WHERE 조건1 OR 조건2 OR 조건3 ...;
 ```
 
 예제)
-다음은 Country가 Germany, Spain인 레코드를 추출하는 명령문입니다
+다음은 1학년이거나 나이가 20살인 학생들을 추출하는 명령문입니다.
 ```sql
 SELECT *
-FROM Customers
-WHERE Country = 'Germany' OR Country = 'Spain';
+FROM 학생 WHERE 학년 = 1 OR 나이 = 20;
 ```
 
 
@@ -85,10 +82,10 @@ WHERE Country = 'Germany' OR Country = 'Spain';
 조건을 뒤집는 연산자로 NOT LIKE, NOT BETWEEN, NOT IN 등 다른 연산자와 함께 쓰입니다.
 
 예제)
-다음은 Country가 Spain이 아닌 레코드를 추출하는 명령문입니다
+다음은 <학생>에서 1학년을 제외한 학생 정보를 제외한 추출하는 명령문입니다
 ```sql
-SELECT * FROM Customers
-WHERE NOT Country = 'Spain';
+SELECT * FROM 학생
+WHERE NOT 학년 = 1;
 ```
 
 
@@ -97,36 +94,37 @@ WHERE NOT Country = 'Spain';
 값의 범위를 지정합니다. 범위는 숫자 뿐만 아니라 문자, 날짜가 될 수도 있습니다.
 
 ```sql
-BETWEEN value1 AND value2;
+... BETWEEN 값1 AND 값2;
 ```
 
 예제)
-다음은 Price값이 10과 20 사이인 레코드들만 추출하는 명령문입니다.
+다음은 '나이'가 25과 30 사이인 학생들만 추출하는 명령문입니다.
 ```sql
-SELECT * FROM Products
-WHERE Price BETWEEN 10 AND 20;
+SELECT * FROM 학생
+WHERE 나이 BETWEEN 25 AND 30;
 ```
 
 
 # IN 
 
-IN은 컬럼의 값을 한정하는 연산자입니다
+IN에 명시된 조건들 중 하나를 만족시키는 레코드를 추출합니다.
+여러 개의 OR 연산자를 사용하는 것과 같습니다.
 
 ```sql
-WHERE column_name IN (value1, value2, ...);
+WHERE 컬럼 IN (값1, 값2, ...);
 ```
 
 예제)
-다음은 Country가 Germany, France, UK인 레코드를 추출하는 명령문입니다
+다음은 취미가 축구, 농구, 야구 중 하나인 학생들을 추출하는 명령문입니다.
 ```sql
-SELECT * FROM Customers
-WHERE Country IN ('Germany', 'France', 'UK');
+SELECT * FROM 학생
+WHERE 취미 IN ('축구', '농구', '야구');
 ```
 
 
 # LIKE
 
-LIKE는 패턴으로 컬럼 값을 선별하는 연산자입니다.
+LIKE는 값의 패턴으로 검색 조건을 추가하는 연산자입니다.
 
 ```sql
 WHERE 컬럼 LIKE 패턴;
@@ -136,13 +134,13 @@ WHERE 컬럼 LIKE 패턴;
 LIKE는 주로 %(Wildcard) 문자와 함께 쓰입니다
 
 ```sql
--- CustomerName이 a로 시작하는 
-WHERE CustomerName LIKE 'a%';
+-- 이름이 '김'으로 시작하는 학생들
+WHERE 학생 LIKE '김%';
 
--- CustomerName이 a로 끝나는
-WHERE CustomerName LIKE '%a';
+-- 이름이 '수'로 끝나는 학생들
+WHERE 학생 LIKE '%수';
 
--- CustomerName이 a를 포함하는
-WHERE CustomerName LIKE '%a%';
+-- 이름에 '동'을 포함하는 학생들 (시작, 끝도 인정합니다)
+WHERE 학생 LIKE '%동%';
 ```
 

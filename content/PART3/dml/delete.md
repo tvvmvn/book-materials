@@ -7,8 +7,7 @@ DELETE FROM 테이블명 WHERE 조건;
 ```
 
 예제)
-아래는 테이블 Customers에서 CustomerName이 Alfreds인 고객을 삭제하는 명령문입니다
-
+아래는 테이블 <동아리>에서 '동아리 이름'이 '씨름'인 레코드를 삭제하는 명령문입니다.
 ```sql
-DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+DELETE FROM 동아리 WHERE 동아리 이름 = '씨름';
 ```

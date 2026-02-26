@@ -2,17 +2,13 @@
 
 뷰는 SQL문의 조회 결과를 기반으로 생성되는 가상의 테이블입니다.
 
-다음은 뷰를 생성하는 방법입니다.
 ```sql
-CREATE VIEW view_name AS
-SELECT column1, column2, ... FROM table_name 
-WHERE condition;
+CREATE VIEW 뷰_이름 AS SELECT 컬럼1, 컬럼2, ...
 ```
 
 예시)
-다음은 테이블 Customers로부터 Brazil Customers 뷰를 생성하는 명령문입니다.
+다음은 테이블 <학생>으로부터 '1학년 학생들' 뷰를 생성하는 명령문입니다.
 ```sql
-CREATE VIEW [Brazil Customers] 
-AS SELECT * FROM Customers 
-WHERE Country = 'Brazil';
+CREATE VIEW [1학년 학생들] 
+AS SELECT * FROM 학생 WHERE 학년 = 1
 ```

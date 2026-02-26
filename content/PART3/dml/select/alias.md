@@ -28,17 +28,20 @@ FROM 고객;
 테이블 AS 별칭;
 ```
 
-예제)
 테이블 별칭이 없는 경우와 있는 경우 두가지를 비교해봅시다. 별칭이 있는 경우가 더 짧은 문장이라는 것을 알 수 있습니다
 
+예제)
+다음은 1학년 학생들을 그들이 가입한 동아리 정보와 함께 추출하는 명령문입니다.
+별칭을 사용하기 전입니다.
 ```sql
-SELECT * FROM 고객 JOIN 주문
-ON 고객.고객 ID = 주문.고객 ID
-WHERE 고객.도시 = '부산';
+SELECT * FROM 학생 JOIN 동아리
+ON 학생.동아리ID = 동아리.동아리ID
+WHERE 학생.학년 = 1;
 ```
 
+같은 명령문을 별칭을 사용한 경우입니다.
 ```sql
-SELECT * FROM 고객 AS c JOIN 주문 AS o
-ON c.고객 ID = o.고객 ID;
-WHERE c.도시 = '부산';
+SELECT * FROM 학생 AS s JOIN 동아리 AS c
+ON s.동아리ID = c.동아리ID;
+WHERE s.학년 = 1;
 ```

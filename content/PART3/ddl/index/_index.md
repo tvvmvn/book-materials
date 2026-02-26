@@ -4,13 +4,13 @@ CREATE INDEX는 인덱스를 생성하는 명령문입니다
 
 다음은 사용법입니다.
 ```sql
-CREATE INDEX 인덱스명 ON 테이블명 (컬럼1, 컬럼2, ...);
+CREATE INDEX 인덱스_이름 ON 테이블_이름 (컬럼1, 컬럼2, ...);
 ```
 
 예시)
-아래는 테이블 Person에서 LastName 컬럼에 대해 인덱스'idx_lastname'를 생성하는 명령문입니다
+아래는 테이블 <학생>에서 '이름' 컬럼에 대해 인덱스'idx_name'를 생성하는 명령문입니다
 ```sql
-CREATE INDEX idx_lastname ON Persons (LastName);
+CREATE INDEX idx_name ON 학생 (이름);
 ```
 
 
@@ -20,5 +20,5 @@ CREATE INDEX idx_lastname ON Persons (LastName);
 
 Syntax
 ```sql
-DROP INDEX index_name;
+DROP INDEX 인덱스_이름;
 ```
