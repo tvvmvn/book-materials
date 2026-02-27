@@ -7,7 +7,7 @@
 
 # CREATE TABLE
 
-테이블을 생성하는 문장입니다. 다음은 CREATE TABLE 문의 사용 방법입니다.
+테이블을 생성하는 명령문입니다.
 
 ```sql
 CREATE TABLE 테이블 (
@@ -18,14 +18,17 @@ CREATE TABLE 테이블 (
 ```
 
 예제)
-아래는 3개의 컬럼을 가진 테이블 <학생> 생성문입니다.
+'학번(숫자)', '이름(최대 255자)', '주소(최대 255자)' 컬럼으로 구성된 <학생>테이블을 생성하세요.
+
 ```sql
 CREATE TABLE 학생 (
     학번 int,
     이름 varchar(255),
     주소 varchar(255),
 );
-```
+``` 
+int: 정수(integer)
+varchar: 가변 문자(Variable Character)
 
 
 # ALTER TABLE
@@ -39,13 +42,13 @@ ALTER TABLE 테이블명 DROP COLUMN 컬럼_이름;
 
 
 예제)
-아래는 테이블 <학생>에 '이메일' 컬럼을 추가하는 문장입니다.
+<학생>테이블에 '이메일(최대 255자)' 컬럼을 추가하세요.
 ```sql
 ALTER TABLE 학생 ADD 이메일 varchar(255);
 ```
 
 예제)
-아래는 테이블 <학생>에서 '이메일' 컬럼을 삭제하는 문장입니다.
+<학생>테이블에서 '이메일' 컬럼을 삭제하세요.
 ```sql
 ALTER TABLE 학생 DROP COLUMN 이메일;
 ```
@@ -56,5 +59,5 @@ ALTER TABLE 학생 DROP COLUMN 이메일;
 DROP TABLE 문은 테이블을 삭제하는 명령어입니다.
 
 ```sql
-DROP TABLE 테이블명;
+DROP TABLE 테이블_이름;
 ```
