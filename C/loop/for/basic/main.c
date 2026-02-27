@@ -2,8 +2,8 @@
 
 int main() {
 
-  for (int i = 0; i < 10; i++) {
-    printf("%d times executed\n", i);
+  for (int i = 0; i < 5; i++) {
+    printf("hello\n");
   }
 
   return 0;

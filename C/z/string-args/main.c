@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void display(char* s) {
-  printf("%s\n", s);
+void display(char s[]) {
+  printf("hello %s\n", s);
 }
 
 int main() {

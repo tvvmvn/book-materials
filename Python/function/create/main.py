@@ -1,8 +1,8 @@
 # A function with one argument:
 
-def my_function(fname):
-  print(fname + " Refsnes")
+def my_function():
+  print("hello")
 
-my_function("Emil")
-my_function("Tobias")
-my_function("Linus")
+my_function()
+my_function()
+my_function()

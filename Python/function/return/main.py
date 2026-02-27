@@ -2,9 +2,9 @@
 
 # When a function reaches a return statement, it stops executing and sends the result back:
 
-def get_greeting():
-  return "Hello from a function"
+def add(a, b):
+  return a + b
 
-message = get_greeting()
+r = add(1, 2)
 
-print(message)
+print(r)

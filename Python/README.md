@@ -1,3 +1,13 @@
-## Python Programming
+# Python Programming
 
-> Presentation URL here..
+list
+string
+tuple
+set
+dictionary
+
+function
+
+loop
+selection
+match

@@ -1,16 +1,11 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
-
-  for (int i = 0; i < 3; i++) {
-    if (i == 2) break;
-
-    printf("%d times executed\n", i);
+int main() {
+  for (int i = 0; i < 5; i++) {
+    if (i == 4) break;
+    printf("%d", i);
   }
-
-  /* code */
 
   return 0;
 }
-
+//0123

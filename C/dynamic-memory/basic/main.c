@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 int main() {
-  int* ptr;
+  int* ptr = NULL;
 
   ptr = (int*)malloc(sizeof(int));
-  // ptr = malloc(sizeof(*ptr));
 
   if (ptr == NULL) {
     printf("Memory allocation failed\n");

@@ -1,5 +1,8 @@
-def f():
-  return 100, 200
+person = {
+  'name': 'John Doe',
+  'age': 30,
+  'gender': 'male'
+}
 
-print(f())
-# (100, 200)
+for (k, v) in person.items():
+  print(f'{k}: {v}')
