@@ -1,6 +1,6 @@
-mylist = [10, 20, 30]
+nums = [10, 20, 30]
 
-mylist.append(40)
+nums.append(40)
 
-print(mylist)
+print(nums)
 # [10, 20, 30, 40]

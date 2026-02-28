@@ -1,7 +1,5 @@
-x = ["apple", "banana"]
-y = ["apple", "banana"]
-z = x
+a = [0, 1]
+b = [0, 1]
 
-print(x is z) # True
-print(x is y) # False
-print(x == y) # True
+print(a == b) #True
+print(a is b) #False

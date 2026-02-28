@@ -1,9 +1,5 @@
-# Negative indexing means start from the end
+nums = [10, 20, 30]
 
-# -1 refers to the last item, -2 refers to the second last item etc.
-
-
-# Print the last item of the list:
-thislist = ["apple", "banana", "cherry"]
-
-print(thislist[-1])
+print(nums[-1]) #30
+print(nums[-2]) #20
+print(nums[-3]) #10

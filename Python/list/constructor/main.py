@@ -1,6 +1,3 @@
-# It is also possible to use the list() constructor when creating a new list.
+nums = list((10, 20, 30))
 
-# note the double round-brackets
-thislist = list(("apple", "banana", "cherry")) 
-
-print(thislist)
+print(nums) # [10, 20, 30]

@@ -1,7 +1,4 @@
-print(range(5))
-print(range(1, 5))
-print(range(1, 5, 2))
+o = range(10)
 
-# range(0, 5)
-# range(1, 5)
-# range(1, 5, 2)
+print(o) #range(0, 10)
+print(len(o)) #10

@@ -1,5 +1,5 @@
-name = "john"
 
-s = f"my name is {name}"
+s = "name: {}, age: {}"
 
-print(s.format(name))
+print(s.format("John", 30))
+# name: John, age: 30

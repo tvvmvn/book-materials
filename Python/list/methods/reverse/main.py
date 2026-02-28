@@ -1,6 +1,6 @@
-mylist = [10, 30, 20]
+nums = [10, 20, 30]
 
-mylist.reverse()
+nums.reverse()
 
-print(mylist)
-# [20, 30, 10]
+print(nums)
+# [30, 20, 10]

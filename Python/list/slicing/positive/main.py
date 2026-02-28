@@ -1,9 +1,6 @@
-# You can specify a range of indexes by specifying where to start and where to end the range.
+nums = [10, 20, 30, 40]
 
-# When specifying a range, the return value will be a new list with the specified items.
-
-
-# Return the third, fourth, and fifth item:
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-
-print(thislist[2:5])
+print(nums[:]) # [10, 20, 30, 40]
+print(nums[1:]) # [20, 30, 40]
+print(nums[:3]) # [10, 20, 30]
+print(nums[1:3]) # [20, 30]

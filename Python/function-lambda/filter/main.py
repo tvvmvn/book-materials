@@ -1,7 +1,6 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+nums = [1, 2, 3, 4]
 
 # filter object
-odd_numbers = filter(lambda x: x % 2 != 0, numbers)
+o = filter(lambda x: x % 2 == 0, nums)
 
-print(list(odd_numbers))
-#[1, 3, 5, 7]
+print(list(o))#[2, 4]

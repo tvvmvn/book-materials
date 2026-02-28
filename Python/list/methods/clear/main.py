@@ -1,6 +1,6 @@
-mylist = [10, 20, 30]
+nums = [10, 20, 30]
 
-mylist.clear()
+nums.clear()
 
-print(mylist)
+print(nums)
 # []

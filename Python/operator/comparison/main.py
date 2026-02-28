@@ -1,13 +1,12 @@
-# Comparison operators return True or False based on the comparison:
-x = 5
-y = 3
+a = 5
+b = 2
 
-print(x == y)
-print(x != y)
-print(x > y)
-print(x < y)
-print(x >= y)
-print(x <= y)
+print(a == b) # False
+print(a != b) # True
+print(a > b) # True
+print(a < b) # False
+print(a >= b) # True
+print(a <= b) # False
 
 # pythonic!
-print(1 < x < 10)
+print(1 < a < 10)

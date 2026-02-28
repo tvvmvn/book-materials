@@ -1,5 +1,3 @@
-# A function with one argument:
-
 def my_function():
   print("hello")
 

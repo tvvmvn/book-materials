@@ -1,5 +1,4 @@
-# Check if "banana" is present in a list:
-fruits = ["apple", "banana", "cherry"]
+nums = [10, 20, 30]
 
-print("banana" in fruits)
-print("pineapple" not in fruits)
+print(30 in nums) #True
+print(40 not in nums) #True

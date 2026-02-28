@@ -3,5 +3,5 @@ s = "hello"
 # integer
 n = 2
 
-print(s)
-print(n)
+print(type(s))
+print(type(n))

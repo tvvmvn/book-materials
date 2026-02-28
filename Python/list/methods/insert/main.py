@@ -1,6 +1,6 @@
-mylist = [10, 20, 30]
+nums = [10, 30, 40]
 
-mylist.insert(3, 40)
+nums.insert(1, 20)
 
-print(mylist)
+print(nums)
 # [10, 20, 30, 40]

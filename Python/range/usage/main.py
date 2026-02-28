@@ -1,4 +1,4 @@
-# Create a range of numbers from 3 to 9:
+o = range(1, 10)
 
-for i in range(5):
-  print(i, 'times exeucted')
+print(list(o))
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]

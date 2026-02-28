@@ -3,6 +3,7 @@ cat = {
   "age": 2,
 }
 
+# add or change
 cat["home"] = None
 
 print(cat)

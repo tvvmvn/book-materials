@@ -1,7 +1,5 @@
-# Specify negative indexes if you want to start the search from the end of the list:
+nums = [10, 20, 30, 40]
 
-
-# This example returns the items from "orange" (-4) to, but NOT including "mango" (-1):
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-
-print(thislist[-4:-1])
+print(nums[:-1]) # [10, 20, 30]
+print(nums[-3:]) # [20, 30, 40]
+print(nums[-3:-1]) # [20, 30]

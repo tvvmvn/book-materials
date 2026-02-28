@@ -1,5 +1,5 @@
-# Add 10 to argument a, and return the result:
-x = lambda a : a + 10
+f = lambda a : a * 10
 
-print(x(1))#11
-print(x(2))#12
+print(f(1)) #10
+print(f(2)) #20
+print(f(3)) #30

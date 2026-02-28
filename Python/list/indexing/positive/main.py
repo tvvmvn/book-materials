@@ -1,5 +1,5 @@
-# List items are indexed and you can access them by referring to the index number:
+nums = [10, 20, 30]
 
-thislist = ["apple", "banana", "cherry"]
-
-print(thislist[1])
+print(nums[0])
+print(nums[1])
+print(nums[2])

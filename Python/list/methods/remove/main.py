@@ -1,6 +1,6 @@
-mylist = [10, 20, 30, 40]
+nums = [10, 20, 30, 40]
 
-mylist.remove(30)
+nums.remove(30)
 
-print(mylist)
+print(nums)
 # [10, 20, 40]

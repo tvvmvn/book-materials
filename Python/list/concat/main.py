@@ -1,6 +1,6 @@
-list1 = ["a", "b", "c"]
-list2 = [1, 2, 3]
+nums1 = [10, 20, 30]
+nums2 = [40, 50, 60]
 
-list3 = list1 + list2
+nums3 = nums1 + nums2
 
-print(list3)
+print(nums3)

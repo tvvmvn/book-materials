@@ -1,6 +1,3 @@
-# To determine how many items a list has, 
-# use the len() function:
+nums = [10, 20, 30, 40]
 
-thislist = ["apple", "banana", "cherry"]
-
-print(len(thislist))
+print(len(nums)) #4

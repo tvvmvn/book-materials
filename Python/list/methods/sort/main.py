@@ -1,4 +1,4 @@
-mylist = [10, 30, 20]
+mylist = [30, 10, 20]
 
 mylist.sort()
 

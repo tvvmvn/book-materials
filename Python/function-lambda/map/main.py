@@ -1,7 +1,6 @@
-numbers = [1, 2, 3, 4]
+nums = [1, 2, 3, 4]
 
 # map object
-doubled = map(lambda x: x * 10, numbers)
+o = map(lambda x: x * 10, nums)
 
-print(list(doubled))
-# [10, 20, 30, 40]
+print(list(o))# [10, 20, 30, 40]
