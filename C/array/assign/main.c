@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-
   int nums[3];
   
   nums[0] = 10;

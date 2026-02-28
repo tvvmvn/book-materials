@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 int main() {
+  int level = 2;
 
-  switch (2023) {
-  
-    case 2022:
-      printf("Last year");
+  switch (level) {
+    case 1:
+      printf("Lv.1\n");
       break;
-
-    case 2023:
-      printf("This year");
+    case 2:
+      printf("Lv.2\n");
       break;
-
-    case 2024:
-      printf("Next year");
+    case 3:
+      printf("Lv.3\n");
       break;
-    
     default:
-      printf("Not a close year");
+      printf("Unknown level\n");
   }
 }

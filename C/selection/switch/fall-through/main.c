@@ -1,15 +1,18 @@
 #include <stdio.h>
 
 int main() {
-  int hour = 18;
+  int level = 2;
 
-  switch (hour) {
-    case 9:
-    case 10:
-      printf("morning\n");
-    case 17:
-    case 18:
-    case 19:
-      printf("afternoon\n");
+  switch (level) {
+    case 1:
+    case 2:
+      printf("Beginner\n");
+      break;
+    case 3:
+    case 4:
+      printf("Amateur\n");
+      break;
+    case 5:
+      printf("Master\n");
   }
 }

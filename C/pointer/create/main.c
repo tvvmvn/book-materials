@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int n = 2;  
-  int* ptr = &n;   
+  int* ptr;
 
-  printf("%p\n", ptr); //0x7ffe5367e044
-  printf("%d\n", *ptr); //2
-
-  return 0;
+  printf("%p", ptr); //0x100601b90
 }

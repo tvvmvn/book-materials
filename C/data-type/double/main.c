@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  double d = 1.5;
+  double pi = 3.141592653589793;
 
-  printf("%lf\n", d);//1.500000
-  printf("%.1lf\n", d);//1.5
-  printf("%.2lf\n", d);//1.50
+  printf("%lf\n", pi);
+  printf("%.2lf\n", pi);
+  printf("%.15lf\n", pi);
+  // 3.141593
+  // 3.14
+  // 3.141592653589793
 }

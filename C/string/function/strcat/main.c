@@ -2,10 +2,10 @@
 #include <string.h>
 
 int main() {
-  char str1[20] = "hello";
-  char str2[] = " world";
+  char s1[20] = "hello";
+  char s2[] = " world";
+  
+  strcat(s1, s2);
 
-  strcat(str1, str2);
-
-  printf("%s", str1);
+  printf("%s", s1);
 }

@@ -1,14 +1,13 @@
 #include <stdio.h>
 
 struct Person {
-  char data;
+  char name[10];
   int age;
 };
 
 int main() {
+  struct Person person = {"John", 30};
 
-  struct Person person = {'A', 30};
-
-  printf("%c\n", person.data);
+  printf("%s\n", person.name);
   printf("%d\n", person.age);
 }

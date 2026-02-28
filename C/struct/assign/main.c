@@ -1,17 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 
 struct Person {
-  char data;
+  char name[10];
   int age;
 };
 
 int main() {
-
   struct Person person;
   
-  person.data = 'A';
-  person.age = 20;
+  strcpy(person.name, "John");
+  person.age = 30;
 
-  printf("%c\n", person.data);
+  printf("%s\n", person.name);
   printf("%d\n", person.age);
 }

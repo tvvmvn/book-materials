@@ -1,12 +1,9 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
+int main() {
+  float a = 1; //promotion
+  int b = (int) 1.5; //casting
 
-  float f1 = 5 / 2; // will be 2.000000
-  float f2 = (float) 5 / 2; // will be 2.500000
-
-  printf("%f\n", f1);
-  printf("%f\n", f2);
-
-  return 0;
+  printf("%f\n", a);//1.000000
+  printf("%d\n", b);//1
 }

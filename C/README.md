@@ -1,3 +1,24 @@
-## C Programming
+# C Tutorials
 
-> Presentation URL here..
+- data type
+
+- string
+
+- array
+
+- operator
+
+- loop
+
+- selection
+
+- function
+
+- struct
+
+- pointer
+
+
+# Quiz
+
+dynamic array

@@ -3,7 +3,7 @@
 int main() {
   int x;
 
-  // late assign
+  // later
   x = 2;
 
   printf("%d\n", x);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void myFunction() {
-  printf("I just got executed!");
+  printf("hello\n");
 }
 
 int main() {
@@ -11,6 +11,3 @@ int main() {
   
   return 0;
 }
-
-// Output
-// I just got executed!

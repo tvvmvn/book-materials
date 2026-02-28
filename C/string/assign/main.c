@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
-  char greeting[10];
+  char name[10];
 
-  scanf("%s", greeting);
+  strcpy(name, "john");
+
+  printf("%s", name);
 }
