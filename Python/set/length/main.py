@@ -1,6 +1,3 @@
-# To determine how many items a set has, use the len() function.
+a = {1, 2, 3}
 
-
-thisset = {"apple", "banana", "cherry"}
-
-print(len(thisset))
+print(len(a)) # 3

@@ -1,4 +1,3 @@
-s = "hello"
+n = 2
 
-print(s)
-# hello
+print(n)

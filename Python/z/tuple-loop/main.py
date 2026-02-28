@@ -1,4 +1,6 @@
-thistuple = ("apple", "banana", "cherry")
+t = (100, 200, 300)
 
-for i in thistuple:
-  print(i)
+for i in t:
+  print(i, end = ' ')
+
+# 100 200 300

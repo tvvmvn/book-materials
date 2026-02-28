@@ -1,5 +1,5 @@
-x = input("first: ")
-y = input("second: ")
+x = input("x: ")
+y = input("y: ")
 
-print(int(x) + int(y))
+print(f"x + y = {int(x) + int(y)}")
 

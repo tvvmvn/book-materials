@@ -1,4 +1,4 @@
-a = {3, 6, 9}
+a = {1, 2, 3}
 
 for i in a:
-  print(i)
+  print(i, end = ' ') # 1 2 3

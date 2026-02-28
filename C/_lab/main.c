@@ -1,11 +1,8 @@
 #include <stdio.h>
 
-typedef struct Person {
-  char name[10];
-  int age;
-} Person;
-
 int main() {
-  Person persons[] = {"John", 30, "Jane", 25, "Mary", 40};
+  char greeting[] = "hello";
 
+  printf("%p\n", greeting); //0x7ff7bfeff19a
+  printf("%s\n", greeting); //hello
 }

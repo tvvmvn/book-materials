@@ -1,2 +1,4 @@
-s = "Hello World"
-print(s.split()) #['Hello', 'World']
+s = "Hello World and Python"
+
+print(s.split()) 
+# ['Hello', 'World', 'and', 'Python']

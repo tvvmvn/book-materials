@@ -1,5 +1,0 @@
-a = [10, 20, 30]
-
-m = map(lambda n : n * 10, a)
-
-print(list(m))

@@ -3,7 +3,6 @@
 int main() {
   char* greeting = "hello";
 
-  // greeting[0] = 'H'; // error
-
-  printf("%s", greeting);
+  printf("%p\n", greeting); //0x100000f96
+  printf("%s\n", greeting); //hello
 }

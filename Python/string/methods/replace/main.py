@@ -1,2 +1,5 @@
 s = "Hello World"
-print(s.replace("World", "Python")) # Hello Python
+r = s.replace("World", "Python")
+
+print(r) 
+# Hello Python

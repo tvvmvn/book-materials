@@ -5,7 +5,6 @@ void display(char s[]) {
 }
 
 int main() {
-
   display("C");
   display("Java");
   display("Python");

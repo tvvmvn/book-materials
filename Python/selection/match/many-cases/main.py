@@ -1,8 +1,11 @@
-day = 4
+level = 3
 
-match day:
-  case 1 | 2 | 3 | 4 | 5:
-    print("Today is a weekday")
-  case 6 | 7:
-    print("I love weekends!")
-# Today is a weekday
+match level:
+  case 1 | 2:
+    print("Beginner")
+  case 3 | 4:
+    print("Amateur")
+  case 5:
+    print("Master")
+
+# Amateur

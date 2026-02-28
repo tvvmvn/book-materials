@@ -1,10 +1,8 @@
-temperature = 22
+age = 20
 
-if temperature > 30:
-  print("It's hot outside!")
-elif temperature > 20:
-  print("It's warm outside")
-elif temperature > 10:
-  print("It's cool outside")
+if age >= 18:
+  print("Adult")
 else:
-  print("It's cold outside!")
+  print("Kids")
+
+print("Adult") if age >= 18 else print("Kids")

@@ -1,14 +1,13 @@
-# Use the underscore character _ as the last case value 
-# if you want a code block to execute when there are not other matches:
+level = 2
 
+match level:
+  case 1:
+    print("Lv.1")
+  case 2:
+    print("Lv.2")
+  case 3:
+    print("Lv.3")
+  case _: # option
+    print("Unknown level")
 
-
-day = 4
-
-match day:
-  case 6:
-    print("Today is Saturday")
-  case 7:
-    print("Today is Sunday")
-  case _:
-    print("Looking forward to the Weekend")
+# Lv.2

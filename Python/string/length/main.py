@@ -1,4 +1,3 @@
-# To get the length of a string, use the len() function.
+a = "Hello World"
 
-a = "Hello, World!"
-print(len(a))
+print(len(a)) #11
