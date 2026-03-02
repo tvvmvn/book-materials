@@ -1,8 +1,7 @@
 # UML (통합 모델링 언어)
 
-UML(Unified Modeling Language)은 시스템 개발 과정에서 개발자와 고객 간에 또는 개발자 상호 간의 원활한 의사소통을 위해 고안된 표준 모델링 언어입니다. 
-
-세명의 친구들(The Three Amigos)이라고 불리는 객체 지향 모델링의 선구자들인 Rumbaugh, Booch, Jacobson이 각자의 모델링 언어들을 통합하고 발전시켜 UML이 탄생했습니다.
+UML(Unified Modeling Language)은 요구사항 분석 및 S/W 설계 도구입니다.
+세명의 친구들(The Three Amigos)이라고 불리는 객체-지향 모델링의 선구자들인 Rumbaugh, Booch, Jacobson이 각자의 모델링 언어들을 통합하고 발전시켜 UML이 탄생했습니다.
 
 다음은 UML의 3가지 구성요소입니다.
 
@@ -46,7 +45,6 @@ UML(Unified Modeling Language)은 시스템 개발 과정에서 개발자와 고
 - 일반화 (Generalization)
 - 의존 (Dependency)
 - 실체화 (Realization)
-
 
 연관 관계는 2개 이상의 사물이 서로 관련되어 있음을 의미합니다. 
 사물 사이에 실선을 연결하여 표현하고 방향이 있는 경우에는 흐르는 방향대로 실선에 화살표를 추가합니다. 다중도를 선위에 표기합니다.
@@ -109,7 +107,6 @@ UML(Unified Modeling Language)은 시스템 개발 과정에서 개발자와 고
 - 배치 다이어그램 (Deployment Diagram)
 - 패키지 다이어그램 (Package Diagram)
 - 복합체 구조 다이어그램 (Composite Structure Diagram)
-
 
 클래스 다이어그램: 클래스와 클래스가 가지는 속성, 클래스 사이의 관계를 표현합니다.
 
