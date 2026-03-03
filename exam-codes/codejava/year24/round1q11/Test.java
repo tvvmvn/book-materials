@@ -29,6 +29,7 @@ class Child extends Parent {
 public class Test {
   public static void main(String[] args) {
     Parent parent = new Child(10);
+    
     System.out.println(parent.getX());
   }  
 }

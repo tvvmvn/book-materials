@@ -6,6 +6,7 @@ public class Main {
 
     try {
       System.out.print(a/b);
+      
     } catch (ArithmeticException e) {
       System.out.print("출력1");
     } catch (ArrayIndexOutOfBoundsException e) {
@@ -19,4 +20,5 @@ public class Main {
     }
   }
 }
+
 //출력1출력5

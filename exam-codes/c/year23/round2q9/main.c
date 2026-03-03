@@ -22,11 +22,13 @@ void into(int num) {
 int take() {
   if (isEmpty() == 1) printf("Empty");
   else return isWhat[point--];
+  
   return 0;
 }
 
 int main() {
   into(5); into(2);
+
   while (!isEmpty()) {
     printf("%d", take());
     into(4); into(1); printf("%d", take());

@@ -12,9 +12,12 @@ void inverse(char *str, int len) {
 int main() {
   char str[100] = "ABCDEFGH";
   int len = strlen(str);
+
   inverse(str, len);
+
   for (int i = 1; i < len; i += 2)
     printf("%c", str[i]);
+    
   return 0;
 }
 // GECA

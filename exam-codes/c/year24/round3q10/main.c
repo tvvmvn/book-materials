@@ -18,9 +18,12 @@ int main() {
   struct Node n1 = {1, NULL};
   struct Node n2 = {2, NULL};
   struct Node n3 = {3, NULL};
+
   n1.next = &n3;
   n3.next = &n2;
+
   func(&n1);
+
   struct Node* current = &n1;
   while (current != NULL) {
     printf("%d", current->value);

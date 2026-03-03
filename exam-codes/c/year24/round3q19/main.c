@@ -11,9 +11,12 @@ int main() {
   int* p = arr;
   int** pp = &p;
   int num = 6;
+
   func(pp, 5);
   num = arr[2];
+
   printf("%d", num);
+  
   return 0;
 }
 // 1

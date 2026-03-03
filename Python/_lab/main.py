@@ -1,8 +1,5 @@
-person = {
-  'name': 'John Doe',
-  'age': 30,
-  'gender': 'male'
-}
 
-for (k, v) in person.items():
-  print(f'{k}: {v}')
+def f(l):
+  print(l)
+
+f(for i in range(5))

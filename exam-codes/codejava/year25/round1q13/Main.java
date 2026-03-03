@@ -1,8 +1,8 @@
 package codejava.year25.round1q13;
 
 class Parent {
-  static int total = 0;
   int v = 1;
+  static int total = 0;
 
   public Parent() {
     total += (++v);
@@ -32,6 +32,7 @@ class Child extends Parent {
 public class Main {
   public static void main(String[] args) {
     new Child();
+
     System.out.println(Parent.total);
   }
 }

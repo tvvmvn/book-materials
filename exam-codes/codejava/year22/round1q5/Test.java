@@ -2,6 +2,7 @@ package codejava.year22.round1q5;
 
 class Car implements Runnable {
   int a;
+  
   public void run() {
     try {
       while(++a < 100) {
@@ -15,6 +16,7 @@ class Car implements Runnable {
 public class Test {
   public static void main(String[] args) {
     Thread t = new Thread(new Car());
+    
     t.start();
   }
 }

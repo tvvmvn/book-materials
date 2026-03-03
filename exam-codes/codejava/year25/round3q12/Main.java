@@ -28,6 +28,7 @@ class Square extends Rectangle {
 public class Main {
   public static void main(String[] args) {
     Square sq = new Square(10);
+    
     sq.getArea();
   }  
 }

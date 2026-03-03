@@ -5,8 +5,10 @@ class Node:
 
 def tree(li):
   n = [Node(i) for i in li]
+
   for i in range(1, len(li)):
     n[(i - 1) // 2].c.append(n[i])
+    
   return n[0]
 
 def calc(n, level = 0):

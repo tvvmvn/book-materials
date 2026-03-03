@@ -4,6 +4,7 @@
 int main() {
   char *p = "It is 8";
   char result[100];
+
   int i;
   for (i = 0; p[i] != '\0'; i++) {
     if (isupper(p[i]))
@@ -15,8 +16,10 @@ int main() {
     else if (!(isupper(p[i]) || islower(p[i]) || isdigit(p[i])))
       result[i] = p[i];
   }
+  
   result[i] = '\0';
   printf("변환된 문자열 : %s\n", result);
+
   return 0;
 }
 // 변환된 문자열 : Nd sc 1

@@ -3,6 +3,7 @@ package codejava.year22.round2q7;
 public class Test {
   public static void main(String[] args) {
     int i = 3, k = 1;
+
     switch(i) {
       case 1: k++;
       case 2: k -= 3;
@@ -11,6 +12,7 @@ public class Test {
       case 5: k -= 10;
       default: k--;
     }
+    
     System.out.print(k);
   }
 }

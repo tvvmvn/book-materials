@@ -1,7 +1,10 @@
 package codejava.year25.round3q17;
 
 enum Tri {
-  A("A"), B("AB"), C("ABC");
+  A("A"), 
+  B("AB"), 
+  C("ABC");
+  
   private String code;
   
   Tri(String code) {

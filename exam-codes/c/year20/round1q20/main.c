@@ -10,9 +10,12 @@ void align(int a[]) {
         a[j + 1] = temp;
       }
 }
+
 int main() {
   int a[] = { 85, 75, 50, 100, 95};
+  
   align(a);
+
   for (int i = 0; i < 5; i++)
     printf("%d ", a[i]);
 }

@@ -4,6 +4,7 @@ public class Test {
 
   public static void main(String[] args) {
     int sum = 0;
+
     try {
       func();
     } catch (NullPointerException e) {
@@ -13,6 +14,7 @@ public class Test {
     } finally {
       sum = sum + 100;
     }
+    
     System.out.print(sum);
   }
 

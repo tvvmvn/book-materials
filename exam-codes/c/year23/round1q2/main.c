@@ -1,8 +1,10 @@
 #include <stdio.h>
+
 int main() {
   char a[] = "Art";
   char* p = NULL;
   p = a;
+
   printf("%s\n", a);
   printf("%c\n", *p);
   printf("%c\n", *a);
