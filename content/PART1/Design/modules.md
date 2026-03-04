@@ -1,6 +1,8 @@
 # 모듈 (Module)
 
-모듈은 시스템을 구성하는 기능 단위로 함수, 객체, 하나의 파일 등이 모듈이 될 수 있습니다.
+모듈은 시스템을 구성하는 기능 단위(보통 함수)를 의미합니다. 
+
+모듈의 응집도(Cohesion)와 결합도(Coupling)는 1970년대 에드워드 요던(Edward Yourdon)과 래리 콘스탄틴(Larry Constantine)이 제안한 개념으로 모듈화를 평가하는 척도입니다.
 
 
 # 결합도 (Coupling)
@@ -9,12 +11,13 @@
 
 다음은 결합도의 6가지 종류를 좋은 것부터 나열한 것입니다.
 
-1. 자료 결합도 (Data Coupling)
+<!-- 1. 자료 결합도 (Data Coupling)
 2. 스탬프 결합도 (Stamp Coupling)
 3. 제어 결합도 (Control Coupling)
 4. 외부 결합도 (External Coupling)
 5. 공통 결합도 (Common Coupling)
-6. 내용 결합도 (Content Coupling)
+6. 내용 결합도 (Content Coupling) -->
+<그림 - 결합도>
 
 자료 결합도는 모듈 간의 인터페이스가 자료 요소로만 구성될 때 형성되는 결합도입니다. 예를 들어 모듈 간에 간단한 값(숫자나 문자열 등)을 주고받는 경우가 있습니다. 가장 바람직한 결합도입니다.
 
@@ -35,13 +38,14 @@
 
 다음은 응집도의 7가지 종류를 좋은 것부터 나열한 것입니다.
 
-1. 기능적 응집도 (Functional Cohesion)
+<!-- 1. 기능적 응집도 (Functional Cohesion)
 2. 순차적 응집도 (Sequential Cohesion)
 3. 교환적/통신적 응집도 (Communication Cohesion)
 4. 절차적 응집도 (Procedural Cohesion)
 5. 시간적 응집도 (Temporal Cohesion)
 6. 논리적 응집도 (Logical Cohesion)
-7. 우연적 응집도 (Coincidental Cohesion)
+7. 우연적 응집도 (Coincidental Cohesion) -->
+<그림 - 응집도>
 
 기능적 응집도는 모듈의 구성 요소들이 하나의 같은 기능을 구현하기 위해 모인 경우에 형성되는 응집도입니다. 가장 바람직한 응집도입니다.
 

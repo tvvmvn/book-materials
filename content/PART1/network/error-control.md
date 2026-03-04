@@ -14,7 +14,6 @@
 - 체크섬 (Checksum)
 - CRC (Cyclic Redundancy Check)
 
-
 패리티 비트는 추가적인 비트와 1의 개수에 근거해서 오류를 검출하는 기법입니다. 구현하기 간편하지만 2개 비트가 동시에 변하면 에러를 검출 할 수 없습니다.
 
 체크섬은 데이터 전체를 다 더한 값을 헤더에 실어 보내는 기법입니다. 주로 TCP/UDP에서 사용합니다.
@@ -28,7 +27,6 @@ CRC는 수학적인 나눗셈(다항식)을 이용하는 기법입니다. 매우
 
 - 후진 오류 수정 (BEC: Backward Error Correction)
 - 전진 오류 수정 (FEC: Forward Error Correction)
-
 
 BEC는 오류가 발생한 경우 재전송을 요청합니다. ARQ(Automatic Repeat reQuest) 기술로 오류를 제어합니다. 
 

@@ -1,14 +1,15 @@
-# OSI 모형
+# OSI(Open System Interconnection) 모형 
 
-OSI 모형(Open System Interconnection Model)은 시스템 간의 원활한 통신을 위해 ISO(국제 표준화 기구)에서 제안한 통신 프로토콜 체계입니다.
+OSI 모형은 ISO(국제 표준화 기구)에서 제안한 프로토콜 체계입니다.
 
-- 계층 7. 응용 계층 (Application Layer)
+<!-- - 계층 7. 응용 계층 (Application Layer)
 - 계층 6. 표현 계층 (Presentation Layer)
 - 계층 5. 세션 계층 (Session Layer)
 - 계층 4. 전송 계층 (Transport Layer)
 - 계층 3. 네트워크 계층 (Network Layer)
 - 계층 2. 데이터 링크 계층 (Data Link Layer)
-- 계층 1. 물리 계층 (Physical Layer)
+- 계층 1. 물리 계층 (Physical Layer) -->
+<그림 - OSI 모델>
 
 1-3 계층을 하위 계층, 4-7 계층을 상위 계층으로 구분하기도 합니다.
 
@@ -23,9 +24,7 @@ OSI 모형(Open System Interconnection Model)은 시스템 간의 원활한 통�
 표현 계층은 다음의 3가지 작업을 수행하는 계층입니다.
 
 - 데이터 변환: 다른 데이터 형식을 사용하는 시스템들이 통신할 수 있도록 데이터 형식을 맞춥니다. 
-
 - 압축: 데이터를 빠른 속도로 전송하기 위해 위해 원본 파일을 압축해서 크기를 줄입니다.
-
 - 데이터 암호화: 전송 도중 데이터가 탈취될 수 있는 경우 등에 대비해서 데이터를 암호화합니다.
 
 

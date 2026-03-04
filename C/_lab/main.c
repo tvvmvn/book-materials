@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  char greeting[] = "hello";
+  int n = 2;
+  int* ptr = &n;
+  int** pptr = &ptr;
 
-  printf("%p\n", greeting); //0x7ff7bfeff19a
-  printf("%s\n", greeting); //hello
+  printf("%p\n", ptr);
+  printf("%p\n", pptr);
 }

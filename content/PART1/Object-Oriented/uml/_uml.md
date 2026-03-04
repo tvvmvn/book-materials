@@ -1,6 +1,6 @@
 # UML (통합 모델링 언어)
 
-UML(Unified Modeling Language)은 요구사항 분석 및 S/W 설계 도구입니다.
+UML(Unified Modeling Language)은 객체-지향 기반의 설계 도구입니다.
 세명의 친구들(The Three Amigos)이라고 불리는 객체-지향 모델링의 선구자들인 Rumbaugh, Booch, Jacobson이 각자의 모델링 언어들을 통합하고 발전시켜 UML이 탄생했습니다.
 
 다음은 UML의 3가지 구성요소입니다.
@@ -120,7 +120,6 @@ UML(Unified Modeling Language)은 요구사항 분석 및 S/W 설계 도구입�
 
 
 # 행위 다이어그램
-
 
 - 유스케이스 다이어그램 (Usecase Diagram)
 - 순차 다이어그램 (Sequence Diagram)
