@@ -6,16 +6,12 @@ typedef struct {
   int age;
 } Person;
 
-void printPerson(Person* p) { // p is address
-  printf("name: %s, age: %d\n", p->name, p->age);
-}
-
 int main() {
   Person* p;
 
   strcpy(p->name, "John");
   p->age = 30;
 
-  printPerson(p);
+  printf("name: %s, age: %d\n", p->name, p->age);
 }
 //name: John, age: 30

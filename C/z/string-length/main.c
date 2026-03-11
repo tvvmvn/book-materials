@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  char s[] = "hello world";
+  char s[] = "hello";
   
   int i = 0;
   while (s[i] != '\0') {
@@ -9,4 +9,4 @@ int main() {
   }
   printf("%d\n", i);
 }
-//11
+//5

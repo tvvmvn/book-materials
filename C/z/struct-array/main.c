@@ -8,6 +8,7 @@ typedef struct Person {
 int main() {
   Person persons[] = {"John", 30, "Jane", 25, "Mary", 40};
 
-  printf("name: %s\n", persons[0].name);//John
-  printf("age: %d\n", persons[0].age);//30
+  for (int i = 0; i < 3; i++) {
+    printf("%s (%d)\n", persons[i].name, persons[i].age);
+  }
 }

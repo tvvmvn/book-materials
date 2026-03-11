@@ -145,6 +145,7 @@ UML(Unified Modeling Language)은 객체-지향 기반의 설계 도구입니다
 
 사물과 함께 쓰이는 스테레오 타입들:
 
+- <<Actor>>: 부액터
 - <<interface>>: 인터페이스 정의
 - <<exception>>: 예외 정의
 - <<constructor>>: 생성자 정의
