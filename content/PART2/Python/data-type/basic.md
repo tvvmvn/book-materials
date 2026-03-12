@@ -1,12 +1,11 @@
 # 자료형
 
-파이썬에서 모든 자료형은 객체입니다.
+파이썬에서 모든 자료형은 객체(참조형)입니다.
 
 - 숫자
 - Boolean
 - Sequence
-- Set
-- Dictionary
+- Set & Dictionary(Map)
 - NoneType
 
 
@@ -83,4 +82,21 @@ x = None
 
 print(x) # None
 print(type(x)) # <class 'NoneType'>
+```
+
+
+# 동적 타이핑
+
+파이썬이 C, Java와 다른점은 
+파이썬은 동적 타이핑 (Dynamic typing) 언어입니다.
+즉 값을 할당하면 그에 맞는 타입이 정해집니다.
+
+```py
+# string
+s = "hello"
+# integer
+n = 2
+
+print(s)
+print(n)
 ```
