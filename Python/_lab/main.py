@@ -1,5 +1,4 @@
-n = 1
+class Person:
+  pass
 
-n = 2
-
-print(n)
+print(Person)
