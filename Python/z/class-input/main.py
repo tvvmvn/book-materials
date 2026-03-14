@@ -1,11 +1,11 @@
 class Person:
-  pass
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
 name = input('your name: ')
 age = input('your age: ')
 
-p = Person()
-p.name = name
-p.age = age
+p = Person(name, age)
 
 print(f"name: {name}, age: {age}")

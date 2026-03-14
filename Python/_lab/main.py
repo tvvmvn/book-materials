@@ -1,4 +1,3 @@
-class Person:
-  pass
+s = 'hello'
 
-print(Person)
+print(id(s))

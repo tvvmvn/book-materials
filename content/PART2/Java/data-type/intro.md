@@ -2,10 +2,18 @@
 
 다음은 자바의 자료형입니다. 이 자료형들은 참조 변수(객체)에 대비해서 원시 자료형(Primative Type)이라고도 불립니다.
 
-- 정수형 (Integer)
-- 실수형 (Floating point number)
-- 문자형 (Character)
-- 불리언 (Boolean)
+원시값(Primitive type)
+  정수형 (Integer)
+  실수형 (Floating point number)
+    float
+    double
+  문자형 (Character)
+  불리언 (Boolean)
+
+비원시값(Non-Primitive type)
+  문자열 (String)
+  배열 (Array)
+  기타 객체 (etc)
 
 
 # 정수형 (Integer)

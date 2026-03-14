@@ -1,6 +1,6 @@
 nums = [10, 20, 30, 40]
 
-for i in nums:
-  print(i, end = ' ') 
+for num in nums:
+  print(num, end = ' ') 
   
 # 10 20 30 40
