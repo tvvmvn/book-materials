@@ -10,7 +10,9 @@ interface Phone {
 
 interface SmartPhone extends Phone, Camera {
   // takePhoto()
+  
   // call()
+  
   void playApp();
 }
 

@@ -4,6 +4,7 @@ int main() {
   int n;
   char c;
   float f;
+  
   // all types
   void* ptr;
   

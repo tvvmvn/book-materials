@@ -3,6 +3,9 @@ package oop01basic.instances;
 class Person {
   String name;
   int age;
+
+  // to create an instance
+  Person() {}
 }
 
 public class Main {

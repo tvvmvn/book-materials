@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int myNumbers[4] = {10, 20, 30, 40};
+  int myNumbers[] = {10, 20, 30, 40};
 
   printf("%p\n", myNumbers);
   printf("%p\n", myNumbers + 1);

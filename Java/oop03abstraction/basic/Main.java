@@ -1,15 +1,12 @@
 package oop03abstraction.basic;
 
-// interface
-interface Shape {
-  void draw();
+// 1층: 가장 기본적인 기능
+interface 마우스 {
+  void click();
 }
 
-// implementation of Shape
-class Circle implements Shape {
-  public void draw() {
-    System.out.println("draw a circle");
-  }
+interface 휠마우스 extends 마우스 {
+  void scroll();
 }
 
 public class Main {

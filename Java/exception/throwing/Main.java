@@ -1,28 +1,18 @@
 package exception.throwing;
 
 public class Main {
-  static void f1() {
-    f2();
-  }
-  
-  static void f2() {
-    try {
-      f3();
-    } catch (Exception ex) {
-      System.out.println("f2 ex: " + ex.getMessage());
-    }
-  }
-  
-  static void f3() throws Exception {
-    throw new Exception("Oops!");
-  }
-
   public static void main(String[] args) {
+    int age = 14;
+
     try {
-      f1();
+      if (age < 18) {
+        throw new RuntimeException("You must be at least 18 years old.");
+      }
+  
+      System.out.println("You are old enough!");
+
     } catch (Exception e) {
-      // ex: Oops!
-      System.out.println("main ex: " + e.getMessage());
+      System.out.println("Exception: " + e.getMessage());
     }
   }
 }

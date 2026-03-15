@@ -1,13 +1,17 @@
 package more.annotation;
 
-public class Main {
+interface Person {
+  void greeting();
+}
 
-  @Deprecated
-  static void f() {
-    System.out.println("Don't call me");
+class Korean implements Person {
+  @Override
+  public void greeting() {
+    System.out.println("안녕하세요");
   }
+}
 
+public class Main {
   public static void main(String[] args) {
-    f();
   }
 }

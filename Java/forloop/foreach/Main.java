@@ -2,10 +2,10 @@ package forloop.foreach;
 
 public class Main {
   public static void main(String[] args) {
-    String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+    int[] nums = {10, 20, 30};
 
-    for (String car : cars) {
-      System.out.println(car);
+    for (int num : nums) {
+      System.out.println(num);
     }
   }
 }

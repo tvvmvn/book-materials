@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main() {
-  int* ptr;
+  int* ptr = NULL;
 
-  printf("%p", ptr); //0x100601b90
+  printf("%p\n", ptr); // 0x0
+
+  return 0;
 }

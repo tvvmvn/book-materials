@@ -20,6 +20,8 @@ int main() {
     printf("%p\n", ptr + i);
   }
 
+  printf("total memory size: %lu", sizeof(int) * size);
+
   free(ptr);
   ptr = NULL;
 

@@ -1,8 +1,7 @@
 package oop01basic.encapsulation;
 
-// Immutable Object
 class MapService {
-  // your crds
+  // not accessible from outside
   private final int x;
   private final int y;
 
@@ -12,8 +11,7 @@ class MapService {
   }
 
   public void recommendPlaces() {
-    // logic based on x, y
-    System.out.println("place list here..");
+    System.out.printf("Places based on [%d, %d]", x, y);
   }
 }
 

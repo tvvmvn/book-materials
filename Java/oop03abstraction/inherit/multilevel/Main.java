@@ -1,17 +1,18 @@
 package oop03abstraction.inherit.multilevel;
 
-interface Vehicle {
-  void takePerson();
+// 1층: 가장 기본적인 기능
+interface 마우스 {
+  void click();
 }
 
-interface Train extends Vehicle  {
-  // takePerson()
-  void run();
+// 2층: 1층을 상속받아 기능을 확장 (다층 상속의 시작)
+interface 휠마우스 extends 마우스 {
+  void scroll();
 }
 
-interface Airplane extends Vehicle  {
-  // takePerson()
-  void fly();
+// 3층: 2층을 다시 상속받아 더 고차원적인 기능 추가
+interface 게이밍마우스 extends 휠마우스 {
+  void adjustDPI();
 }
 
 public class Main {

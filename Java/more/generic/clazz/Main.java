@@ -1,27 +1,26 @@
 package more.generic.clazz;
 
 class Box<T> {
-  T value; // T is a placeholder for any data type
+  // T is a placeholder for any data type
+  T value; 
 
-  void set(T value) {
+  Box(T value) {
     this.value = value;
   }
 
-  T get() {
-    return value;
+  void show() {
+    System.out.println(value);
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    // Create a Box to hold a String
-    Box<String> stringBox = new Box<>();
-    stringBox.set("Hello");
-    System.out.println("Value: " + stringBox.get());
+    // String box
+    Box<String> stringBox = new Box<>("Hello");
+    stringBox.show();
 
-    // Create a Box to hold an Integer
-    Box<Integer> intBox = new Box<>();
-    intBox.set(50);
-    System.out.println("Value: " + intBox.get());
+    // Number Box
+    Box<Integer> intBox = new Box<>(100);
+    intBox.show();
   }
 }
