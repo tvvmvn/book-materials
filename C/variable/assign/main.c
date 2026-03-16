@@ -1,12 +1,9 @@
 #include <stdio.h>
 
 int main() {
-  int x;
+  int a = 2;
 
-  // later
-  x = 2;
-
-  printf("%d\n", x);
+  printf("a: %d\n", a);
 
   return 0;
 }

@@ -11,8 +11,7 @@ int main() {
     return 1;
   }
 
-  printf("%p\n", ptr); // 0x7fc2d9804130
-  printf("%lu\n", sizeof(ptr)); // 8
+  printf("address: %p\n", ptr); // 0x7fc2d9804130
 
   free(ptr);
   ptr = NULL;
