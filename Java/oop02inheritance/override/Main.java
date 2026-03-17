@@ -1,22 +1,22 @@
 package oop02inheritance.override;
 
-class Shape {
-  void draw() {
-    System.out.println("draw a shape");
+class Base {
+  void doSomething() {
+    System.out.println("in a parent way");
   }
 }
 
-class Rectangle extends Shape {
+class Derived extends Base {
   @Override
-  void draw() {
-    System.out.println("draw a rectangle");
+  void doSomething() {
+    System.out.println("in a child way");
   }
 }
 
 class Main {
   public static void main(String[] args) {
-    Shape shape = new Rectangle();
+    Derived d = new Derived();
 
-    shape.draw(); 
+    d.doSomething(); 
   }
 }

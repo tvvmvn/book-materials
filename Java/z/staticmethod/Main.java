@@ -1,17 +1,21 @@
 package z.staticmethod;
 
-class Calculator {
-  int a = 10;
-  static int b = 20;
+class Korean {
+  String name;
+  static String language = "한국어";
 
-  static void printB() {
-    System.out.println(b);
-    // System.out.println(a); // error
+  Korean(String name) {
+    this.name = name;
+  }
+
+  static void about() {
+    System.out.println("언어: " + language); //ok
+    // System.out.println(name); // error
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    Calculator.printB();
+    Korean.about();
   }
 }

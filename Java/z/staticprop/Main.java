@@ -1,10 +1,10 @@
 package z.staticprop;
 
-class American {
+class Korean {
   String name;
   static int population = 0;
 
-  American(String name) {
+  Korean(String name) {
     this.name = name;
     population++;
   }
@@ -12,10 +12,10 @@ class American {
 
 public class Main {
   public static void main(String[] args) {
-    American john = new American("John");
-    American jane = new American("Jane");
-    American mary = new American("Mary");
+    Korean kim = new Korean("Kim");
+    Korean lee = new Korean("Lee");
+    Korean park = new Korean("Park");
 
-    System.out.println(American.population); //3
+    System.out.println(Korean.population); //3
   }
 }

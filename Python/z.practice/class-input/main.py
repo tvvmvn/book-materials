@@ -6,6 +6,8 @@ class Person:
 name = input('your name: ')
 age = input('your age: ')
 
-p = Person(name, age)
+person = Person(name, age)
 
-print(f"name: {name}, age: {age}")
+# person
+print(person.name)
+print(person.age)

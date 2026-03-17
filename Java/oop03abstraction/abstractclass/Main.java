@@ -14,18 +14,10 @@ class Korean extends Person {
   }
 }
 
-class Japanese extends Person {
-  void greeting() { 
-    System.out.println("곤니치와");
-  }
-}
-
 public class Main {
   public static void main(String[] args) {
     Korean korean = new Korean();
-    Japanese janpanese = new Japanese();
 
     korean.greeting();
-    janpanese.greeting();
   }
 }
