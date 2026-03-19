@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  for (int i = 0; i < 5; i++) {
-    if (i == 2) {
+  for (int i = 1; i <= 5; i++) {
+    if (i == 3) {
       continue;
     }
     printf("%d", i);
   }
-  //0134
+  //1245
 }

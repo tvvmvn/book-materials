@@ -1,12 +1,8 @@
 #include <stdio.h>
 
 int main() {
-  int a;
-
-  a = 2;
-
-  a = 3;
-
+  int a = 2;
+  
   printf("%d", a); //2
 
   return 0;

@@ -13,7 +13,7 @@ int main() {
     case 3:
       printf("Lv.3\n");
       break;
-    default:
+    default: //option
       printf("Unknown level\n");
   }
 }

@@ -1,6 +1,6 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/jintaemin/workspace/book-materials/C/loop/for/continue/main'
+binary-path:     '/Users/jintaemin/workspace/book-materials/C/for/continue/main'
 relocations:
   - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x57 }
   - { offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x57 }
