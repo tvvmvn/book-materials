@@ -1,3 +1,3 @@
-nums = [10, 20, 30, 40]
+nums = [10, 20, 30]
 
-print(len(nums)) #4
+print(len(nums)) #3

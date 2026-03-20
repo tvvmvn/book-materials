@@ -1,5 +1,10 @@
-x = 2
+a = 1 > 0
+b = 1 < 0
 
-print(x > 1 and x < 3)
-print(x > 1 or x < 3)
-print(not(x > 1))
+print(a and b)
+print(a or b)
+print(not b)
+
+# False
+# True
+# True
