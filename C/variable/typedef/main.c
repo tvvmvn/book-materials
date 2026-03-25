@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// alias
+typedef double weight;
+
 int main() {
-  // alias
-  typedef double weight;
 
-  weight val = 52.5;
+  weight a = 52.5;
+  weight b = 65;
 
-  printf("%lf\n", val);
+  printf("%f\n", a);
+  printf("%f\n", b);
 
   return 0;
 }

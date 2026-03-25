@@ -1,18 +1,20 @@
 package z.generics;
 
 class Person<IdType, AddressType> {
+  IdType id;
+  AddressType address;
+
   Person(IdType id) {
     this.id = id;
   }
-  IdType id;
-  AddressType address;
 }
 
 class Address<T> {
+  T zipCode;
+  
   Address(T zipCode) {
     this.zipCode = zipCode;
   }
-  T zipCode;
 }
 
 public class Main {

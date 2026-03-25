@@ -1,42 +1,81 @@
 #include <stdio.h>
-#define CAPACITY 5
+#include <stdbool.h>
 
-char queue[CAPACITY];
-int front = 0;
-int rear = -1;
-int size = 0;
+#define CAPACITY 10
 
-void enq(char c) {
-  rear = (rear + 1) % CAPACITY;
+struct Queue {
+  int queue[CAPACITY];
+  int front;
+  int size;
+};
 
-  queue[rear] = c;
+void enqueue(struct Queue *q, int element);
+int dequeue(struct Queue *q);
+int peek(struct Queue *q);
+bool isEmpty(struct Queue *q);
+int size(struct Queue *q);
+void printQueue(struct Queue *q);
+
+int main() {
+  struct Queue myQueue = { .front = 0, .size = 0 };
+
+  enqueue(&myQueue, 'A');
+  enqueue(&myQueue, 'B');
+  enqueue(&myQueue, 'C');
   
-  size++;
+  printQueue(&myQueue);
+
+  printf("Dequeue: %c\n", dequeue(&myQueue));
+  printf("Peek: %c\n", peek(&myQueue));
+  printf("isEmpty: %d\n", isEmpty(&myQueue));
+  printf("Size: %d\n", size(&myQueue));
+
+  return 0;
 }
 
-void deq() {
-  front = (front + 1) % CAPACITY;
-
-  size--;
+void enqueue(struct Queue *q, int element) {
+  if (q->size == CAPACITY) {
+    printf("Queue is full\n");
+    return;
+  }
+  q->queue[(q->front + q->size) % CAPACITY] = element;
+  q->size++;
 }
 
-void printQueue() {
+int dequeue(struct Queue *q) {
+  if (isEmpty(q)) {
+    printf("Queue is empty\n");
+    return -1;
+  }
+  int item = q->queue[q->front];
+  q->front = (q->front + 1) % CAPACITY;
+  q->size--;
+  return item;
+}
+
+int peek(struct Queue *q) {
+  if (isEmpty(q)) {
+    printf("Queue is empty\n");
+    return -1;
+  }
+  return q->queue[q->front];
+}
+
+bool isEmpty(struct Queue *q) {
+  return q->size == 0;
+}
+
+int size(struct Queue *q) {
+  return q->size;
+}
+
+void printQueue(struct Queue *q) {
   printf("Queue: ");
-  for (int i = 0; i < size; i++) {
-    printf("%c ", queue[(front + i) % CAPACITY]);
+  for (int i = 0; i < q->size; ++i) {
+    printf("%c ", q->queue[(q->front + i) % CAPACITY]);
   }
   printf("\n");
 }
 
-int main() {
-  enq('A');
-  enq('B');
-  enq('C');
-  enq('D');
-  deq();
-  enq('E');
-  deq();
-  enq('F');
 
-  printQueue();
-}
+//C

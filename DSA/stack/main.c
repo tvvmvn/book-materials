@@ -1,54 +1,77 @@
 #include <stdio.h>
-#define CAPACITY 10
+#include <stdlib.h>
 
-char stack[CAPACITY];
-int top = -1;
+typedef struct {
+  int *stack;
+  int top;
+  int capacity;
+} Stack;
 
-void push(char element) {
-  if (top == CAPACITY - 1) {
-    printf("Overflow\n");
-    return;
-  }
-  stack[++top] = element;
+Stack* createStack(int capacity) {
+  Stack *newStack = (Stack*)malloc(sizeof(Stack));
+  newStack->stack = (int*)malloc(capacity * sizeof(int));
+  newStack->top = -1;
+  newStack->capacity = capacity;
+  return newStack;
 }
 
-void pop() {
-  if (top < 0) {
-    printf("Underflow\n");
+void push(Stack *s, int element) {
+  if (s->top == s->capacity - 1) {
+    printf("Stack is full\n");
     return;
   }
-  top--;
+  s->stack[++s->top] = element;
 }
 
-void peek() {
-  if (top < 0) {
+int pop(Stack *s) {
+  if (s->top == -1) {
     printf("Stack is empty\n");
-    return;
+    return -1;
   }
-  printf("Peek: %c\n", stack[top]);
+  return s->stack[s->top--];
 }
 
-void size() {
-  printf("Size: %d", top + 1);
+int peek(Stack *s) {
+  if (s->top == -1) {
+    printf("Stack is empty\n");
+    return -1;
+  }
+  return s->stack[s->top];
 }
 
-void printStack() {
+int isEmpty(Stack *s) {
+  return s->top == -1;
+}
+
+int size(Stack *s) {
+  return s->top + 1;
+}
+
+void printStack(Stack *s) {
   printf("Stack: ");
-  for (int i = 0; i <= top; i++) {
-    printf("%c ", stack[i]);
+  for (int i = 0; i <= s->top; ++i) {
+    printf("%c ", s->stack[i]);
   }
   printf("\n");
 }
 
 int main() {
-  push('A');
-  push('B');
-  push('C');
-  push('D');
-  pop();
-  push('E');
+  Stack *myStack = createStack(100);
 
-  printStack();
-  peek();
-  size();
+  push(myStack, 'A');
+  push(myStack, 'B');
+  push(myStack, 'C');
+
+  // Print initial stack
+  printStack(myStack);
+
+  printf("Pop: %c\n", pop(myStack));
+  printf("Peek: %c\n", peek(myStack));
+  printf("isEmpty: %d\n", isEmpty(myStack));
+  printf("Size: %d\n", size(myStack));
+
+  return 0;
 }
+
+
+//C

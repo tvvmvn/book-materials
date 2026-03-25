@@ -1,35 +1,22 @@
 package lab;
 
-class Rectangle {
-  int x, y;
-
-  Rectangle(int x, int y) {
-    this.x = x;
-    this.y = y;
-  }
-
-  int getArea() {
-    return x * y;
-  }
-}
-
-class Square extends Rectangle {
-  int s;
-
-  Square(int s) {
-    super(s, s);
-  }
-  
-  int getSquareArea() {
-    return s * s;
-  }
-}
-
 public class Main {
   public static void main(String[] args) {
-    Square sq = new Square(10);
+    int a = 5; // 0101
+    int b = 2; // 0010
 
-    System.out.println(sq.x);
-    System.out.println(sq.y);
+    System.out.println(a & b);
+    System.out.println(a | b);
+    System.out.println(a ^ b);
+    System.out.println(~a);
+    System.out.println(a << 1);
+    System.out.println(a >> 1);
   }  
 }
+
+// 0
+// 7
+// 7
+// -6
+// 10
+// 2

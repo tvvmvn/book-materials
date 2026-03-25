@@ -5,8 +5,8 @@ phone = [
 ]
 
 for row in phone:
-  for col in row:
-    print(col, end = ' ')
+  for val in row:
+    print(val, end = ' ')
   print()
 
 # 1 2 3 

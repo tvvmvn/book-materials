@@ -3,7 +3,7 @@ package more.wrapperclass;
 public class Main {
   public static void main(String[] args) {
     // Wrapper instance. random number
-    Integer randomNum = 1234567890;
+    Integer randomNum = 839247254;
 
     String numString = randomNum.toString();
 

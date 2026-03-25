@@ -1,5 +1,8 @@
-a = input("a: ")
-b = input("b: ")
+print('enter two numbers to add with space')
 
-print(f"a + b = {int(a) + int(b)}")
+d = input()
+
+a, b = d.split()
+
+print(f"{a} + {b} = {int(a) + int(b)}")
 

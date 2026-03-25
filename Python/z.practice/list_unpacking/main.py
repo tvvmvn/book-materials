@@ -2,6 +2,4 @@ fruits = ['apple', 'banana', 'mango']
 
 a, b, c = fruits
 
-print(a)
-print(b)
-print(c)
+print(f'monkey loves {b}')

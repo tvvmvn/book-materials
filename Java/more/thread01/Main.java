@@ -1,6 +1,6 @@
 package more.thread01;
 
-class Derived implements Runnable {
+class Derived extends Thread {
   public void run() {
     System.out.println("This code is running in a thread");
   }
@@ -9,7 +9,7 @@ class Derived implements Runnable {
 public class Main {
   public static void main(String[] args) {
     
-    Thread thread = new Thread(new Derived());
+    Derived thread = new Derived();
 
     thread.start();
 

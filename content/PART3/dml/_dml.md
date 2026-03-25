@@ -1,7 +1,0 @@
-# DML
-
-- INSERT
-- SELECT
-- UPDATE
-- DELETE
-
