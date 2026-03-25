@@ -1,6 +1,6 @@
 # WHERE 
 
-연산자를 활용해 조건을 지정할 때 사용됩니다.
+조건을 지정하는 명령입니다. 다음의 연산자를 활용합니다.
 
 - 산술 연산자 (Arithmetic Operator)
 - 비트 연산자 (Bit Operator)
