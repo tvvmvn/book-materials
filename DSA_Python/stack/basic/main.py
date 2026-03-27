@@ -38,3 +38,8 @@ print("isEmpty: ", myStack.isEmpty())
 print("Size: ", myStack.size())
 
 #Python
+# Stack:  ['A', 'B', 'C']
+# Pop:  C
+# Peek:  B
+# isEmpty:  False
+# Size:  2

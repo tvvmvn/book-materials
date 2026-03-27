@@ -38,3 +38,8 @@ print("isEmpty: ", myQueue.isEmpty())
 print("Size: ", myQueue.size())
 
 #Python
+# Queue:  ['A', 'B', 'C']
+# Dequeue:  A
+# Peek:  B
+# isEmpty:  False
+# Size:  2

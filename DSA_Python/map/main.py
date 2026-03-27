@@ -65,3 +65,18 @@ hash_map.put("123-4570","James")
 print("Name associated with '123-4570':", hash_map.get("123-4570"))
 
 #Python
+# Hash Map Contents:
+# Bucket 0: [('123-4569', 'Jens')]
+# Bucket 1: []
+# Bucket 2: [('123-4570', 'Peter')]
+# Bucket 3: [('123-4571', 'Lisa')]
+# Bucket 4: []
+# Bucket 5: [('123-4672', 'Adele'), ('123-4573', 'Michaela')]
+# Bucket 6: []
+# Bucket 7: []
+# Bucket 8: [('123-4567', 'Charlotte'), ('123-6574', 'Bob')]
+# Bucket 9: [('123-4568', 'Thomas')]
+
+# Name associated with '123-4570': Peter
+# Updating the name for '123-4570' to 'James'
+# Name associated with '123-4570': James

@@ -55,3 +55,19 @@ print("'Peter' is in the set:", hash_set.contains('Peter'))
 print("'Adele' has hash code:", hash_set.hash_function('Adele'))
 
 #Python
+# Hash Set Contents:
+# Bucket 0: ['Thomas', 'Jens']
+# Bucket 1: []
+# Bucket 2: ['Peter']
+# Bucket 3: ['Lisa']
+# Bucket 4: ['Charlotte']
+# Bucket 5: ['Adele', 'Bob']
+# Bucket 6: []
+# Bucket 7: []
+# Bucket 8: ['Michaela']
+# Bucket 9: []
+
+# 'Peter' is in the set: True
+# Removing 'Peter'
+# 'Peter' is in the set: False
+# 'Adele' has hash code: 5

@@ -19,3 +19,4 @@ while currentNode:
 print("null")
 
 #Python
+# 3 -> 5 -> 13 -> 2 -> null

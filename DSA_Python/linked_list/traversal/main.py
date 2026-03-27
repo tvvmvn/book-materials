@@ -1,14 +1,14 @@
 class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+  def __init__(self, data):
+    self.data = data
+    self.next = None
 
 def traverseAndPrint(head):
-    currentNode = head
-    while currentNode:
-        print(currentNode.data, end=" -> ")
-        currentNode = currentNode.next
-    print("null")
+  currentNode = head
+  while currentNode:
+    print(currentNode.data, end=" -> ")
+    currentNode = currentNode.next
+  print("null")
 
 node1 = Node(7)
 node2 = Node(11)

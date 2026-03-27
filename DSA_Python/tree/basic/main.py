@@ -35,3 +35,4 @@ nodeF.left = nodeG
 preOrderTraversal(root)
 
 #Python
+# R, A, C, D, B, E, F, G, %

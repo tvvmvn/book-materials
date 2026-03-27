@@ -34,7 +34,6 @@ g.add_edge(1, 2)  # B - C
 g.print_graph()
 
 #Python
-
 # Adjacency Matrix:
 # 0 1 1 1
 # 1 0 1 0
