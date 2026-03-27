@@ -6,7 +6,10 @@ public class Main {
     int n = 9;
     double d = n; // 9.0
 
-    System.out.println(n);//9
-    System.out.println(d); //9.0
+    System.out.println(n); 
+    System.out.println(d); 
   }
 }
+
+// 9
+// 9.0

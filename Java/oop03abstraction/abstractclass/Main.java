@@ -21,3 +21,5 @@ public class Main {
     korean.greeting();
   }
 }
+
+// 안녕하세요

@@ -13,3 +13,6 @@ public class Main {
     System.out.println(Steak.RARE);
   }
 }
+
+// WELL
+// RARE

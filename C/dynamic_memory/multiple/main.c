@@ -23,8 +23,7 @@ int main() {
   return 0;
 }
 
-// how many: 4
-// your memories: 
+// addresses: 
 // 0x600000494000
 // 0x600000494004
 // 0x600000494008

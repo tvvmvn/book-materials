@@ -8,6 +8,11 @@ age = input('your age: ')
 
 person = Person(name, age)
 
-# person
 print(person.name)
 print(person.age)
+
+# 
+# your name: john
+# your age: 30
+# john
+# 30

@@ -5,4 +5,6 @@ cat = {
 }
 
 print(cat)
+
+# 
 # {'name': 'Kitty', 'age': 2, 'home': None}

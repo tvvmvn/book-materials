@@ -13,3 +13,5 @@ public class Main {
   }
   // still working (no crash)..
 }
+
+// Exception: java.lang.ArithmeticException: / by zero

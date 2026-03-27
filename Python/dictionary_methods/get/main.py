@@ -3,4 +3,7 @@ cat = {
   "age": 2,
 }
 
-print(cat.get("name")) # Kitty
+print(cat.get("name")) 
+
+# 
+# Kitty

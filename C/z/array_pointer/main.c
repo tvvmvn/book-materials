@@ -8,9 +8,10 @@ int main() {
   printf("%p\n", myNumbers + 2);
   printf("%p\n", myNumbers + 3);
   
-  // 0x7ff7bfeff220
-  // 0x7ff7bfeff224
-  // 0x7ff7bfeff228
-  // 0x7ff7bfeff22c
   return 0;
 }
+
+// 0x7ff7bfeff220
+// 0x7ff7bfeff224
+// 0x7ff7bfeff228
+// 0x7ff7bfeff22c

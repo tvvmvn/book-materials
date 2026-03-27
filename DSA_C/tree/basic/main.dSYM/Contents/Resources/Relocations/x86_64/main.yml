@@ -1,8 +1,9 @@
 ---
-triple:      'x86_64-apple-darwin'
-binary-path:   '/Users/jintaemin/workspace/book-materials/DSA/tree/main'
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/DSA_C/tree/basic/main'
 relocations:
-  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _createNewNode, symObjAddr: 0x0, symBinAddr: 0x100000E10, symSize: 0x70 }
-  - { offset: 0x83, size: 0x8, addend: 0x0, symName: _createNewNode, symObjAddr: 0x0, symBinAddr: 0x100000E10, symSize: 0x70 }
-  - { offset: 0xB9, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x70, symBinAddr: 0x100000E80, symSize: 0xFA }
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _createNewNode, symObjAddr: 0x0, symBinAddr: 0x100000DB0, symSize: 0x50 }
+  - { offset: 0x83, size: 0x8, addend: 0x0, symName: _createNewNode, symObjAddr: 0x0, symBinAddr: 0x100000DB0, symSize: 0x50 }
+  - { offset: 0xB9, size: 0x8, addend: 0x0, symName: _preOrderTraversal, symObjAddr: 0x50, symBinAddr: 0x100000E00, symSize: 0x60 }
+  - { offset: 0xDD, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xB0, symBinAddr: 0x100000E60, symSize: 0x12C }
 ...

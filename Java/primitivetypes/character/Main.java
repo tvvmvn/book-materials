@@ -5,7 +5,10 @@ public class Main {
     char grade = 'A';
     char a = 65;
 
-    System.out.println(grade);//A
-    System.out.println(a);//A
+    System.out.println(grade);
+    System.out.println(a);
   }
 }
+
+// A
+// A

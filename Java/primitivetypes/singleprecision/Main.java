@@ -8,3 +8,6 @@ public class Main {
     System.out.printf("%.2f", height);
   }
 }
+
+// 178.5
+// 178.50%  

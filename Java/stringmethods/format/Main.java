@@ -6,6 +6,8 @@ public class Main {
 
     String greeting = String.format("Happy %d", year);
 
-    System.out.println(greeting); //Happy 2026
+    System.out.println(greeting); 
   }
 }
+
+//Happy 2026

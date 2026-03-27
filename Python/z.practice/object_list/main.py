@@ -12,3 +12,9 @@ persons = [
 print('Persons:')
 for person in persons:
   print(f'name: {person.name}, age: {person.age}')
+
+# 
+# Persons:
+# name: John, age: 30
+# name: Jane, age: 25
+# name: Mary, age: 40

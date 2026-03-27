@@ -3,3 +3,7 @@ def info(name, age):
 
 info(name = "John", age = 30)
 info(age = 25, name = "Jane")
+
+# 
+# name: John, age: 30
+# name: Jane, age: 25

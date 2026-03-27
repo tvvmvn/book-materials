@@ -10,5 +10,7 @@ int main() {
 
   person.age = 31;
 
-  printf("%d\n", person.age);
+  printf("age: %d\n", person.age);
 }
+
+//age: 31

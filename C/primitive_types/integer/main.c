@@ -5,7 +5,11 @@ int main() {
   int b = 0;
   int c = -3;
 
-  printf("%d\n", a); // 2
-  printf("%d\n", b); // 0
-  printf("%d\n", c); // -3
+  printf("%d\n", a); 
+  printf("%d\n", b); 
+  printf("%d\n", c); 
 }
+
+// 2
+// 0
+// -3

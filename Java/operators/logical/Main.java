@@ -10,3 +10,7 @@ public class Main {
     System.out.println(!b);
   }
 }
+
+// false
+// true
+// true

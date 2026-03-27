@@ -4,4 +4,5 @@ tmp = set(nums)
 
 print(list(tmp))
 
+# 
 # [1, 2, 3, 4, 5]

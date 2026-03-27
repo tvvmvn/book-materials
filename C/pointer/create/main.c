@@ -3,7 +3,9 @@
 int main() {
   int* ptr = NULL;
 
-  printf("%p\n", ptr); // 0x0
+  printf("%p\n", ptr); 
 
   return 0;
 }
+
+// 0x0

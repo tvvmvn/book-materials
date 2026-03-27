@@ -4,6 +4,11 @@ cat = {
   "home": None  
 }
 
-print(cat["name"]) # Kitty
-print(cat["age"]) # 2
-print(cat["home"]) # None
+print(cat["name"])
+print(cat["age"])
+print(cat["home"])
+
+# 
+# Kitty
+# 2
+# None

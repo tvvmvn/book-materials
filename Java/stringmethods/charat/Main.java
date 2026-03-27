@@ -9,3 +9,6 @@ public class Main {
     System.out.println(greeting.charAt(4));
   }
 }
+
+// h
+// o

@@ -3,8 +3,9 @@
 int main() {
   int age = 20;
 
-  printf("%d\n", age < 18 ? "Kids" : "Adult");
+  printf("%s\n", age < 18 ? "Kids" : "Adult");
 
-  /* code */
   return 0;
 }
+
+// Adult

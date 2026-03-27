@@ -5,6 +5,7 @@ public class Main {
     String name = "John";
     
     System.out.println("Hello " + name);
-    // Hello John
   }
 }
+
+// Hello John

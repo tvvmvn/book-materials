@@ -10,7 +10,8 @@ int factorial(int n) {
 
 int main() {
   printf("5! = %d", factorial(5)); 
-  // 5! = 120
   
   return 0;
 }
+
+// 5! = 120

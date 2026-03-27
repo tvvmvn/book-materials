@@ -6,5 +6,7 @@ int main() {
   for (int i = 1; i <= 10; i++) { 
     sum += i; // sum = sum + i
   }
-  printf("%d", sum);//55
+  printf("%d", sum);
 }
+
+//55

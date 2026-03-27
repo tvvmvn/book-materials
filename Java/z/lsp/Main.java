@@ -31,3 +31,5 @@ public class Main {
     System.out.println(sq.getArea());
   }  
 }
+
+// 100

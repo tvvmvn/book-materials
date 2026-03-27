@@ -8,3 +8,5 @@ int main() {
     printf("%d ", arr[i]);
   }
 }
+
+// 50 40 30 20 10 

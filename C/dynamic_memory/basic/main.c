@@ -11,10 +11,12 @@ int main() {
     return 1;
   }
 
-  printf("address: %p\n", ptr); // 0x7fc2d9804130
+  printf("address: %p\n", ptr); 
 
   free(ptr);
   ptr = NULL;
 
   return 0;
 }
+
+//address: 0x7f79ecf04130

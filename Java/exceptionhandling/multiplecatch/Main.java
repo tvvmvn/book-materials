@@ -20,3 +20,5 @@ public class Main {
     }
   }
 }
+
+// 출력1출력5%

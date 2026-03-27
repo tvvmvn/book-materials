@@ -19,3 +19,5 @@ public class Main {
     Korean.about();
   }
 }
+
+// 언어: 한국어

@@ -6,7 +6,8 @@ int main() {
   for (int i = 0; i < 3; i++) {
     printf("%s\n", persons[i]);
   }
-  // John
-  // Jane
-  // Marry
 }
+
+// John
+// Jane
+// Marry

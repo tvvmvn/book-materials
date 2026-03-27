@@ -9,4 +9,5 @@ int main() {
     printf("%d ", arr[i]);
   }
 }
+
 //10 20 30 40 

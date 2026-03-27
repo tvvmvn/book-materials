@@ -79,3 +79,8 @@ void printQueue(struct Queue *q) {
 
 
 //C
+// Queue: A B C 
+// Dequeue: A
+// Peek: B
+// isEmpty: 0
+// Size: 2

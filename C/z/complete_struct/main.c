@@ -16,4 +16,7 @@ int main() {
 
   printf("name: %s, age: %d", person.name, person.age);
 }
-// name: <name>, age: <age>
+
+// your name: john
+// your age: 30
+// name: john, age: 30

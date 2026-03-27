@@ -12,3 +12,9 @@ public class Main {
     System.out.println(a % b);
   }
 }
+
+// 7
+// 3
+// 10
+// 2
+// 1

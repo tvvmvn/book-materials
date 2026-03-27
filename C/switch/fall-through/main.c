@@ -16,3 +16,5 @@ int main() {
       printf("Master\n");
   }
 }
+
+//Beginner

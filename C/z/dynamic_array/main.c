@@ -6,7 +6,7 @@ int main() {
   int size;
 
   // user input 
-  printf("enter size of array\n");
+  printf("enter size of array: ");
   scanf("%d", &size);
 
   // allocate memory according to input
@@ -38,3 +38,9 @@ int main() {
   
   return 0;
 }
+
+// enter size of array: 3
+// item 1: 10
+// item 2: 20
+// item 3: 30
+// your array: 10 20 30 

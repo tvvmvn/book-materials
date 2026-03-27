@@ -16,3 +16,5 @@ public class Main {
     }
   }
 }
+
+// Exception: You must be at least 18 years old.

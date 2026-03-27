@@ -16,3 +16,6 @@ public class Main {
     System.out.println("This code is outside of the thread");
   }
 }
+
+// This code is outside of the thread
+// This code is running in a thread

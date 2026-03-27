@@ -12,3 +12,7 @@ int main() {
     printf("%s (%d)\n", persons[i].name, persons[i].age);
   }
 }
+
+// John (30)
+// Jane (25)
+// Mary (40)

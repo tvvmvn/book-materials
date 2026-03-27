@@ -9,3 +9,5 @@ int main() {
 void add(int x, int y) {
   printf("result: %d", x + y);
 }
+
+// result: 3

@@ -26,3 +26,6 @@ public class Main {
     System.out.println(jane.age);
   }
 }
+
+// 30
+// 0

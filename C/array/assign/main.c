@@ -8,5 +8,6 @@ int main() {
   nums[2] = 30;
 
   printf("%p\n", nums);
-  // 0x7ff7bfeff16c
 }
+
+// 0x7ff7bfeff16c

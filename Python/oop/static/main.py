@@ -13,3 +13,6 @@ p3 = Person("Mary", 40)
 print(p1.country)
 print(Person.country)
 
+# 
+# USA
+# USA

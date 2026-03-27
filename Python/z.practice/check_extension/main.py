@@ -7,3 +7,5 @@ supported = ('jpg', 'png', 'gif')
 if ext in supported:
   print('cool')
 
+# 
+# cool

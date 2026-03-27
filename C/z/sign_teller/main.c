@@ -15,3 +15,7 @@ int main() {
   isPositive(0);
   isPositive(-5);
 }
+
+// Positive number
+// Zero
+// Negative number

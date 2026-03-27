@@ -10,8 +10,8 @@ int main() {
       printf("%d ", ages[i]);
     }
   }
-  //Adults: 20 28 35 
-
+  
   return 0;
 }
 
+//Adults: 20 28 35 

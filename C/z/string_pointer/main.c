@@ -3,7 +3,11 @@
 int main() {
   char* greeting = "hello";
 
-  printf("%p\n", greeting); //0x100000f96
-  printf("%c\n", *greeting); //h
-  printf("%s\n", greeting); //hello
+  printf("%p\n", greeting);
+  printf("%c\n", *greeting);
+  printf("%s\n", greeting);
 }
+
+//0x100000f96
+//h
+//hello

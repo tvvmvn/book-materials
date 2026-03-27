@@ -7,4 +7,5 @@ preview = s[:20] + '...'
 
 print(preview)
 
+# 
 # Hi guys, my name is...

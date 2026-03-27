@@ -8,3 +8,6 @@ elif 30 <= age < 40:
   print("30s")
 else:
   print("old")
+
+# 
+# 30s

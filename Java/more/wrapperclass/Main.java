@@ -10,3 +10,5 @@ public class Main {
     System.out.println("how many digits: " + numString.length());
   }
 }
+
+// how many digits: 9

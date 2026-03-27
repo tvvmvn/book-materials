@@ -16,15 +16,15 @@ interface SmartPhone extends Phone, Camera {
 
 class iPhone implements SmartPhone {
   public void takePhoto() {
-    System.out.println("");
+    System.out.println("taking a picture");
   };
 
   public void call() {
-    System.out.println("");
+    System.out.println("calling");
   };
   
   public void playApp() {
-    System.out.println("");
+    System.out.println("playing an app");
   }
 }
 
@@ -37,3 +37,7 @@ public class Main {
     iPhone.playApp();
   }
 }
+
+// taking a picture
+// calling
+// playing an app

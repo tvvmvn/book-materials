@@ -26,3 +26,7 @@ public class Main {
     System.out.println(student.grade);
   }
 }
+
+// John
+// 20
+// 3

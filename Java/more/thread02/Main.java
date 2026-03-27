@@ -8,7 +8,6 @@ class Derived implements Runnable {
 
 public class Main {
   public static void main(String[] args) {
-    
     Thread thread = new Thread(new Derived());
 
     thread.start();
@@ -16,3 +15,6 @@ public class Main {
     System.out.println("This code is outside of the thread");
   }
 }
+
+// This code is outside of the thread
+// This code is running in a thread

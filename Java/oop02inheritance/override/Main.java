@@ -20,3 +20,5 @@ class Main {
     d.doSomething(); 
   }
 }
+
+// in a child way

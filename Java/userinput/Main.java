@@ -17,3 +17,9 @@ public class Main {
     scanner.close();
   }
 }
+
+// What's your name?
+// john
+// How old are you?
+// 30
+// name: john, age: 30%  

@@ -16,6 +16,8 @@ public class Main {
     Korean lee = new Korean("Lee");
     Korean park = new Korean("Park");
 
-    System.out.println(Korean.population); //3
+    System.out.println(Korean.population); 
   }
 }
+
+//3

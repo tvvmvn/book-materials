@@ -9,3 +9,7 @@ public class Main {
     System.out.println(nums[2]);
   }
 }
+
+// 10
+// 20
+// 30

@@ -15,3 +15,7 @@ int main() {
   printf("%s\n", person.name);
   printf("%d\n", person.age);
 }
+
+
+// John
+// 30

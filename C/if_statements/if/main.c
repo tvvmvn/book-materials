@@ -7,3 +7,5 @@ int main() {
     printf("Adult");
   } 
 }
+
+// Adult

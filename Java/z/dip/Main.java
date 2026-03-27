@@ -32,3 +32,6 @@ public class Main {
     kids.play();
   }
 }
+
+// lego is working
+// I'm playing now

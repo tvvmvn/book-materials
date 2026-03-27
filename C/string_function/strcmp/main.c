@@ -6,7 +6,11 @@ int main() {
   char s2[] = "apple";
   char s3[] = "orange";
   
-  printf("%d\n", strcmp(s1, s2));//0
-  printf("%d\n", strcmp(s1, s3));//-14
-  printf("%d\n", strcmp(s3, s1));//14
+  printf("%d\n", strcmp(s1, s2));
+  printf("%d\n", strcmp(s1, s3));
+  printf("%d\n", strcmp(s3, s1));
 }
+
+// 0
+// -14
+// 14

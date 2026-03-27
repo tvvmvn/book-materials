@@ -1,0 +1,14 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/DSA_C/map/main'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _hashFunction, symObjAddr: 0x0, symBinAddr: 0x1000008E0, symSize: 0x90 }
+  - { offset: 0x9B, size: 0x8, addend: 0x0, symName: _hashFunction, symObjAddr: 0x0, symBinAddr: 0x1000008E0, symSize: 0x90 }
+  - { offset: 0xED, size: 0x8, addend: 0x0, symName: _initHashMap, symObjAddr: 0x90, symBinAddr: 0x100000970, symSize: 0x40 }
+  - { offset: 0x12D, size: 0x8, addend: 0x0, symName: _put, symObjAddr: 0xD0, symBinAddr: 0x1000009B0, symSize: 0x110 }
+  - { offset: 0x197, size: 0x8, addend: 0x0, symName: _get, symObjAddr: 0x1E0, symBinAddr: 0x100000AC0, symSize: 0x80 }
+  - { offset: 0x1E9, size: 0x8, addend: 0x0, symName: _removeEntry, symObjAddr: 0x260, symBinAddr: 0x100000B40, symSize: 0xC0 }
+  - { offset: 0x245, size: 0x8, addend: 0x0, symName: _freeHashMap, symObjAddr: 0x320, symBinAddr: 0x100000C00, symSize: 0x80 }
+  - { offset: 0x2BD, size: 0x8, addend: 0x0, symName: _printHashMap, symObjAddr: 0x3A0, symBinAddr: 0x100000C80, symSize: 0xB0 }
+  - { offset: 0x319, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x450, symBinAddr: 0x100000D30, symSize: 0x151 }
+...

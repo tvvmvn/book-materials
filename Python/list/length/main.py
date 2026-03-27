@@ -1,3 +1,6 @@
 nums = [10, 20, 30]
 
-print(len(nums)) #3
+print(len(nums)) 
+
+# 
+# 3

@@ -13,3 +13,10 @@ public class Main {
     System.out.println(a <= b);
   }
 }
+
+// false
+// true
+// true
+// false
+// true
+// false

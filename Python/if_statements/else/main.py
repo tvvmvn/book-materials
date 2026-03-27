@@ -6,3 +6,7 @@ else:
   print("Kids")
 
 print("Adult") if age >= 18 else print("Kids")
+
+# 
+# Adult
+# Adult

@@ -7,3 +7,5 @@ int main() {
 
   printf("%d\n", nums[0]);
 }
+
+// 100

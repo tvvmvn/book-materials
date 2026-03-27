@@ -12,6 +12,7 @@ for row in board:
       print('X', end = ' ')
   print()
 
+# 
 # O X X 
 # X O X 
 # X X O 

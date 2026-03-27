@@ -5,4 +5,6 @@ cat = {
 }
 
 print(cat.items())
+
+# 
 # dict_items([('name', 'Kitty'), ('age', 2), ('home', None)])

@@ -4,5 +4,7 @@
 int main() {
   char s[] = "hello";
   
-  printf("%lu\n", strlen(s));//5
+  printf("%lu\n", strlen(s));
 }
+
+// 5

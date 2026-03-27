@@ -5,8 +5,12 @@ public class Main {
     
     String greeting = "hello";
 
-    System.out.println(greeting.indexOf('h'));//0
-    System.out.println(greeting.indexOf('l'));//2
-    System.out.println(greeting.indexOf('k'));//-1
+    System.out.println(greeting.indexOf('h'));
+    System.out.println(greeting.indexOf('l'));
+    System.out.println(greeting.indexOf('k'));
   }
 }
+
+//0
+//2
+//-1

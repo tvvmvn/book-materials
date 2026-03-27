@@ -12,3 +12,7 @@ int main() {
 
   printf("name: %s, age: %d", name, age);
 }
+
+// your name: john
+// your age: 30
+// name: john, age: 30

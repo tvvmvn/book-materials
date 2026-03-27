@@ -14,4 +14,5 @@ int main() {
 
   printf("name: %s, age: %d\n", p->name, p->age);
 }
+
 //name: John, age: 30

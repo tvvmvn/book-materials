@@ -1,4 +1,8 @@
 s = "Hello World"
 
-print(s.lower())# hello world
-print(s.upper())# HELLO WORLD
+print(s.lower())
+print(s.upper())
+
+# 
+# hello world
+# HELLO WORLD

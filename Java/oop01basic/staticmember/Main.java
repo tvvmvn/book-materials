@@ -28,3 +28,8 @@ public class Main {
     System.out.println(American.greeting());
   }
 }
+
+// John
+// Jane
+// USA
+// hello

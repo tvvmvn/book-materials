@@ -1,3 +1,8 @@
-print(int(1.5)) # 1
-print(float(2)) # 2.0
-print(int("3")) # 3
+print(int(1.5))
+print(float(2))
+print(int("3"))
+
+# 
+# 1
+# 2.0
+# 3

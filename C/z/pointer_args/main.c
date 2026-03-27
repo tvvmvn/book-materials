@@ -10,5 +10,7 @@ int main() {
 
   f(&n);
 
-  printf("%d", n); //10
+  printf("%d", n); 
 }
+
+//10

@@ -20,3 +20,6 @@ public class Main {
     System.out.println(person.age);
   }
 }
+
+// John
+// 30

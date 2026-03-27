@@ -7,9 +7,13 @@ enum Level {//all integers
 };
 
 int main() {
-  printf("%d\n", LOW);//0
-  printf("%d\n", MEDIUM);//1
-  printf("%d\n", HIGH);//2
+  printf("%d\n", LOW);
+  printf("%d\n", MEDIUM);
+  printf("%d\n", HIGH);
    
   return 0;
 }
+
+// 0
+// 1
+// 2

@@ -9,8 +9,13 @@ void isEven(int d) {
 }
 
 int main() {
-  isEven(2);//even
-  isEven(-4);//even
-  isEven(3);//odd
-  isEven(0);//even
+  isEven(2);
+  isEven(-4);
+  isEven(3);
+  isEven(0);
 }
+
+//even
+//even
+//odd
+//even

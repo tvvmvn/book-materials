@@ -5,4 +5,6 @@ cat = {
 }
 
 print(cat.keys())
+
+# 
 # dict_keys(['name', 'age', 'home'])

@@ -7,4 +7,6 @@ cat = {
 cat.pop("home")
 
 print(cat)
+
+# 
 # {'name': 'Kitty', 'age': 2}

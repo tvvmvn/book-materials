@@ -3,4 +3,7 @@ def f():
 
 r = f()
 
-print(r) # (1, 2)
+print(r) 
+
+# 
+# (1, 2)

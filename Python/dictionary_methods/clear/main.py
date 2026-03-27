@@ -6,4 +6,6 @@ cat = {
 cat.clear()
 
 print(cat)
+
+# 
 # {}

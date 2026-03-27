@@ -4,3 +4,8 @@ def say(to = "world"):
 say()
 say('C')
 say('Python')
+
+# 
+# hello world
+# hello C
+# hello Python

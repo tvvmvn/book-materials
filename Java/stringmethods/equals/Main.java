@@ -6,6 +6,7 @@ public class Main {
     String s2 = "foo";
 
     System.out.println(s1.equals(s2));
-    // true
   }
 }
+
+// true

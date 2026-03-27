@@ -23,4 +23,5 @@ public class Main {
     System.out.print(t.code());
   }
 }
+
 // AB

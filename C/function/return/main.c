@@ -8,8 +8,8 @@ int main() {
   int r = add(1, 2);
   
   printf("result: %d\n", r); 
-  // result: 3
-
+  
   return 0;
 }
 
+// result: 3
