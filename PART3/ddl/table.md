@@ -66,15 +66,14 @@ DROP TABLE 테이블_이름;
 
 # 제약 조건 (Constraints)
 
-테이블을 생성/수정할 때 데이터의 무결성을 지키기 위해 다양한 제약 조건을 추가할 수 있습니다. 다음은 제약 조건을 추가하는 명령어입니다.
+테이블을 생성 또는 수정할 때 데이터의 무결성을 지키기 위해 다양한 제약 조건을 추가할 수 있습니다. 다음은 제약 조건을 추가하는 명령어입니다.
 
-- NOT NULL
-- UNIQUE
 - PRIMARY KEY
 - FOREIGN KEY
+- NOT NULL
+- UNIQUE
 - CHECK
 - DEFAULT
-- CREATE INDEX
 
 
 ```sql
