@@ -4,6 +4,7 @@ class Person {
   String name;
   int age;
 
+  // 나이 정보가 없거나 보호하고 싶은 경우 사용할 수 있는 생성자
   Person(String name) {
     this(name, 0);
   }
@@ -16,10 +17,10 @@ class Person {
 
 public class Main {
   public static void main(String[] args) {
-    // name and age
+    // 두번째 생성자 사용
     Person john = new Person("John", 30);
 
-    // no age info
+    // 첫번째 생성자 사용
     Person jane = new Person("Jane");
 
     System.out.println(john.age);

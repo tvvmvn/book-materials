@@ -3,9 +3,13 @@
 int main() {
   int myNumbers[] = {10, 20, 30, 40};
 
+  // 첫번째 요소의 주소
   printf("%p\n", myNumbers);
+  // 두번째 요소의 주소
   printf("%p\n", myNumbers + 1);
+  // 세번째 요소의 주소
   printf("%p\n", myNumbers + 2);
+  // 네번째 요소의 주소
   printf("%p\n", myNumbers + 3);
   
   return 0;

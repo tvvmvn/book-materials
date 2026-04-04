@@ -3,6 +3,7 @@ class Person:
     self.name = name
     self.age = age
 
+# 객체를 생성함과 동시에 리스트에 할당하고 있습니다.
 persons = [
   Person('John', 30), 
   Person('Jane', 25),

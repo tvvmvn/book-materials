@@ -1,7 +1,10 @@
+# 사용자가 회원가입할 때 입력한 비밀번호라고 가정해봅시다
 password = 'shhhh'
 
+# 비밀번호 길이를 검사합니다
 if (len(password) < 8):
-  print('password should be over 8 letters!')
+  print('비밀번호를 8자 이상이어야 합니다')
+
 
 # 
-# password should be over 8 letters!
+# 비밀번호를 8자 이상이어야 합니다

@@ -17,4 +17,3 @@ order + 집계함수
 SELECT * FROM 학생 
 WHERE 학년 = 3 AND 학년 = 4 OR 
 ```
-

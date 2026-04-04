@@ -3,11 +3,12 @@
 int main() {
   char s[] = "hello";
   
-  int i = 0;
-  while (s[i] != '\0') {
-    i++;
+  int length = 0;
+  // '\0' (문자열의 끝)을 만날 때까지 length 변수를 1씩 증가시킵니다
+  while (s[length] != '\0') {
+    length++;
   }
-  printf("%d\n", i);
+  printf("%d\n", length);
 }
 
 //5

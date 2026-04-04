@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// enum 선언
 enum Level {
   LOW,
   MEDIUM,
@@ -7,6 +8,7 @@ enum Level {
 };
 
 int main() {
+  // enum 변수를 선언합니다.
   enum Level myLevel = HIGH;
 
   switch (myLevel) {

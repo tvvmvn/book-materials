@@ -10,6 +10,7 @@ class Pet {
 
 class Person {
   String name;
+  // Pet은 Person에 포함됩니다
   Pet pet;
 
   Person(String name, Pet pet) {
@@ -20,10 +21,8 @@ class Person {
 
 public class Main {
   public static void main(String[] args) {
-    //pet
+    
     Pet pet = new Pet("Pongo");
-
-    //person
     Person person = new Person("John", pet);
 
     System.out.println(person.pet.name);

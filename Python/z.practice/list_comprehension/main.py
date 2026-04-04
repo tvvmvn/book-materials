@@ -1,3 +1,4 @@
+# i에 10을 곱한 값을 반환합니다
 l = [i * 10 for i in range(10)]
 
 print(l)

@@ -1,12 +1,17 @@
-print('enter two numbers to add with space')
+print('더하고 싶은 숫자 두 개를 띄어쓰기로 구분해서 입력하세요')
 
+# 사용자로부터 입력을 받습니다
 d = input()
 
+# 입력받은 문자열을 띄어쓰기를 기준으로 나눕니다
+# 결과(리스트)를 언패킹해서 변수에 바로 담습니다.
 a, b = d.split()
 
+# 변수 a, b는 문자열 타입이므로 계산을 하기위해 정수형으로 변환합니다
 print(f"{a} + {b} = {int(a) + int(b)}")
 
+
 # 
-# enter two numbers to add with space
+# 더하고 싶은 숫자 두 개를 띄어쓰기로 구분해서 입력하세요
 # 2 3
 # 2 + 3 = 5

@@ -6,6 +6,7 @@ int main() {
   int min = arr[0];
 
   for (int i = 0; i < 5; i++) {
+    // 더 작은 값을 발견하면 min 변수를 업데이트합니다
     if (arr[i] < min) {
       min = arr[i];
     }
