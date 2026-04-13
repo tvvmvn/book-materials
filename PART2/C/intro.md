@@ -1,9 +1,19 @@
-# C Language
+# 시작하기
 
-- Intro
-- Variable
-- Data Type
-- Operator
-- Loop 
-- Condition
-- Function
+C의 모든 프로그램은 main 함수에서 시작합니다. 제일 위에 코드에 필요한 헤더를 추가합니다. 위 코드는 출력 함수를 사용하기 위해 stdio 헤더를 추가했습니다.
+
+코드를 작성할 때 메모가 필요한 경우 주석을 사용합니다. 주석은 프로그램에 포함되지 않습니다. 슬래시 두개(//)로 주석을 만들 수 있습니다.
+
+'hello C'를 출력하는 프로그램입니다.
+
+```c
+// 헤더
+#include <stdio.h>
+
+int main() {
+  // 주석
+  printf("hello C");
+
+  return 0;
+}
+```

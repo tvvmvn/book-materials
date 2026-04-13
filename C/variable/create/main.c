@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  int a = 2;
+  int a = 1;
+  int b = 2;
   
-  printf("%d", a);
+  printf("%d", a + b);
 
   return 0;
 }
 
-//2
+//3

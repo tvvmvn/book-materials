@@ -4,14 +4,8 @@ int main() {
 
   int arr[] = {10, 20, 30};
 
-  printf("%d\n", arr[0]);
-  printf("%d\n", arr[1]);
-  printf("%d\n", arr[2]);
-  
+  printf("%p\n", arr);
   return 0;
 }
 
-// 10
-// 20
-// 30
-
+// 0x7ff7bfeff0ec

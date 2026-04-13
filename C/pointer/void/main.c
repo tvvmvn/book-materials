@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  int n;
-  char c;
-  float f;
+  int n = 2;
   
   // all types
-  void* ptr;
+  void* p = &n;
+
+  int* ptr = (int*)p;
   
-  ptr = &c;
-  ptr = &n;
-  ptr = &f;
+  printf("%d", *ptr);
 }
