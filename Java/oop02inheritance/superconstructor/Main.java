@@ -4,7 +4,7 @@ class Person {
   String name;
   int age;
 
-  // when you call super constructor, this means you.
+  // when Child call super constructor, 'this' means Child.
   Person(String name, int age) {
     this.name = name;
     this.age = age;

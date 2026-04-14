@@ -1,25 +1,27 @@
 package userinput;
 
+// import
 import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
+    // info
+    String name;
+
+    // create a scanner
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("What's your name?");
-    String name = scanner.nextLine();
+    // gathering
+    System.out.print("your name: ");
+    name = scanner.nextLine();
 
-    System.out.println("How old are you?");
-    int age = scanner.nextInt();
+    // print info
+    System.out.printf("name: %s", name);
 
-    System.out.printf("name: %s, age: %d", name, age);
-
+    // close scanner
     scanner.close();
   }
 }
 
-// What's your name?
-// john
-// How old are you?
-// 30
-// name: john, age: 30%  
+// your name: j
+// name: j

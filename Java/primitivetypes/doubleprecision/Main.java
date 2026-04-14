@@ -2,12 +2,12 @@ package primitivetypes.doubleprecision;
 
 public class Main {
   public static void main(String[] args) {
-    double height = 178.5;
+    double pi = 3.14159265358979;
 
-    System.out.println(height);
-    System.out.printf("%.2f", height);
+    System.out.println(pi);
+    System.out.printf("%.15f", pi);
   }
 }
 
-// 178.5
-// 178.50%  
+// 3.14159265358979
+// 3.141592653589790 

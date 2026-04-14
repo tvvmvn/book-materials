@@ -4,10 +4,10 @@ public class Main {
   public static void main(String[] args) {
     int year = 2026;
 
-    String greeting = String.format("Happy %d", year);
+    String greeting = String.format("year: %d", year);
 
     System.out.println(greeting); 
   }
 }
 
-//Happy 2026
+//year: 2026

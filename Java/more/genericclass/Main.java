@@ -1,29 +1,24 @@
 package more.genericclass;
 
-class Box<T> {
-  // T is a placeholder for any data type
-  T value; 
+class Person<T> {
+  T id;
 
-  Box(T value) {
-    this.value = value;
+  Person(T id) {
+    this.id = id;
   }
 
-  void show() {
-    System.out.println(value);
+  T getId() {
+    return this.id;
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    // String box
-    Box<String> stringBox = new Box<>("Hello");
-    stringBox.show();
+    // responsive to increase 
+    Person<Long> person = new Person<>(10L);
 
-    // Number Box
-    Box<Integer> intBox = new Box<>(100);
-    intBox.show();
+    System.out.println(person.getId());
   }
 }
 
-// Hello
-// 100
+// 10

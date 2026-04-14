@@ -1,22 +1,12 @@
 package lab;
 
+import java.util.function.Consumer;
+
 public class Main {
   public static void main(String[] args) {
-    int a = 5; // 0101
-    int b = 2; // 0010
+    // functional interface
+    Consumer<String> consumer = (d) -> System.out.println(d);
 
-    System.out.println(a & b);
-    System.out.println(a | b);
-    System.out.println(a ^ b);
-    System.out.println(~a);
-    System.out.println(a << 1);
-    System.out.println(a >> 1);
+    consumer.accept("hello");
   }  
 }
-
-// 0
-// 7
-// 7
-// -6
-// 10
-// 2

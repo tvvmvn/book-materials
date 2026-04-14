@@ -1,16 +1,22 @@
 package more.genericmethods;
 
 public class Main {
-  // <T> in front of return type
-  static <T> void display(T element) {
-    System.out.println(element);
+  // <T> return_type
+  static <T> void info(T d) {
+    System.out.println("data info:");
+    System.out.printf("type: %s\n", d.getClass().getName());
+    System.out.printf("value: %s\n", d);
   }
 
   public static void main(String[] args) {
-    display(2025);
-    display("Hello");
+    info(100);
+    info("hello");
   }
 }
 
-// 2025
-// Hello
+// data info:
+// type: java.lang.Integer
+// value: 100
+// data info:
+// type: java.lang.String
+// value: hello

@@ -2,10 +2,11 @@ package string.concat;
 
 public class Main {
   public static void main(String[] args) {
-    String name = "John";
+    String s1 = "hello";
+    String s2 = "world";
     
-    System.out.println("Hello " + name);
+    System.out.println(s1 + " " + s2);
   }
 }
 
-// Hello John
+//hello world

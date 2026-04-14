@@ -2,12 +2,12 @@ package primitivetypes.singleprecision;
 
 public class Main {
   public static void main(String[] args) {
-    float height = 178.5f;
+    float pi = 3.14159265358979f;
 
-    System.out.println(height);
-    System.out.printf("%.2f", height);
+    System.out.println(pi);
+    System.out.printf("%.15f", pi);
   }
 }
 
-// 178.5
-// 178.50%  
+// 3.1415927
+// 3.141592741012573

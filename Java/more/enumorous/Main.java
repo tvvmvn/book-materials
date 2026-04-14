@@ -1,16 +1,20 @@
 package more.enumorous;
 
-enum Steak {
-  WELL,
-  MEDIUMWELL,
-  MEDIUMRARE,
-  RARE
+enum ArrowKeys {
+  UP,
+  LEFT,
+  RIGHT,
+  DOWN,
 }
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println(Steak.WELL);
-    System.out.println(Steak.RARE);
+
+    ArrowKeys clicked = ArrowKeys.RIGHT;
+
+    if (clicked == ArrowKeys.RIGHT) {
+      System.out.println("go to right");
+    }
   }
 }
 
