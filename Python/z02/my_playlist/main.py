@@ -1,0 +1,28 @@
+class Playlist:
+  def __init__(self, name):
+    self.name = name
+    self.songs = []
+
+  def add_song(self, song):
+    self.songs.append(song)
+
+  def remove_song(self, song):
+    if song in self.songs:
+      self.songs.remove(song)
+
+  def show_songs(self):
+    print(f"Playlist '{self.name}':")
+    for song in self.songs:
+      print(f"- {song}")
+
+my_playlist = Playlist("Favorites")
+my_playlist.add_song("Bohemian Rhapsody")
+my_playlist.add_song("Stairway to Heaven")
+my_playlist.add_song("Beat It")
+my_playlist.show_songs()
+
+# 
+# Playlist 'Favorites':
+# - Bohemian Rhapsody
+# - Stairway to Heaven
+# - Beat It

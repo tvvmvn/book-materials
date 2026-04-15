@@ -1,8 +1,10 @@
-country_codes = {
-  'Korea': 'kr',
-  'Japan': 'jp',
-  'USA': 'us',
-  'United Kingdom': 'uk'
-}
+nums = [10, 20, 30, 40]
 
-print(country_codes.get('Korea'))
+print(nums[0])
+print(nums[1])
+print(nums[2])
+print(nums[3])
+
+print(nums[:3])
+print(nums[1:3])
+print(nums[1:])

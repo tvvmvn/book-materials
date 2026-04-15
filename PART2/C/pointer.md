@@ -4,6 +4,11 @@
 - 포인터 생성하기
 - 포인터 사용하기
 - NULL 포인터
+- void
+- 함수와 포인터
+- 배열과 포인터
+- 문자열과 포인터
+- 구조체와 포인터
 <!-- void* -->
 
 
@@ -12,7 +17,10 @@
 포인터는 C언어의 강력한 기능 중 하나입니다.
 다른 변수의 메모리 주소(Memory Address)를 값으로 가지는 변수를 포인터라고 부릅니다.
 
-포인터를 활용해 ...할 수 있습니다.
+포인터는 왜 쓸까요? 포인터를 활용해 ...할 수 있습니다.
+- 함수에 주소 전달하기. 메모리 절약
+- 함수에 주소 전달하기. 원본 값 바꾸기
+- 동적으로 메모리 사용하기. malloc과 함께
 
 
 # 포인터 생성하기
@@ -97,4 +105,110 @@ int main() {
   
   printf("%d", *ptr);
 }
+```
+
+
+# 함수와 포인터
+
+원래 함수에 전달한 값은 메모리에 복사됩니다.
+메모리 절약 또는 원본 배열 수정을 위해
+
+```c
+#include <stdio.h>
+
+// 포인터를 입력받는 함수
+void f(int* addr) {
+  // 포인터를 이용해 원본 변수에 접근할 수 있습니다.
+  *addr = 10;
+}
+
+int main() {
+  int n = 2;
+
+  // 함수에 변수의 주소를 입력했습니다
+  f(&n);
+
+  printf("%d", n); 
+}
+
+//10
+```
+
+# 배열과 포인터
+
+배열 이름은 포인터입니다.
+배열에서 포인터 연산도 가능합니다.
+
+```c
+#include <stdio.h>
+
+int main() {
+  int myNumbers[] = {10, 20, 30, 40};
+
+  // 첫번째 요소의 주소
+  printf("%p\n", myNumbers);
+  // 두번째 요소의 주소
+  printf("%p\n", myNumbers + 1);
+  // 세번째 요소의 주소
+  printf("%p\n", myNumbers + 2);
+  // 네번째 요소의 주소
+  printf("%p\n", myNumbers + 3);
+  
+  return 0;
+}
+
+// 0x7ff7bfeff220
+// 0x7ff7bfeff224
+// 0x7ff7bfeff228
+// 0x7ff7bfeff22c
+```
+
+# 문자열과 포인터
+
+포인터를 이용해 문자열을 자동으로 크기 조절을 합니다!
+
+```c
+#include <stdio.h>
+
+int main() {
+  // greeting은 문자열 포인터입니다. 
+  // 문자열 포인터를 사용해 문자열을 다룰 수도 있습니다.
+  char* greeting = "hello";
+
+  printf("%p\n", greeting);
+  printf("%c\n", *greeting);
+  printf("%s\n", greeting);
+}
+
+//0x100000f96
+//h
+//hello
+```
+
+# 구조체와 포인터
+
+포인터 구조체에서 화살표(->)로 포인터의 멤버에 접근할 수 있습니다.
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+// 구조체 선언
+typedef struct {
+  char name[10];
+  int age;
+} Person;
+
+int main() {
+  // typedef을 활용해서 변수 선언이 더 간단해졌습니다
+  Person* p;
+
+  // 포인트로 멤버에 접근할 때는 .(점) 대신 ->(화살표)를 사용합니다.
+  strcpy(p->name, "John");
+  p->age = 30;
+
+  printf("name: %s, age: %d\n", p->name, p->age);
+}
+
+//name: John, age: 30
 ```

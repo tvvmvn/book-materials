@@ -1,12 +1,12 @@
-# C Tutorials
+# Tutorials
+- 변수
+- 출력
+- 입력
 
-인트로
-  변수
+- if
+- for/while
 
-입/출력
 
-제어문
-  if
-  for/while
+# Pointer & Memory
 
-포인터
+# Dive

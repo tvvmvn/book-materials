@@ -1,6 +1,6 @@
-print("Hello")
-print("Hello Python!")
+s = 'hello python'
+
+print(s)
 
 # 
-# Hello
-# Hello Python!
+# hello python

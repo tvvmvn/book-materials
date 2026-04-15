@@ -1,18 +1,15 @@
-class Person:
-  # static
-  country = "USA"
+class User:
+  count = 0 # static property
   
-  def __init__(self, name, age):
+  def __init__(self, name):
     self.name = name
-    self.age = age
+    User.count += 1
 
-p1 = Person("John", 30)
-p2 = Person("Jane", 25)
-p3 = Person("Mary", 40)
+p1 = User("John")
+p2 = User("Jane")
+p3 = User("Mary")
 
-print(p1.country)
-print(Person.country)
+print(User.count)
 
 # 
-# USA
-# USA
+# 3
