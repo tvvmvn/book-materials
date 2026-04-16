@@ -1,34 +1,31 @@
 # Tutorials
 - intro
-
 - variables
-- output
-- formatting
+- output/formatting
 - data types
-- basic types
-- operators
 
 - List
 - String
 - Tuple
 - Range
-
 - Set
 - Map (Dictionary)
 
-- for
-- while
+- operators
 - if
 - match
-
+- for
+- while
 - 함수
-- exception
 
 # OOP
 - basic
 
-# Dive
-- lambda
+# More
+- casting
+- input
 - unpacking
+- exception
+- lambda
 - utils
 - comprehension

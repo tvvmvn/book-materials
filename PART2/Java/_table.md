@@ -1,15 +1,17 @@
 # Tutorials
 - intro
+- modifiers
 - output
-- data type
-- array
-- string
-- functions
+- Variables
+- data types
+- Array
+- String
+- Operators
 - if statements
 - switch
 - for
 - while
-- Input
+- functions
 
 # OOP
 - OOP1 object
@@ -25,12 +27,16 @@
   interface
   with inherit
 
-# Dive
+# More
+- input
+- type casting
+- exception
+- enum
+- anonymous class
+- lambda
 - wrapper class
 - annotation
 - generics
-- anonymous class
-- lambda
 - thread
 
 # Practices

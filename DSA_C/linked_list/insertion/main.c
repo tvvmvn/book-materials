@@ -6,6 +6,18 @@ typedef struct Node {
   struct Node* next;
 } Node;
 
+// 노드를 생성하는 함수
+Node* createNode(int data) {
+  Node* newNode = (Node*)malloc(sizeof(Node));
+  if (!newNode) {
+    printf("Memory allocation failed!\n");
+    exit(1);
+  }
+  newNode->data = data;
+  newNode->next = NULL;
+  return newNode;
+}
+
 void traverseAndPrint(Node* head) {
   Node* currentNode = head;
   while (currentNode != NULL) {
@@ -15,6 +27,7 @@ void traverseAndPrint(Node* head) {
   printf("null\n");
 }
 
+// insert
 Node* insertNodeAtPosition(Node* head, Node* newNode, int position) {
   if (position == 1) {
     newNode->next = head;
@@ -34,22 +47,18 @@ Node* insertNodeAtPosition(Node* head, Node* newNode, int position) {
 }
 
 int main() {
-  Node* node1 = malloc(sizeof(Node));
-  node1->data = 7;
-  
-  Node* node2 = malloc(sizeof(Node));
-  node2->data = 3;
-  
-  Node* node3 = malloc(sizeof(Node));
-  node3->data = 2;
-  
-  Node* node4 = malloc(sizeof(Node));
-  node4->data = 9;
+  // create nodes
+  Node* node1 = createNode(7);
+  Node* node2 = createNode(3);
+  Node* node3 = createNode(2);
+  Node* node4 = createNode(9);
 
+  // connect nodes
   node1->next = node2;
   node2->next = node3;
   node3->next = node4;
 
+  // traverse before
   printf("Original list:\n");
   traverseAndPrint(node1);
 
@@ -58,9 +67,11 @@ int main() {
   newNode->data = 97;
   node1 = insertNodeAtPosition(node1, newNode, 2);
 
+  // traversse after
   printf("\nAfter insertion:\n");
   traverseAndPrint(node1);
 
+  // 
   free(node1);
   free(node2);
   free(node3);

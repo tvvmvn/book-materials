@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main() {
-  int arr[] = {10, 20, 30, 40, 50};
-  int size = 5;
+enum Command { START, STOP, PAUSE };
 
-  for (int i = size - 1; i >= 0; i--) {
-    printf("%d ", arr[i]);
-  }
+void control(enum Command cmd) {
+    switch(cmd) {
+        case START: printf("시스템 가동\n"); break;
+        case STOP:  printf("시스템 중단\n"); break;
+    }
 }

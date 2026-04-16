@@ -1,10 +1,13 @@
-nums = [10, 20, 30, 40]
+nums = [10, 20, 30]
 
-print(nums[0])
-print(nums[1])
-print(nums[2])
-print(nums[3])
+# nums.append(40)
+# nums.insert(1, 20)
+# nums.pop()
+# nums.remove(30)
+# nums.clear()
+# nums.sort()
+# nums.reverse()
+# a.extend(b)
 
-print(nums[:3])
-print(nums[1:3])
-print(nums[1:])
+
+

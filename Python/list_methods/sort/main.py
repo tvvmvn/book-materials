@@ -1,8 +1,8 @@
-mylist = [30, 10, 20]
+nums = [30, 10, 20]
 
-mylist.sort()
+nums.sort()
 
-print(mylist)
+print(nums)
 
 # 
 # [10, 20, 30]

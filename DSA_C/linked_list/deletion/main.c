@@ -6,6 +6,18 @@ typedef struct Node {
   struct Node* next;
 } Node;
 
+// 노드를 생성하는 함수
+Node* createNode(int data) {
+  Node* newNode = (Node*)malloc(sizeof(Node));
+  if (!newNode) {
+    printf("Memory allocation failed!\n");
+    exit(1);
+  }
+  newNode->data = data;
+  newNode->next = NULL;
+  return newNode;
+}
+
 void traverseAndPrint(Node* head) {
   Node* currentNode = head;
   while (currentNode != NULL) {
@@ -15,6 +27,7 @@ void traverseAndPrint(Node* head) {
   printf("null\n");
 }
 
+// delete
 Node* deleteSpecificNode(Node* head, Node* nodeToDelete) {
   if (head == nodeToDelete) {
     Node* newHead = head->next;
@@ -39,30 +52,31 @@ Node* deleteSpecificNode(Node* head, Node* nodeToDelete) {
 }
 
 int main() {
-  Node* node1 = malloc(sizeof(Node));
-  node1->data = 7;
-  Node* node2 = malloc(sizeof(Node));
-  node2->data = 11;
-  Node* node3 = malloc(sizeof(Node));
-  node3->data = 3;
-  Node* node4 = malloc(sizeof(Node));
-  node4->data = 2;
-  Node* node5 = malloc(sizeof(Node));
-  node5->data = 9;
+  // create nodes
+  Node* node1 = createNode(7);
+  Node* node2 = createNode(11);
+  Node* node3 = createNode(3);
+  Node* node4 = createNode(2);
+  Node* node5 = createNode(9);
 
+  // connect nodes
   node1->next = node2;
   node2->next = node3;
   node3->next = node4;
   node4->next = node5;
 
+  // traverse before
   printf("Before deletion:\n");
   traverseAndPrint(node1);
 
+  // delete
   node1 = deleteSpecificNode(node1, node4);
 
+  // traverse after
   printf("\nAfter deletion:\n");
   traverseAndPrint(node1);
 
+  // 
   free(node1);
   free(node2);
   free(node3);

@@ -12,7 +12,7 @@ int main() {
   scanf("%d", &size);
 
   // 입력받은 사이즈만큼 메모리를 확보합니다
-  arr = (int*)malloc(size * sizeof(int)); 
+  arr = (int*)malloc(sizeof(int) * size); 
 
   // 할당에 실패하면 프로그램을 종료합니다
   if (arr == NULL) {

@@ -1,12 +1,9 @@
 package lab;
 
-import java.util.function.Consumer;
-
 public class Main {
   public static void main(String[] args) {
-    // functional interface
-    Consumer<String> consumer = (d) -> System.out.println(d);
+    String s = String.format("hello %s", "world");
 
-    consumer.accept("hello");
+    System.out.println(s);
   }  
 }
