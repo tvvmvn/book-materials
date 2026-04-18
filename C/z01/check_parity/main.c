@@ -1,14 +1,19 @@
 #include <stdio.h>
 
-
-int main() {
-  int d = 17;
-
-  if (d % 2 == 0) {
+void checkParity(int n) {
+  if (n % 2 == 0) {
     printf("even number\n");
   } else {
     printf("odd number\n");
   }
 }
 
-//odd number
+int main() {
+  checkParity(1);
+  checkParity(4);
+  checkParity(5);
+}
+
+// odd number
+// even number
+// odd number

@@ -1,10 +1,12 @@
 package more.annotation;
 
-interface Person {
-  void greeting();
+class Person {
+  void greeting() {
+    System.out.println("hello");
+  }
 }
 
-class Korean implements Person {
+class Korean extends Person {
   @Override
   public void greeting() {
     System.out.println("안녕하세요");

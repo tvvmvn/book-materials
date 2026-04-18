@@ -2,12 +2,12 @@ package stringmethods.format;
 
 public class Main {
   public static void main(String[] args) {
-    int year = 2026;
+    String s = "Java";
 
-    String greeting = String.format("year: %d", year);
+    String greeting = String.format("Hello %s", s);
 
     System.out.println(greeting); 
   }
 }
 
-//year: 2026
+// Hello Java

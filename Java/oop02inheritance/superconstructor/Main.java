@@ -4,7 +4,7 @@ class Person {
   String name;
   int age;
 
-  // when Child call super constructor, 'this' means Child.
+  // 부모의 생성자
   Person(String name, int age) {
     this.name = name;
     this.age = age;
@@ -14,10 +14,10 @@ class Person {
 class Student extends Person {
   int grade;
 
+  // 자식의 생성자
   Student(String name, int age, int grade) {
-    // parent constructor
+    // 부모 생성자를 호출합니다
     super(name, age);
-    // child
     this.grade = grade;
   }
 }

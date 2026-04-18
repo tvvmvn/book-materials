@@ -1,24 +1,23 @@
 package more.userinput;
 
-// import
+// Scanner 가져오기
 import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
-    // info
     String name;
 
-    // create a scanner
+    // 스캐너 생성
     Scanner scanner = new Scanner(System.in);
 
-    // gathering
+    // 정보 수집
     System.out.print("your name: ");
     name = scanner.nextLine();
 
-    // print info
+    // 정보 출력
     System.out.printf("name: %s", name);
 
-    // close scanner
+    // 스캐너 닫기
     scanner.close();
   }
 }

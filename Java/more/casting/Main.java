@@ -2,14 +2,15 @@ package more.casting;
 
 public class Main {
   public static void main(String[] args) {
-    
-    double d = 9; // 9.0
-    int h = (int) 178.5; // 178
+    // 업캐스팅 (편리함)
+    double a = 9; 
+    // 10 -> 10.0
+    float b = (float) 10 / 3;
 
-    System.out.println(d); 
-    System.out.println(h); 
+    System.out.println(a); 
+    System.out.println(b); 
   }
 }
 
 // 9.0
-// 178
+// 3.3333333

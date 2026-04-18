@@ -1,16 +1,14 @@
 package oop02inheritance.basic;
 
+// 부모 클래스
 class Person {
   String name;
   int age;
-
-  Person() {}
 }
 
+// 자식 클래스
 class Student extends Person {
   int grade;
-
-  Student() {}
 }
 
 public class Main {

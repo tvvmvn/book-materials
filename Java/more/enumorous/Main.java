@@ -9,14 +9,13 @@ enum ArrowKeys {
 
 public class Main {
   public static void main(String[] args) {
+    // 사용자가 클릭한 키
+    ArrowKeys clickedKey = ArrowKeys.RIGHT;
 
-    ArrowKeys clicked = ArrowKeys.RIGHT;
-
-    if (clicked == ArrowKeys.RIGHT) {
+    if (clickedKey == ArrowKeys.RIGHT) {
       System.out.println("go to right");
     }
   }
 }
 
-// WELL
-// RARE
+// go to right

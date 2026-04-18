@@ -6,15 +6,15 @@ public class Main {
 
     try {
       if (age < 18) {
-        throw new RuntimeException("You must be at least 18 years old.");
+        // 예외를 생성하고 catch로 던집니다
+        throw new RuntimeException("18세 이상만 가능합니다");
       }
   
-      System.out.println("You are old enough!");
-
+      System.out.println("통과!");
     } catch (Exception e) {
       System.out.println("Exception: " + e.getMessage());
     }
   }
 }
 
-// Exception: You must be at least 18 years old.
+// Exception: 18세 이상만 가능합니다

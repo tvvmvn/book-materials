@@ -1,20 +1,23 @@
 package more.thread02;
 
-class Derived implements Runnable {
+// Runnable 구현
+class RunnableImpl implements Runnable {
   public void run() {
-    System.out.println("This code is running in a thread");
+    System.out.println("스레드 안에서 실행중..");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    Thread thread = new Thread(new Derived());
+    // 스레드 생성
+    Thread thread = new Thread(new RunnableImpl());
 
+    // 스레드 시작
     thread.start();
 
-    System.out.println("This code is outside of the thread");
+    System.out.println("스레드 밖에서 실행중..");
   }
 }
 
-// This code is outside of the thread
-// This code is running in a thread
+// 스레드 밖에서 실행중..
+// 스레드 안에서 실행중..

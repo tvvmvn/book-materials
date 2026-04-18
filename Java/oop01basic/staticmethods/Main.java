@@ -1,6 +1,6 @@
 package oop01basic.staticmethods;
 
-// utility class
+// 유틸리티 클래스
 class MathTeacher {
   static void add(int a, int b) {
     System.out.println(a + b);

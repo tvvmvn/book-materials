@@ -2,11 +2,11 @@ package primitivetypes.bool;
 
 public class Main {
   public static void main(String[] args) {
-    boolean a = true;
-    boolean b = false;
+    boolean turnRight = true;
+    boolean turnLeft = false;
 
-    System.out.println(a);
-    System.out.println(b);
+    System.out.println(turnRight);
+    System.out.println(turnLeft);
   }
 }
 

@@ -4,18 +4,19 @@ int main() {
   int a, b, c;
   int sum;
 
-  // 3 과목의 점수를 입력받습니다
-  printf("enter your 3 scores: ");
+  // 세 과목의 점수를 띄어쓰기를 기준으로 입력받습니다
+  printf("scores: ");
   scanf("%d %d %d", &a, &b, &c);
 
-  // 일단 모두 더합니다
+  // 점수 합계를 구합니다
   sum = a + b + c;
 
-  // 3 으로 나눕니다. 소수점을 보존하기 위해 실수형으로 저장합니다
+  // 정수형끼리 나눗셈을 하면 소수점이 버려지므로
+  // sum을 10.0으로 형변환하고 3으로 나눕니다.
   double avg = (double) sum / 3;
 
   printf("average: %.2f", avg);
 }
 
-// enter your 3 scores: 90 90 95
+// scores: 90 90 95
 // average: 91.67

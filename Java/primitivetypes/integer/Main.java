@@ -2,10 +2,10 @@ package primitivetypes.integer;
 
 public class Main {
   public static void main(String[] args) {
-    int year = 2025;
+    int num = 2;
 
-    System.out.println(year);
+    System.out.println(num);
   }
 }
 
-// 2025
+// 2

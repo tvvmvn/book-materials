@@ -4,6 +4,7 @@ class Person {
   String name;
   int age;
 
+  // 생성자 정의하기
   Person(String name, int age) {
     this.name = name;
     this.age = age;
@@ -12,7 +13,7 @@ class Person {
 
 public class Main {
   public static void main(String[] args) {
-    // call constructor
+    // 인스턴스 생성은 곧 생성자 호출을 의미합니다.
     Person person = new Person("John Doe", 30);
 
     System.out.println(person.name);

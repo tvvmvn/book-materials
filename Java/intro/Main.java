@@ -2,7 +2,7 @@ package intro;
 
 public class Main {
   public static void main(String[] args) {
-    // This is comments.
+    // 출력 함수
     System.out.println("Hello Java!");
   }
 }

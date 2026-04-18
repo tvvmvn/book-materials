@@ -6,12 +6,11 @@ public class Main {
       int n = 2 / 0;
 
       System.out.println(n);
-      
     } catch (Exception e) {
       System.out.println("Exception: " + e);
     }
+    // 계속 진행..
   }
-  // still working (no crash)..
 }
 
 // Exception: java.lang.ArithmeticException: / by zero

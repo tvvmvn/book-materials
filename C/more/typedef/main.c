@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// alias
+// 타입 'weight' 정의
 typedef double weight;
 
 int main() {

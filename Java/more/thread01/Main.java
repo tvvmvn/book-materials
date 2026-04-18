@@ -1,21 +1,23 @@
 package more.thread01;
 
-class Derived extends Thread {
+// Thread 상속
+class MyThread extends Thread {
   public void run() {
-    System.out.println("This code is running in a thread");
+    System.out.println("스레드 안에서 실행중..");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    
-    Derived thread = new Derived();
+    // 스레드 생성
+    MyThread thread = new MyThread();
 
+    // 스레드를 시작합니다.
     thread.start();
 
-    System.out.println("This code is outside of the thread");
+    System.out.println("스레드 밖에서 실행중..");
   }
 }
 
-// This code is outside of the thread
-// This code is running in a thread
+// 스레드 밖에서 실행중..
+// 스레드 안에서 실행중..

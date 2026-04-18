@@ -2,11 +2,8 @@
 
 int main() {
   int n = 2;
-  
-  // all types
-  void* p = &n;
+  char c = 'A';
 
-  int* ptr = (int*)p;
-  
-  printf("%d", *ptr);
+  void* p = &n;
+  p = &c;
 }

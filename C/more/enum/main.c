@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-enum Level {//all integers
+enum Level {
   LOW,
   MEDIUM,
   HIGH
 };
 
 int main() {
-  printf("%d\n", LOW);
-  printf("%d\n", MEDIUM);
-  printf("%d\n", HIGH);
+
+  enum Level myLevel = HIGH;
+
+  printf("%d\n", myLevel == HIGH);
    
   return 0;
 }
 
-// 0
 // 1
-// 2

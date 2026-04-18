@@ -1,24 +1,23 @@
 package oop02inheritance.override;
 
-class Base {
-  void doSomething() {
-    System.out.println("in a parent way");
+class Person {
+  void greeting() {
+    System.out.println("hello");
   }
 }
 
-class Derived extends Base {
-  @Override
-  void doSomething() {
-    System.out.println("in a child way");
+class Student extends Person {
+  void greeting() {
+    System.out.println("hello I'm student");
   }
 }
 
 class Main {
   public static void main(String[] args) {
-    Derived d = new Derived();
+    Student student = new Student();
 
-    d.doSomething(); 
+    student.greeting();
   }
 }
 
-// in a child way
+// hello I'm student

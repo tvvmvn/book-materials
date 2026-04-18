@@ -2,10 +2,11 @@ package variables.create;
 
 public class Main {
   public static void main(String[] args) {
-    int year = 2026;
+    // 문자열 변수
+    String greeting = "Hello";
 
-    System.out.println(year); 
+    System.out.println(greeting); 
   }
 }
 
-// 2026
+// Hello

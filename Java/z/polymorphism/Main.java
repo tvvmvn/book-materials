@@ -42,7 +42,7 @@ public class Main {
       payment = new NaverPay();
     } else {
       // payment 할당에 실패했으므로 프로그램을 종료합니다.
-      System.err.println("unknown payment method");
+      System.out.println("unknown payment method");
       return;
     }
 

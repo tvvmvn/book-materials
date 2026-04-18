@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  // coordinates
+  // 좌표(Coordinates) 데이터 
   int crds[3][2] = {{100, 120}, {90, 100}, {110, 100}};
   
   // 중첩 반복문을 이용해 2차원 배열을 순회합니다

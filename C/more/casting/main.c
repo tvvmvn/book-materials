@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 int main() {
-  // upcasting(promotion)
-  float version = 2; 
-  // downcasting
-  int height = (int) 178.5; 
+  // 정수값을 실수형에 저장 (업캐스팅)
+  float f = 2; 
+  // 실수값을 정수형에 저장 (다운캐스팅)
+  int i = 2.5;
   
-  printf("%f\n", version);
-  printf("%d\n", height);
+  printf("%f\n", f);
+  printf("%d\n", i);
 }
 
 // 2.000000
-// 178
+// 2
+

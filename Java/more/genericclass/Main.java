@@ -1,9 +1,9 @@
 package more.genericclass;
 
-class Person<T> {
+class User<T> {
   T id;
 
-  Person(T id) {
+  User(T id) {
     this.id = id;
   }
 
@@ -14,10 +14,10 @@ class Person<T> {
 
 public class Main {
   public static void main(String[] args) {
-    // responsive to increase 
-    Person<Long> person = new Person<>(10L);
+    // 지네릭 인자 - Integer
+    User<Integer> user = new User<>(10);
 
-    System.out.println(person.getId());
+    System.out.println(user.getId());
   }
 }
 

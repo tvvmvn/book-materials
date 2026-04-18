@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  // coordinates
+  // 좌표 데이터
   int crds[3][2] = {{100, 120}, {90, 100}, {110, 100}};
   
   printf("%d %d\n", crds[0][0], crds[0][1]);

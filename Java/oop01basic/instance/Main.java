@@ -1,21 +1,20 @@
 package oop01basic.instance;
 
 class Person {
-  // variables
+  // 클래스 멤버
   String name;
   int age;
-
-  // constructor
-  Person() {}
 }
 
 public class Main {
   public static void main(String[] args) {
-    // call a constructor
+    // Person의 인스턴스를 생성합니다
     Person person = new Person();
+    // 인스턴스의 각 속성에 값을 할당합니다
     person.name = "John";
     person.age = 30;
 
+    // 인스턴스에 접근합니다
     System.out.println(person.name);
     System.out.println(person.age);
   }

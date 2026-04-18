@@ -6,7 +6,7 @@ public class Main {
     int b = 1;
 
     System.out.printf("a=%d, b=%d\n", --a, b--);
-    System.err.printf("a=%d, b=%d\n", a, b);
+    System.out.printf("a=%d, b=%d\n", a, b);
   }
 }
 

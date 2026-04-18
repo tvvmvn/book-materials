@@ -2,11 +2,11 @@ package array.access;
 
 public class Main {
   public static void main(String[] args) {
-    int[] nums = {10, 20, 30};
-
-    System.out.println(nums[0]);
-    System.out.println(nums[1]);
-    System.out.println(nums[2]);
+    int[] arr = {10, 20, 30};
+    
+    System.out.println(arr[0]);
+    System.out.println(arr[1]);
+    System.out.println(arr[2]);
   }
 }
 

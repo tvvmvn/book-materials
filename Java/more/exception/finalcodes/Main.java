@@ -6,14 +6,13 @@ public class Main {
       int n = 2 / 0;
 
       System.out.println(n);
-      
     } catch (Exception e) {
       System.out.println("Exception: " + e);
     } finally {
-      System.out.println("handling ended");
+      System.out.println("추가 작업..");
     }
   }
 }
 
 // Exception: java.lang.ArithmeticException: / by zero
-// handling ended
+// 추가 작업..

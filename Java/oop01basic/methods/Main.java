@@ -1,10 +1,7 @@
 package oop01basic.methods;
 
 class Person {
-  // constructor
-  Person() {}
-
-  // methods
+  // 메서드
   void greeting() {
     System.out.println("hello");
   }
@@ -12,9 +9,9 @@ class Person {
 
 public class Main {
   public static void main(String[] args) {
-    // create an instance
     Person person = new Person();
 
+    // 메서드 호출
     person.greeting();
   }
 }
