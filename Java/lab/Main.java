@@ -1,11 +1,22 @@
 package lab;
 
-public class Main {
-  public static void main(String[] args) {
-    String s1 = "hello";
-    String s2 = "world";
-
-  }  
+// Person 인터페이스
+@FunctionalInterface
+interface Person {
+  void greeting();
 }
 
-// Hello Java
+public class Main {
+  public static void main(String[] args) {
+    // Person을 구현한 익명 클래스
+    Person person = new Person() {
+      public void greeting() {
+        System.out.println("hello");
+      }
+    };
+
+    person.greeting();
+  }
+}
+
+// hello
