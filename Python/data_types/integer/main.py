@@ -2,11 +2,7 @@ a = -1
 b = 0
 c = 2
 
-print(a)
-print(b)
-print(c)
+print(a, b, c)
 
 # 
-# -1
-# 0
-# 2
+# -1 0 2

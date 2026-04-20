@@ -1,4 +1,5 @@
-print("Hello World")
+# 메모
+print("Hello Python")
 
 # 
-# Hello World
+# Hello Python
