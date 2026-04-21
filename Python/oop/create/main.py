@@ -1,8 +1,11 @@
+# 클래스 Person
 class Person:
+  # 생성자
   def __init__(self, name, age):
     self.name = name
     self.age = age
 
+# Person의 인스턴스
 p1 = Person("John", 30)
 p2 = Person("Jane", 25)
 

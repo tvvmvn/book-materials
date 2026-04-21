@@ -1,6 +1,7 @@
-def add(a, b):
+def add(a, b): # a, b는 매개변수
   print(f"{a} + {b} = {a + b}")
 
+# 전달된 숫자들은 인자
 add(1, 2)
 add(3, 4)
 add(4, 5)

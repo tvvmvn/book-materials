@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 // 노드
-typedef struct Node {
+typedef struct _Node {
   // 노드의 데이터
   int data;
   // 다음 노드를 가리키는 포인터
-  struct Node* next;
+  struct _Node* next;
 } Node;
 
 // 노드를 생성하는 함수
@@ -37,15 +37,15 @@ void printList(Node* node) {
     node = node->next;
   }
   // 마지막 노드가 가리키는 건 null입니다
-  printf("null\n");
+  printf("null");
 }
 
 int main() {
   // 노드들을 고유한 데이터와 함께 생성합니다.
-  Node* node1 = createNode(3);
-  Node* node2 = createNode(5);
-  Node* node3 = createNode(13);
-  Node* node4 = createNode(2);
+  Node* node1 = createNode(7);
+  Node* node2 = createNode(10);
+  Node* node3 = createNode(3);
+  Node* node4 = createNode(9);
 
   // 노드들을 연결합니다.
   node1->next = node2;
@@ -65,4 +65,4 @@ int main() {
 }
 
 //C
-// 3 -> 5 -> 13 -> 2 -> null
+// 7 -> 10 -> 3 -> 9 -> null

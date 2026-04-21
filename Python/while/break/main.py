@@ -1,5 +1,5 @@
-i = 1
-while i <= 5:
+i = 0
+while i < 5:
   if i == 3:
     break
 
@@ -7,5 +7,6 @@ while i <= 5:
   i += 1
 
 # 
+# 0
 # 1
 # 2

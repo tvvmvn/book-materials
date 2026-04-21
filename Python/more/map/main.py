@@ -1,10 +1,11 @@
-nums = [10, 20, 30, 40]
+def bigger(n):
+  return n * 10
 
-for item in map(lambda n : n * 10, nums):
-  print(item)
+nums = [10, 20, 30]
+
+bigNums = map(bigger, nums)
+
+print(list(bigNums))
 
 # 
-# 100
-# 200
-# 300
-# 400
+# [100, 200, 300]

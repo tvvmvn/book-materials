@@ -2,12 +2,12 @@ age = 30
 
 if age < 18 :
   print("Teenage")
-elif 18 <= age < 30:
+elif age >= 18 and  age < 30:
   print("20s")
-elif 30 <= age < 40:
+elif age >= 30 and age < 40:
   print("30s")
 else:
-  print("old")
+  print("over 40s")
 
 # 
 # 30s

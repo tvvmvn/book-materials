@@ -1,12 +1,5 @@
-a = range(10)
-b = range(1, 10)
-c = range(1, 10, 2)
 
-print(a)
-print(b)
-print(c)
+print(range(5))
 
 # 
-# range(0, 10)
-# range(1, 10)
-# range(1, 10, 2)
+# range(0, 5)

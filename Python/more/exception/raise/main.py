@@ -1,14 +1,13 @@
-input = 123
-password = 1234
+age = 15
 
 try:
-  if input != password:
+  if age < 18:
     raise Exception(1)
   
-  print("login success")
+  print("입장")
   
 except:
-  print("비밀번호 오류")
+  print("너무 어려요!")
 
 # 
-# 비밀번호 오류
+# 너무 어려요!

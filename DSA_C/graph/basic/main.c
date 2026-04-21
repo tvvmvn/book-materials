@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-// 
 #define SIZE 4
 
 // 그래프 구조체

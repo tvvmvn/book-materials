@@ -1,4 +1,2 @@
-r = range(5, 10, 2)
-
-for i in r:
-  print(i)
+for t in [(100, 120), (90, 110)]:
+  print(f'{t[0]} {t[1]}')

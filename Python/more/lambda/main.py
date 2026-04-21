@@ -1,11 +1,9 @@
-# quick
-add = lambda a, b : a + b
+nums = [10, 20, 30]
 
-print(add(1, 2))
-print(add(2, 3))
-print(add(3, 4))
+for item in map(lambda n : n * 10, nums):
+  print(item)
 
 # 
-# 3
-# 5
-# 7
+# 100
+# 200
+# 300

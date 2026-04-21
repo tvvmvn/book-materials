@@ -1,6 +1,6 @@
 print(int(1.5))
 print(float(2))
-print(int("3"))
+print(int('3'))
 
 # 
 # 1

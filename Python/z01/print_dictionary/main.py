@@ -5,7 +5,7 @@ cat = {
 }
 
 print('cat info:')
-# items() 메서드는 딕셔너리의 각 필드를 튜플형으로 반환합니다.
+# dict_items의 각 요소는 키-값으로 구성된 튜플입니다.
 for key, val in cat.items():
   print(f"{key}: {val}")
   

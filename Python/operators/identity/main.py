@@ -1,11 +1,10 @@
 a = [0, 1]
 b = [0, 1]
+c = a
 
-print(a == b)
 print(a is b)
-print(a is not b)
+print(a is c)
 
 # 
-# True
 # False
 # True

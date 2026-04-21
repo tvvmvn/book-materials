@@ -1,5 +1,5 @@
 # 사용자가 회원가입 시도 중에 입력한 비밀번호라고 가정해봅시다
-password = 'shhhh'
+password = 'shhh'
 
 # 비밀번호 길이를 검사합니다
 if (len(password) < 8):

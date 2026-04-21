@@ -1,11 +1,11 @@
 class Person:
-  # ...
-  def greeting(self):
-    print('hello')
+  # 메서드
+  def greeting(self, to):
+    print(f'hello {to}')
 
 p = Person()
 
-p.greeting()
+p.greeting('Python')
 
 # 
-# hello
+# hello Python

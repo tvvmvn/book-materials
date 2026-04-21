@@ -1,9 +1,9 @@
 for i in range(5):
-  print(f"i: {i}")
+  print(f"item: {i}")
 
 # 
-# i: 0
-# i: 1
-# i: 2
-# i: 3
-# i: 4
+# item: 0
+# item: 1
+# item: 2
+# item: 3
+# item: 4

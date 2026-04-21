@@ -1,9 +1,9 @@
-def say(to = "world"):
+def greeting(to = "world"): # 기본 인자 world
   print("hello", to)
 
-say()
-say('C')
-say('Python')
+greeting()
+greeting('C')
+greeting('Python')
 
 # 
 # hello world

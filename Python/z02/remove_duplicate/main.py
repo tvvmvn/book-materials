@@ -5,7 +5,9 @@ nums = [1, 2, 3, 3, 3, 4, 5, 5]
 tmp = set(nums)
 
 # set을 다시 리스트로 변환합니다
-print(list(tmp))
+newNums = list(tmp)
+
+print(newNums)
 
 # 
 # [1, 2, 3, 4, 5]
