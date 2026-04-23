@@ -1,7 +1,11 @@
 ---
-triple:      'x86_64-apple-darwin'
-binary-path:   '/Users/jintaemin/workspace/book-materials/DSA/graph/main'
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/jintaemin/workspace/book-materials/DSA_C/graph/basic/main'
 relocations:
-  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000E20, symSize: 0x102 }
-  - { offset: 0x4D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000E20, symSize: 0x102 }
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _initGraph, symObjAddr: 0x0, symBinAddr: 0x100000CB0, symSize: 0x70 }
+  - { offset: 0x4D, size: 0x8, addend: 0x0, symName: _initGraph, symObjAddr: 0x0, symBinAddr: 0x100000CB0, symSize: 0x70 }
+  - { offset: 0xA9, size: 0x8, addend: 0x0, symName: _addEdge, symObjAddr: 0x70, symBinAddr: 0x100000D20, symSize: 0x70 }
+  - { offset: 0xE9, size: 0x8, addend: 0x0, symName: _addVertexData, symObjAddr: 0xE0, symBinAddr: 0x100000D90, symSize: 0x40 }
+  - { offset: 0x129, size: 0x8, addend: 0x0, symName: _printGraph, symObjAddr: 0x120, symBinAddr: 0x100000DD0, symSize: 0xE0 }
+  - { offset: 0x1A1, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x200, symBinAddr: 0x100000EB0, symSize: 0xB5 }
 ...

@@ -8,6 +8,7 @@ class Person {
 
 // 자식 클래스
 class Student extends Person {
+  // name, age를 상속받음
   int grade;
 }
 

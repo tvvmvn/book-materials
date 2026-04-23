@@ -1,6 +1,6 @@
 # WHERE 
 
-조건을 지정하는 명령입니다. 다음의 연산자를 활용합니다.
+조건을 지정하는 명령어입니다. 다음의 연산자들과 함께 사용됩니다.
 
 - 비교 연산자 (Comparison Operator)
 - 논리 연산자 (Logical Operator)

@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  const int PI = 3.14;  
+  const double PI = 3.14;  
 
   // error
-  // pi = 3;
+  // PI = 3.14159;
   
   return 0;
 }

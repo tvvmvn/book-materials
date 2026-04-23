@@ -7,7 +7,6 @@ enum Level {
 };
 
 int main() {
-
   enum Level myLevel = HIGH;
 
   printf("%d\n", myLevel == HIGH);

@@ -67,8 +67,7 @@ int main() {
   traverseAndPrint(node1);
 
   // 리스트에서 4번째 자리에 값이 2인 노드를 삽입하고 싶습니다.
-  Node* newNode = malloc(sizeof(Node));
-  newNode->data = 2;
+  Node* newNode = createNode(2);
   node1 = insertNodeAtPosition(node1, newNode, 4);
 
   // 노드 추가 후 상태를 확인합니다.

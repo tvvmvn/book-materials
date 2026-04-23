@@ -51,9 +51,9 @@ void printGraph(Graph *g) {
   }
 
   // 그래프에 존재하는 모든 정점을 출력합니다
-  printf("\nVertex Data:\n");
+  printf("\nVertices:\n");
   for (int i = 0; i < SIZE; i++) {
-    printf("Vertex %d: %c\n", i, g->vertexData[i]);
+    printf("%c(%d) ", g->vertexData[i], i);
   }
 }
 
@@ -87,8 +87,5 @@ int main() {
 // 1 1 0 0
 // 1 0 0 0
 
-// Vertex Data:
-// Vertex 0: A
-// Vertex 1: B
-// Vertex 2: C
-// Vertex 3: D
+// Vertices:
+// A(0) B(1) C(2) D(3) 

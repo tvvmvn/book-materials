@@ -38,7 +38,7 @@ int main() {
   int result = binarySearch(myArray, size, myTarget);
 
   if (result != -1) {
-    printf("Value %d found at index %d\n", myTarget, result);
+    printf("%d found at index %d\n", myTarget, result);
   } else { // 찾는 숫자가 배열에 존재하지 않는 경우입니다.
     printf("Target not found in array.\n");
   }
@@ -47,4 +47,4 @@ int main() {
 }
 
 //C
-// Value 15 found at index 7
+// 15 found at index 7

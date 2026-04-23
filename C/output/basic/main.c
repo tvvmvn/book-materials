@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  // 출력 함수입니다.
-  printf("hello C");
+  char to[] = "world";
+  
+  printf("hello %s", to);
 
   return 0;
 }
 
-// hello C
+// hello world

@@ -1,25 +1,12 @@
 #include <stdio.h>
 
-enum Level {
-  Beginner,
-  Amateur,
-  Master
-};
-
 int main() {
-  enum Level myLevel = Master;
+  int a = 1.0;
+  float b = 1;
 
-  switch (myLevel) {
-    case Beginner:
-      printf("Try Hard\n");
-      break;
-    case Amateur:
-      printf("Keep doing\n");
-      break;
-    case Master:
-      printf("Great!\n");
-      break;
-  }
+  printf("%d\n", a);
+  printf("%f\n", b);
 }
 
-// Great
+// 1
+// 1.000000

@@ -1,3 +1,4 @@
+// printf 함수가 포함된 헤더
 #include <stdio.h>
 
 int main() {

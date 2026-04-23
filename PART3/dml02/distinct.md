@@ -1,6 +1,6 @@
 # DISTINCT
 
-DISTINCT는 결과에서 중복을 제거하는 명령어입니다.
+DISTINCT는 검색 결과에서 중복을 제거하는 명령어입니다.
 
 
 # SELECT DISTINCT
@@ -18,7 +18,7 @@ SELECT DISTINCT 학년 FROM 학생;
 
 # DISTINCT와 집계 함수
 
-예제) 사원 테이블에 몇 개의 부서ID가 있는지 구해보세요.
+예제) 사원 테이블에 몇 개의 부서가 있는지 구해보세요.
 ```sql
 SELECT COUNT(DISTINCT 부서ID) FROM 사원
 ```

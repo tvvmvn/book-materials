@@ -1,22 +1,18 @@
 package lab;
 
-// Person 인터페이스
-@FunctionalInterface
-interface Person {
-  void greeting();
-}
+import java.util.function.Consumer;
 
 public class Main {
   public static void main(String[] args) {
-    // Person을 구현한 익명 클래스
-    Person person = new Person() {
-      public void greeting() {
-        System.out.println("hello");
-      }
+    Consumer<String> consumer = new Consumer<String>() {
+      @Override
+      public void accept(String t) {
+        System.out.print(t);  
+      };
     };
 
-    person.greeting();
-  }
+    consumer.accept("hello");
+  }  
 }
 
 // hello

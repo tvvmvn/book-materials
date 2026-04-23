@@ -2,8 +2,9 @@ package more.thread01;
 
 // Thread 상속
 class MyThread extends Thread {
+  @Override
   public void run() {
-    System.out.println("스레드 안에서 실행중..");
+    System.out.println("스레드 실행중..");
   }
 }
 
@@ -15,9 +16,9 @@ public class Main {
     // 스레드를 시작합니다.
     thread.start();
 
-    System.out.println("스레드 밖에서 실행중..");
+    System.out.println("메인 프로그램 실행중..");
   }
 }
 
-// 스레드 밖에서 실행중..
-// 스레드 안에서 실행중..
+// 메인 프로그램 실행중..
+// 스레드 실행중..

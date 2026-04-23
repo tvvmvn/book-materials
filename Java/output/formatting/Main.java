@@ -2,10 +2,10 @@ package output.formatting;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.printf("Hello %s\n", "World");
-    System.out.printf("Hello %s\n", "Java");
+    String to = "Java";
+
+    System.out.printf("Hello %s\n", to);
   }
 }
 
 // Hello World
-// Hello Java

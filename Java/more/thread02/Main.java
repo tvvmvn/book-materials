@@ -2,8 +2,9 @@ package more.thread02;
 
 // Runnable 구현
 class RunnableImpl implements Runnable {
+  @Override
   public void run() {
-    System.out.println("스레드 안에서 실행중..");
+    System.out.println("스레드 실행중..");
   }
 }
 
@@ -15,9 +16,9 @@ public class Main {
     // 스레드 시작
     thread.start();
 
-    System.out.println("스레드 밖에서 실행중..");
+    System.out.println("메인 프로그램 실행중..");
   }
 }
 
-// 스레드 밖에서 실행중..
-// 스레드 안에서 실행중..
+// 메인 프로그램 실행중..
+// 스레드 실행중..
