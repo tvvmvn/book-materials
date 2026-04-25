@@ -4,10 +4,12 @@ cat = {
   "home": None
 }
 
-# add or change
+# change
 cat["age"] = 3
+# add
+cat["color"] = "black"
 
 print(cat)
 
 # 
-# {'name': 'Kitty', 'age': 3, 'home': None}
+# {'name': 'Kitty', 'age': 3, 'home': None, 'color': 'black'}

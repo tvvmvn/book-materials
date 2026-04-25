@@ -3,9 +3,9 @@ def bigger(n):
 
 nums = [10, 20, 30]
 
-bigNums = map(bigger, nums)
+for num in map(bigger, nums):
+  print(num)
 
-print(list(bigNums))
-
-# 
-# [100, 200, 300]
+# 100
+# 200
+# 300

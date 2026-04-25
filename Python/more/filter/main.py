@@ -3,9 +3,9 @@ def isAdult(age):
 
 ages = [10, 18, 22, 30]
 
-adults = filter(isAdult, ages)
+for age in filter(isAdult, ages):
+  print(age)
 
-print(list(adults))
-
-# 
-# [18, 22, 30]
+# 18
+# 22
+# 30
