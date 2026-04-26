@@ -1,7 +1,0 @@
-# TCL
-
-- COMMIT
-- ROLLBACK
-- SAVEPOINT
-
-
