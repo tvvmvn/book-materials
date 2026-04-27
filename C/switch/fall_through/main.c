@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int level = 2;
+  int level = 3;
 
   switch (level) {
     case 1:
@@ -17,4 +17,4 @@ int main() {
   }
 }
 
-//Beginner
+//Amateur

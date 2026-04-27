@@ -1,21 +1,19 @@
 package more.anonymousclass;
 
-// Person 인터페이스
-interface Person {
-  void greeting();
-}
+import java.util.function.Consumer;
 
 public class Main {
   public static void main(String[] args) {
-    // Person을 구현한 익명 클래스
-    Person person = new Person() {
-      public void greeting() {
-        System.out.println("hello");
+    // 제곱을 수행하는 함수 정의
+    Consumer<Integer> square = new Consumer<>() {
+      @Override
+      public void accept(Integer n) {
+        System.out.println(n * n);
       }
     };
 
-    person.greeting();
-  }
+    square.accept(12);
+  }  
 }
 
-// hello
+// 144

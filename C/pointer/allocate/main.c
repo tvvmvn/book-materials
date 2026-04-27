@@ -5,7 +5,7 @@ int main() {
   // 포인터 선언
   int* ptr = NULL;
 
-  // 메모리에 공간을 확보한 다음 ptr에 그 주소를 할당합니다.
+  // 할당된 공간의 주소
   ptr = (int*)malloc(sizeof(int));
 
   // 할당이 잘 됬는지 검사합니다.

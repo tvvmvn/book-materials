@@ -1,7 +1,7 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/jintaemin/workspace/book-materials/C/more/conversion/implicit/main'
+binary-path:     "/Users/jintaemin/workspace/정보처리기사 이패스/book-materials/C/more/conversion/implicit/main"
 relocations:
-  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x4C }
-  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F40, symSize: 0x4C }
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F60, symSize: 0x34 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000F60, symSize: 0x34 }
 ...

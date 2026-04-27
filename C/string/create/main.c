@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  char greeting[] = "hello";
+  char to[] = "world";
 
-  printf("%s\n", greeting);
+  printf("hello %s\n", to);
 
   return 0;
 }
 
-// hello
+// hello world

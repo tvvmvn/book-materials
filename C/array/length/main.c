@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-  int arr[] = {10, 20, 30};
+  int arr[] = {10, 20, 30, 40};
 
   int length = sizeof(arr) / sizeof(arr[0]);
-  // 12 / 4 = 3
+  // 16 / 4 = 4
 
   printf("%d\n", length);
 }
 
-// 3
+// 4

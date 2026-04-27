@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main() {
-  int a = 1.5;
-  float b = 1;
+  int a = 1;
+  double b = 1.5;
 
-  printf("%d\n", a);
-  printf("%f\n", b);
+  // a가 double로 자동 변환되어 계산됨
+  printf("%f", a + b); 
 }
 
-// 1
-// 1.000000
+// 2.500000
