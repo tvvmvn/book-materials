@@ -16,7 +16,7 @@ class Student extends Person {
 
   // 자식의 생성자
   Student(String name, int age, int grade) {
-    // 부모 생성자를 호출합니다
+    // 물려받은 속성을 부모 생성자에게 전달합니다.
     super(name, age);
     this.grade = grade;
   }

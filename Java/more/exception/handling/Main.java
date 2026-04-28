@@ -9,8 +9,9 @@ public class Main {
     } catch (Exception e) {
       System.out.println("Exception: " + e);
     }
-    // 계속 진행..
+    System.out.println("계속 진행..");
   }
 }
 
 // Exception: java.lang.ArithmeticException: / by zero
+// 계속 진행..

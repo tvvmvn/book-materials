@@ -1,19 +1,25 @@
 package lab;
 
-import java.util.function.Consumer;
+class User<T> {
+  // T는 지네릭 매개변수
+  T id;
+
+  User(T id) {
+    this.id = id;
+  }
+
+  T getId() {
+    return this.id;
+  }
+}
 
 public class Main {
   public static void main(String[] args) {
-    // 제곱을 수행하는 함수 정의
-    Consumer<Integer> square = new Consumer<>() {
-      @Override
-      public void accept(Integer n) {
-        System.out.println(n * n);
-      }
-    };
+    // Integer는 지네릭 인자
+    User<Integer> user = new User<Integer>(10);
 
-    square.accept(12);
-  }  
+    System.out.println(user.getId());
+  }
 }
 
-// 144
+// 10

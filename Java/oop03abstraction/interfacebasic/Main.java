@@ -1,27 +1,23 @@
 package oop03abstraction.interfacebasic;
 
-interface Person {
-  void greeting();
-  void walk();
+interface Animal {
+  // 추상 메서드
+  void cry();
 }
 
-class Korean implements Person {
-  public void greeting() {
-    System.out.println("안녕하세요");
-  }
-  public void walk() {
-    System.out.println("walking..");
+class Duck implements Animal {
+  // 추상 메서드를 자식 고유의 방법으로 구현합니다
+  public void cry() { 
+    System.out.println("꽥꽥");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    Korean korean = new Korean();
+    Duck duck = new Duck();
 
-    korean.greeting();
-    korean.walk();
+    duck.cry();
   }
 }
 
-// 안녕하세요
-// walking..
+// 꽥꽥

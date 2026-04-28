@@ -1,6 +1,7 @@
 package more.genericclass;
 
 class User<T> {
+  // T는 지네릭 매개변수
   T id;
 
   User(T id) {
@@ -14,7 +15,7 @@ class User<T> {
 
 public class Main {
   public static void main(String[] args) {
-    // 지네릭 인자 - Integer
+    // Integer는 지네릭 인자
     User<Integer> user = new User<>(10);
 
     System.out.println(user.getId());

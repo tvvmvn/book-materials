@@ -1,28 +1,28 @@
 package oop03abstraction.abstractclass;
 
-abstract class Person {
+abstract class Animal {
   // 추상 메서드
-  abstract void greeting();
+  abstract void cry();
   
   // 일반 메서드
-  void walk() {
-    System.out.println("walking..");
+  void eat() {
+    //..
   }
 }
 
-class Korean extends Person {
+class Duck extends Animal {
   // 추상 메서드를 자식 고유의 방법으로 구현합니다
-  void greeting() { 
-    System.out.println("안녕하세요");
+  void cry() { 
+    System.out.println("꽥꽥");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
-    Korean korean = new Korean();
+    Duck duck = new Duck();
 
-    korean.greeting();
+    duck.cry();
   }
 }
 
-// 안녕하세요
+// 꽥꽥

@@ -1,18 +1,14 @@
 package oop02inheritance.superkeyword;
 
 class Person {
-  Person() {}
-
   void greeting() {
     System.out.println("hello");
   }
 }
 
 class Student extends Person {
-  Student() {}
-  
   void greeting() {
-    // 부모의 greeting 메서드를 호출합니다
+    // 부모의 greeting 메서드를 활용합니다
     super.greeting();
     System.out.println("I'm student");
   }

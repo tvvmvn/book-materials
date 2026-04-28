@@ -9,10 +9,10 @@ public class Main {
     } catch (Exception e) {
       System.out.println("Exception: " + e);
     } finally {
-      System.out.println("추가 작업..");
+      System.out.println("예외 처리문 종료");
     }
   }
 }
 
 // Exception: java.lang.ArithmeticException: / by zero
-// 추가 작업..
+// 예외 처리문 종료

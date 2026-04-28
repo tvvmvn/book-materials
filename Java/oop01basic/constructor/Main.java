@@ -6,6 +6,7 @@ class Person {
 
   // 생성자 정의하기
   Person(String name, int age) {
+    // this는 생성중인 인스턴스를 의미합니다.
     this.name = name;
     this.age = age;
   }
@@ -13,7 +14,7 @@ class Person {
 
 public class Main {
   public static void main(String[] args) {
-    // 인스턴스 생성은 곧 생성자 호출을 의미합니다.
+    // 생성자를 호출해 객체를 생성합니다.
     Person person = new Person("John Doe", 30);
 
     System.out.println(person.name);

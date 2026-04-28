@@ -8,7 +8,7 @@ class Person {
 
 class Korean extends Person {
   @Override
-  public void greeting() {
+  public void unknown() {
     System.out.println("안녕하세요");
   }
 }

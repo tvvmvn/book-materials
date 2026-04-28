@@ -10,8 +10,9 @@ public class Main {
     // 스캐너 생성
     Scanner scanner = new Scanner(System.in);
 
-    // 정보 수집
+    // 정보 요청
     System.out.print("your name: ");
+    // 입력을 처리하고 결과를 반환합니다
     name = scanner.nextLine();
 
     // 정보 출력

@@ -1,10 +1,12 @@
 package oop01basic.overloading;
 
 public class Main {
+  // 정수형 덧셈을 처리합니다
   static void add(int a, int b) {
     System.out.println(a + b);
   }
 
+  // 실수형 덧셈을 처리합니다
   static void add(double a, double b) {
     System.out.println(a + b);
   }

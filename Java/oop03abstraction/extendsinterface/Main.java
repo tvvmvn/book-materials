@@ -7,6 +7,7 @@ interface 마우스 {
 
 // 자식 인터페이스
 interface 휠마우스 extends 마우스 {
+  // click() 상속받음
   void scroll();
 }
 
