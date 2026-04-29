@@ -1,11 +1,12 @@
-def bigger(n):
+def mega(n):
   return n * 10
 
 nums = [10, 20, 30]
 
-for num in map(bigger, nums):
-  print(num)
+m = map(mega, nums)
 
-# 100
-# 200
-# 300
+# 리스트로 변환
+print(list(m))
+
+# 
+# [100, 200, 300]

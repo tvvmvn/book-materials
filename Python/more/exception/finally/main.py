@@ -3,8 +3,8 @@ try:
 except:
   print("Error!")
 finally:
-  print("finished")
+  print("예외처리 종료")
 
 # 
 # Error!
-# finished
+# 예외처리 종료

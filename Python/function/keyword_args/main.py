@@ -1,10 +1,8 @@
 def info(name, age):
   print(f"name: {name}, age: {age}")
 
-# 키워드 인자 name, age
-info(name = "John", age = 30)
-info(age = 25, name = "Jane")
+# 여기에서 name, age는 키워드
+info(age = 30, name = "John")
 
 # 
 # name: John, age: 30
-# name: Jane, age: 25

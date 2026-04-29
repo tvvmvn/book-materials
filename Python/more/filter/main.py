@@ -3,9 +3,10 @@ def isAdult(age):
 
 ages = [10, 18, 22, 30]
 
-for age in filter(isAdult, ages):
-  print(age)
+adults = filter(isAdult, ages)
 
-# 18
-# 22
-# 30
+# 리스트로 변환
+print(list(adults))
+
+# 
+# [18, 22, 30]

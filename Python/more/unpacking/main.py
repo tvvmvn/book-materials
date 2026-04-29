@@ -1,12 +1,12 @@
-fruits = ['apple', 'banana', 'mango']
+nums = [10, 20, 30]
 
-a, b, c = fruits
+a, b, c = nums
 
 print(a)
 print(b)
 print(c)
 
 # 
-# apple
-# banana
-# mango
+# 10
+# 20
+# 30
