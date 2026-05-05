@@ -8,6 +8,27 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "jvarchives.upcasting.Main",
+      "projectName": "Exam_1efedbac"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "javalab.Main",
+      "projectName": "Exam_1efedbac"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "javacode.year25.round1q5.Main",
+      "projectName": "Exam_1efedbac"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "Main",
       "projectName": "exam-codes_91565a29"
     },
