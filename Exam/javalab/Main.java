@@ -1,23 +1,37 @@
 package javalab;
 
-class Parent {
-  void f() {
-    System.out.println(1);
+class Printer {
+  void print(Integer a) {
+    System.out.print("A" + a);
+  }
+
+  void print(Object a) {
+    System.out.print("B" + a);
+  }
+
+  void print(Number a) {
+    System.out.print("C" + a);
   }
 }
-
-class Child extends Parent {
-  // void f() {
-  //   System.out.println(2);
-  // }
-} 
 
 public class Main {
-  public static void main(String[] args) {
-    Parent o = new Child();
+  public static class Collection<T> {
+    T value;
 
-    o.f();
+    public Collection(T t) {
+      value = t;
+    }
+    
+    public void print() {
+      System.out.println(value);
+      System.out.println(value.getClass());
+    }
+  }
+
+  public static void main(String[] args) {
+    new Collection<>(0).print();
   }
 }
 
-// 2
+// 0
+// class java.lang.Integer
