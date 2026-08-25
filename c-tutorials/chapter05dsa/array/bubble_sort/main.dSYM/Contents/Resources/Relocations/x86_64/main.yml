@@ -1,0 +1,7 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     "/Users/jintaemin/workspace/정보처리기사 이패스/book-materials/C/chapter05dsa/array/bubble_sort/main"
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000DF0, symSize: 0x169 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000DF0, symSize: 0x169 }
+...
