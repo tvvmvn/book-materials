@@ -1,7 +1,3 @@
-nums = [10, 20, 30]
-
-r = [i * 10 for i in nums]
+r = [i * 10 for i in range(1, 4)]
 
 print(r)
-
-# [100, 200, 300]

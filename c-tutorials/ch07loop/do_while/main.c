@@ -8,6 +8,7 @@ int main() {
 
     scanf("%d", &input);
 
+    // 일반 while 문을 쓰면 조건을 만족하지 않아 바로 끝나버립니다.
   } while (input <= 0);
 }
 

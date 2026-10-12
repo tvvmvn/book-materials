@@ -1,7 +1,7 @@
 try:
   print(x)
 except:
-  print("Error!")
+  print("예외 발생!")
 
 # 
 # Error!

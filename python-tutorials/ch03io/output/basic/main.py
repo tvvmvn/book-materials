@@ -1,11 +1,11 @@
 # 기본 사용
 print('hello world')
-# 콤마는 띄어쓰기로 출력합니다
-print('hello', 'world')
-# end는 마지막 출력 문자를 의미합니다. 기본값은 \n입니다
-print('hello world', end = '!')
+# 입력값 사이에 삽입할 문자.
+print('hello', 'world', sep = " ")
+# end는 마지막 출력 문자를 의미합니다.
+print('hello world', end = '\n')
 
 
 # hello world
 # hello world
-# hello world!%o world!%  
+# hello world

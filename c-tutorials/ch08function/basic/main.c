@@ -1,19 +1,15 @@
 #include <stdio.h>
 
-// 함수 정의
-void myFunction() {
-  printf("hello\n");
+void greet(char to[]) {
+  printf("hello %s\n", to);
 }
 
 int main() {
-  // 함수 호출
-  myFunction();
-  myFunction();
-  myFunction();
-  
-  return 0;
+  greet("C");
+  greet("Java");
+  greet("Python");
 }
 
-//hello
-//hello
-//hello
+// hello C
+// hello Java
+// hello Python

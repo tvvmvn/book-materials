@@ -1,18 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-// 포인터를 입력받는 함수
-void f(int* ptr) {
-  // 원본 변수의 값을 바꿀 수 있습니다
-  *ptr = 10;
+void f(int* ptr, int n) {
+  *ptr = 100;
+  n = 100;
 }
 
 int main() {
-  int n = 2;
+  int x = 1;
+  int y = 1;
 
-  // 함수에 변수의 주소를 입력했습니다
-  f(&n);
+  f(&x, y);
 
-  printf("%d", n); 
+  printf("%d, %d\n", x, y); 
 }
-
-//10

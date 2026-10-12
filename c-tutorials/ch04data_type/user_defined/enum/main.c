@@ -13,8 +13,7 @@ enum Day {
 int main() {
   enum Day today = SAT;
 
-  printf("%d\n", today);
-  printf("%d\n", SAT);
+  // 오늘이 토요일이니?
   printf("%d\n", today == SAT);
 }
 

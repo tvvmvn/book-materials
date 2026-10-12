@@ -6,7 +6,7 @@ def myfunc():
   b = 2
 
 print(a)
-print(b) #error
+# print(b) #error
 
 # 
 # NameError: name 'b' is not defined

@@ -5,6 +5,7 @@ public class Main {
     String s1 = "hello";
     String s2 = "world";
     
+    // " "는 공백(띄어쓰기)를 의미합니다.
     System.out.println(s1 + " " + s2);
   }
 }

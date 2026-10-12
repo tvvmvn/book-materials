@@ -1,7 +1,7 @@
 nums = [10, 20, 30]
 
-for t in enumerate(nums):
-  print(t)
+for index, item in enumerate(nums):
+  print(index, item)
   
 # 
 # (0, 10)

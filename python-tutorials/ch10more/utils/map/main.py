@@ -1,9 +1,6 @@
-def mega(n):
-  return n * 10
-
 nums = [10, 20, 30]
 
-m = map(mega, nums)
+m = map(lambda n : n * 10, nums)
 
 # 리스트로 변환
 print(list(m))

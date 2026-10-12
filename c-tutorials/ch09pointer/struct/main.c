@@ -11,10 +11,11 @@ int main() {
   // 구조체 포인터
   struct Person* p;
 
-  // 멤버에 값을 할당합니다.
+  // 멤버 정의하기
   strcpy(p->name, "John");
   p->age = 30;
 
+  // 멤버에 접근하기
   printf("name: %s, age: %d\n", p->name, p->age);
 }
 

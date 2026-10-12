@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-void add(int x, int y);
+// 함수를 먼저 선언하고
+void greet(char to[]);
 
 int main() {
-  add(1, 2);
+  greet("C");
 }
 
-void add(int x, int y) {
-  printf("result: %d", x + y);
+// 나중에 정의합니다
+void greet(char to[]) {
+  printf("hello %s\n", to);
 }
 
-// result: 3
+// hello C
