@@ -10,7 +10,8 @@ void f() {
 
 int main() {
   printf("%d\n", a);
-  // printf("%d\n", b); // 컴파일 에러
+  // 컴파일 에러 (지역 변수에 접근 시도)
+  // printf("%d\n", b); 
 
   return 0;
 }

@@ -17,6 +17,4 @@ int main() {
   printf("%d\n", today == SAT);
 }
 
-// 5
-// 5
 // 1

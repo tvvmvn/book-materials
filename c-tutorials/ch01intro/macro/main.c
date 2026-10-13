@@ -1,6 +1,7 @@
 #include <stdio.h>
-#define MAX_SIZE 100 //global
+// 매크로 정의
+#define PI 3.14
 
 int main() {
-  int arr[MAX_SIZE];
+  printf("%f\n", PI);
 }

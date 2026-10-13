@@ -11,9 +11,9 @@ typedef struct {
 // 스택을 생성하는 함수
 Stack* createStack(int capacity) {
   // 스택 구조체 포인터를 생성합니다
-  Stack *newStack = (Stack*)malloc(sizeof(Stack));
+  Stack *newStack = malloc(sizeof(Stack));
   // 데이터 공간을 확보합니다.
-  newStack->data = (int*)malloc(capacity * sizeof(int));
+  newStack->data = malloc(capacity * sizeof(int));
   // top 초기화
   newStack->top = -1;
   // 수용량 초기화

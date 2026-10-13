@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 int main() {
-  // 포인터 선언
+  // 포인터 초기화
   int* ptr = NULL;
 
-  // 할당된 공간의 주소
+  // 메모리 할당
   ptr = malloc(sizeof(int));
 
-  // 할당이 잘 됬는지 검사합니다.
+  // 할당이 잘 됬는지 확인합니다.
   if (ptr == NULL) {
     printf("Memory allocation failed\n");
     return 1;

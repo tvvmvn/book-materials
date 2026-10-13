@@ -12,7 +12,7 @@ typedef struct _Node {
 // 노드를 생성하는 함수
 Node* createNode(int data) {
   // 노드를 저장할 공간을 확보합니다
-  Node* newNode = (Node*)malloc(sizeof(Node));
+  Node* newNode = malloc(sizeof(Node));
 
   // 메모리 할당에 실패하면 프로그램을 종료합니다.
   if (!newNode) {
@@ -67,5 +67,4 @@ int main() {
   return 0;
 }
 
-//C
 // 7 -> 10 -> 3 -> 2 -> 9 -> null

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-// 구조체 선언
+// 구조체 정의
 struct Person{
   char name[10];
   int age;
 };
 
 int main() {
-  // 구조체 포인터
+  // 구조체 포인터 생성
   struct Person* p;
 
   // 멤버 정의하기

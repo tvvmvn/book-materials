@@ -14,7 +14,7 @@ typedef struct TreeNode {
 // 노드를 생성하는 함수
 TreeNode* createNewNode(char data) {
   // 노드를 위한 공간을 할당합니다
-  TreeNode* newNode = (TreeNode*)malloc(sizeof(TreeNode));
+  TreeNode* newNode = malloc(sizeof(TreeNode));
   // 데이터 할당
   newNode->data = data;
   // 일단 자식을 가리키는 포인터는 null 상태입니다. (나중에 연결합니다)
@@ -73,5 +73,4 @@ int main() {
   return 0;
 }
 
-//C
 // R, A, C, D, B, E, F, G, 

@@ -1,15 +1,19 @@
 #include <stdio.h>
 
-// 함수를 먼저 선언하고
-void greet(char to[]);
+// 함수 선언부 (추상화 역할)
+int add(int x, int y);
 
 int main() {
-  greet("C");
+  int r = add(1, 2);
+  
+  printf("result: %d\n", r); 
+  
+  return 0;
 }
 
-// 나중에 정의합니다
-void greet(char to[]) {
-  printf("hello %s\n", to);
+// 나중에 정의하기
+int add(int x, int y) {
+  return x + y;
 }
 
-// hello C
+// result: 3

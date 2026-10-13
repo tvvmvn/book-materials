@@ -5,6 +5,7 @@ typedef double weight;
 
 int main() {
 
+  // weight 변수들
   weight a = 52.5;
   weight b = 65;
 

@@ -8,6 +8,7 @@ struct Person {
 int main() {
   struct Person person = {"John", 30};
 
+  // 나이 업데이트
   person.age = 31;
 
   printf("age: %d\n", person.age);

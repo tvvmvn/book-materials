@@ -7,8 +7,8 @@ int main() {
   // ptr의 주소를 저장한 pptr
   int** pptr = &ptr;
 
-  // pptr 출력
   printf("%p\n", ptr);
+  // pptr을 역참조하면 ptr과 같습니다.
   printf("%p\n", *pptr);
 }
 

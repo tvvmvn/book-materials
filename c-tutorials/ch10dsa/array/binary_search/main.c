@@ -46,5 +46,4 @@ int main() {
   return 0;
 }
 
-//C
 // 15 found at index 7
