@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-// 수용가능한 요소의 개수
+// 매크로: 큐의 수용량(capacity)
 #define CAPACITY 10
 
 // 큐 구조체
 typedef struct {
-  // 데이터를 담는 공간
+  // 요소 저장소
   int data[CAPACITY];
-  // 큐에서 첫번째 요소의 위치를 가리키는 값
+  // 첫번째 요소의 위치를 가리키는 데이터
   int front;
-  // 현재 요소의 개수
+  // 사이즈 (요소 개수)
   int size;
 } Queue;
 
@@ -20,28 +20,28 @@ void enqueue(Queue *q, int element);
 int dequeue(Queue *q);
 // 큐의 첫번째 요소를 반환하는 함수
 int peek(Queue *q);
-// 큐가 현재 비어있는지 확인합니다
+// 큐가 현재 비어있는지 확인하는 함수
 bool isEmpty(Queue *q);
-// 큐의 사이즈(요소의 개수)를 반환합니다
+// 큐의 사이즈를 반환하는 함수
 int size(Queue *q);
 // 큐를 출력하는 함수
 void printQueue(Queue *q);
 
 int main() {
-  // 큐 생성과 동시에 front, size를 0으로 초기화합니다
-  Queue queue = { .front = 0, .size = 0 };
+  // 큐 생성 및 초기화
+  Queue queue = {{0}, 0, 0};
 
-  // A, B, C 요소를 차례로 추가합니다
+  // 요소 A, B, C를 차례대로 추가합니다
   enqueue(&queue, 'A');
   enqueue(&queue, 'B');
   enqueue(&queue, 'C');
   
-  // 현재 상태를 출력합니다
+  // 현재 상태
   printQueue(&queue);
 
-  // 가장 앞의 요소(A)가 추출됩니다
+  // 첫번째 요소(A)가 추출됩니다
   printf("Dequeue: %c\n", dequeue(&queue));
-  // A가 추출되었으므로 B가 가장 앞에 있습니다
+  // A가 추출되었으므로 B가 첫번째입니다
   printf("Peek: %c\n", peek(&queue));
   // 두 요소가 있으니 거짓입니다
   printf("isEmpty: %d\n", isEmpty(&queue));
@@ -52,36 +52,40 @@ int main() {
 }
 
 void enqueue(Queue *q, int element) {
-  // 큐가 꽉 찬 경우입니다. 추가할 수 없습니다
+  // 큐가 꽉 차서 더이상 추가할 수 없는 경우
   if (q->size == CAPACITY) {
     printf("Queue is full\n");
     return;
   }
-  // CAPACITY로 나눈 나머지를 인덱스로 사용합니다.
-  // 이 기법을 원형 큐(Circular Queue)라고 하며 큐 구현의 핵심입니다.
+  // 새 요소(element)를 추가합니다.
+  // 원형 큐(Circular Queue): 수용량(capacity)으로 나눈 나머지를 인덱스로 사용(큐 구현의 핵심)
   q->data[(q->front + q->size) % CAPACITY] = element;
+  // 사이즈 업데이트
   q->size++;
 }
 
 int dequeue(Queue *q) {
-  // 큐가 빈 경우 입니다. 추출할 수 없습니다.
+  // 큐가 비어서 추출할 수 없는 경우
   if (isEmpty(q)) {
     printf("Queue is empty\n");
     return -1;
   }
+  // 추출할 요소
   int item = q->data[q->front];
-  // 마찬가지로 요소 추출에 원형 큐 기법이 사용되고 있습니다
+  // front, size 업데이트
   q->front = (q->front + 1) % CAPACITY;
   q->size--;
+  // 추출한 요소 반환
   return item;
 }
 
 int peek(Queue *q) {
-  // 큐가 빈 경우
+  // 큐가 빈 경우 -1 반환
   if (isEmpty(q)) {
     printf("Queue is empty\n");
     return -1;
   }
+  // 첫번째 요소 반환
   return q->data[q->front];
 }
 

@@ -23,23 +23,25 @@ Node* insertNodeAtPosition(Node* head, Node* newNode, int position) {
   if (position == 1) {
     // 새 노드가 현재 헤드를 가리키게 만들면 됩니다.
     newNode->next = head;
+    // 반환
     return newNode;
   }
 
-  // currentNode는 삽입할 위치 바로 앞에 있는 노드를 저장하는 변수입니다
+  // currentNode: 삽입할 위치 바로 앞에 있는 노드
   Node* currentNode = head;
-  // currentNode가 NULL이 된다는 것은 position이 범위를 벗어났다는 의미
+  // 삽입할 위치로 하나씩 이동합니다.
   for (int i = 1; i < position - 1 && currentNode != NULL; i++) {
     currentNode = currentNode->next;
   }
 
-  // 문제가 없다면 삽입을 시도합니다
+  // currentNode가 NULL인지 검사
   if (currentNode != NULL) {
     // 우선 2가 9를 가리키게 만들고
     newNode->next = currentNode->next;
     // 3이 2를 가리키게 만듭니다
     currentNode->next = newNode;
   }
+  // 결과 반환
   return head;
 }
 
