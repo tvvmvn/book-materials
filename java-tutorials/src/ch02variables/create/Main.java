@@ -2,9 +2,10 @@ package ch02variables.create;
 
 public class Main {
   public static void main(String[] args) {
-    // 문자열 변수
+    // 변수 생성
     String greeting = "Hello";
 
+    // 출력
     System.out.println(greeting); 
   }
 }

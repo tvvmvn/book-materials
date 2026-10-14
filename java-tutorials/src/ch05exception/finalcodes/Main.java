@@ -15,5 +15,5 @@ public class Main {
 }
 
 // java.lang.ArithmeticException: / by zero
-//         at ch06exception.finalcodes.Main.main(Main.java:6)
+//         at ch05exception.finalcodes.Main.main(Main.java:6)
 // 예외 처리문 종료

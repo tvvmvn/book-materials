@@ -10,6 +10,6 @@ public class Main {
   }
   public static void main(String[] args) {
     System.out.println(a);
-    // System.out.println(b); // error
+    // System.out.println(b); // 에러(접근 불가)
   }
 }
