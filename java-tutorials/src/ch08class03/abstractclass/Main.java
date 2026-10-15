@@ -1,5 +1,6 @@
 package ch08class03.abstractclass;
 
+// 추상 클래스
 abstract class Animal {
   // 추상 메서드
   abstract void cry();
@@ -10,8 +11,9 @@ abstract class Animal {
   }
 }
 
+// 자식 클래스
 class Duck extends Animal {
-  // 추상 메서드를 자식 고유의 방법으로 구현합니다
+  // 추상 메서드 구현
   void cry() { 
     System.out.println("꽥꽥");
   }
