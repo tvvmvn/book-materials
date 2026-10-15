@@ -1,8 +1,7 @@
-nums = [10, 20, 30]
+l = [10, 20, 30]
 
-e = enumerate(nums)
+print(tuple(l))
+print(set(l))
 
-# 리스트로 변환
-print(list(e))
-
-# [(0, 10), (1, 20), (2, 30)]
+# (10, 20, 30)
+# {10, 20, 30}
