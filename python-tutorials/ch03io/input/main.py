@@ -1,7 +1,7 @@
-name = input("What's your name? ")
+name = input("What's your name? ") # john 입력
 
-print(f"Hello {name}")
+print(f"Hi {name}")
 
 # 
 # What is your name? john
-# Hello john
+# Hi john

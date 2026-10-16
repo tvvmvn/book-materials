@@ -7,7 +7,7 @@ match level:
     print("Lv.2")
   case 3:
     print("Lv.3")
-  case _: # option
+  case _: # default
     print("Unknown level")
 
 # 

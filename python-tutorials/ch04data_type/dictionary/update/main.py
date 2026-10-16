@@ -4,9 +4,9 @@ cat = {
   "home": None
 }
 
-# change
+# 덮어쓰기
 cat["age"] = 3
-# add
+# 추가
 cat["color"] = "black"
 
 print(cat)

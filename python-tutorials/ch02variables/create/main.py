@@ -1,7 +1,11 @@
-a = 1
-b = 2
+# 정수형
+n = 2
+# 문자열
+s = 'hello'
 
-print(a + b)
+print(type(n))
+print(type(s))
 
 # 
-# 3
+# <class 'int'>
+# <class 'str'>

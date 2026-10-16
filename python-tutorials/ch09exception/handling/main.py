@@ -3,5 +3,4 @@ try:
 except:
   print("예외 발생!")
 
-# 
-# Error!
+# 예외 발생!

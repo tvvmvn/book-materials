@@ -1,4 +1,4 @@
-# 메모
+# 출력함수
 print("Hello Python")
 
 # 

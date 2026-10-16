@@ -1,7 +1,8 @@
-l = [10, 20, 30]
+a = [1, 2, 3]
+b = []
 
-print(tuple(l))
-print(set(l))
+for i in a:
+  b.append(i * 10)
 
-# (10, 20, 30)
-# {10, 20, 30}
+print(b)
+

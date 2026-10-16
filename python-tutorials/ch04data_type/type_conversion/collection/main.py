@@ -1,5 +1,10 @@
-set = {1, 2, 3}
+nums = [10, 20, 30]
+a = {3, 6, 9}
 
-list = list(set)
+# 셋 -> 리스트
+print(list(a))
+# 리스트 -> 셋
+print(set(nums))
 
-print(list)
+# [9, 3, 6]
+# {10, 20, 30}

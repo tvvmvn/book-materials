@@ -1,5 +1,5 @@
 class User:
-  # 정적 멤버
+  # 정적 속성
   userCount = 0 
   
   def __init__(self, name):
@@ -12,5 +12,4 @@ p3 = User("Mary")
 
 print(User.userCount)
 
-# 
 # 3
