@@ -6,7 +6,7 @@ CREATE TABLE product (
   category varchar(100) NOT NULL,
   sales int unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY(product_id)
-)
+);
 
 -- <제품> 테이블에 데이터 삽입하기
 INSERT INTO product (product_name, price, category, sales) VALUES ('아메리카노', 2000, '커피', 10);
